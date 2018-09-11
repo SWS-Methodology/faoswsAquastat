@@ -1,0 +1,15 @@
+current: qa # The current config set. Corresponds to a heading below
+all: 
+qa: 
+  certdir:  ~/.R/QA # Path to certificate directory
+  server: https://hqlqasws1.hq.un.fao.org:8181/sws
+  #token: 49549676-f52c-4269-9b07-85218fd8d03a # Place your token here
+  #token: c924abce-abd9-4a13-91b2-1f80d6a3b0b2 # 2018-09-05 aquastat_imputed
+  # token: 539101ec-d66c-4bf9-9af4-addf4e4ec81e  # 2018 aquastat_imputed 9:50am
+  # token: 84be5e85-0a0f-4a0b-9ce6-022698fef44e # 2018-10-09 TS between first year and 2017
+  token: 95c49ddf-a0ee-475e-9f5c-c248a1a0d8bb # 2018-10-09 TS between 1961 and 2017
+production:
+  certdir: ~/.R/Production/
+  server: https://hqlprswsas1.hq.un.fao.org:8181/sws
+  token: 473b9bf1-524b-4026-aa16-a76fca6cc50e
+

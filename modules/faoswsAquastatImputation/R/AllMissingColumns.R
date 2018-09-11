@@ -1,0 +1,1 @@
+AllMissingColumns <- function(df) as.vector(which(colSums(is.na(df)) == nrow(df))) 

@@ -1,0 +1,61 @@
+---
+title: "Aquastat Modules - General workflow"
+author: "Francy Lisboa"
+date: "July 24, 2018"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What about this document
+
+  This document describes the workflow regarding the migration of the **FAO-AQUASTAT analytical data procedures into the SWS framework**. In this document, the term indicator is used to define a composed variable relevant in the AQUASTAT database context while the term variables refer to as components or dimensions of an indicator.
+  The AQUASTAT - SWS migration represents FAO efforts to allocate interdepartmental statistical procedures into a single platform, facilitating and improving the analytical/statistical value chain of the whole organisation. The AQUASTAT - SWS migration framework is proposed to have three main modules connected through their outputs: **faoswsAquastatImputation**; **faoswsAquastatCalculation**; **faoswsAquastatValidation**.
+
+
+## The faoswsAquastatImputation module
+
+  Due to the difficulty of obtaining credible country-level water statistics annually, the existing high data missingness in the AQUASTAT database represents an initial challenge before computation of relevant water resource indicators.  There is no such a thing as a golden choice when it comes to the imputation of missing values, especially in cases where the missingness is high, and the data frequency is low, a reality of the data in the AQUASTAT. Thus, complex imputation methods are unfeasible.   A good practice, though, is to run a sensitivity analysis with different simple imputation methods (e.g. Last Observation Carried Forward/Backward, Naive Interpolation, replacement of missing values by average or median) and then subject the outputs to analytical comparisons of the resulting indicators. 
+  The current AQUASTAT effort to reduce the blocking effects of the high data missingness on the calculation of water-related indicators lies within the use of a replacement approach where indicators are calculated according to priority rules applied every 5-year interval of a country-level time-series. This approach, however, has flows such as the calculation of indicators based on variables with annual mismatch (e.g. the indicator A of year XXXX may be calculated as a value coming from the year XXXX-4, but also from XXX-3, XXXX-2 and so on depending on the hierarchical rules of the indicator components. Also, the current approach does not ensure a full-time series of variables prior the calculation of the indicators.
+  Thus, the imputation of missing values may supplant the existing drawbacks of the approach currently applied by the AQUASTAT team. **In agreement with the AQUASTAT-SWS migration focal point**,  three imputation methods will be implemented: 1) **Interpolation**; 2) **LOCF**.
+   ![](C:/Users/LISBOAF/Documents/github/Aquastat/Figs/Imputation framework.png)
+     Each country results in two imputed datasets corresponding to the two imputation methods. These datasets are stored in the SWS systems to be used on the faoswsAquastatCalculation module.
+   
+   
+   
+## The faoswsAquastatCaclulation module
+   This module consists of a set of chained operations that ultimately results in the Aquastat water indicators. The calculation rules (set of arithmetical formulas) provided by the AQUASTAT team are confronted against each of the three imputed datasets coming from the faoswsAquastatImputation. The "confront" is used to represent the chained data processing operations that take the imputed datastes from the *faoswsAquastatImputation module* and output long-format datasets containing relevant country-level AQUASTAT indicators (**Fig 2**).
+   
+   
+ ![](C:/Users/LISBOAF/Documents/github/Aquastat/Figs/calculation_process.png)
+ **Figure 2**. A imputed dataset from *faoswsAquastatImputation* domain is used to calculate the missing values of the indicator. The non-missing values of the indicator in the original dataset (gree values in *Indicator(raw)*) are preserved in *Indicator(final)*.
+ 
+ 
+ 
+   
+   Besides the datasets coming from different imputation methods, this module also calculates the AQUASTAT indicators based on the current approach developed by the AQUASTAT team. Some indicators have the so-called "primary variables", which are used as a proxy of the indicator in case of missingness of other variables composing the indicator. To illustrate how this approach works, let the indicator 4311 to be the sum of the variables 4308, 4309 and 4310 in a country A and time series TS. For each 5-year interval in  the TS, the 4311 indicator is calculated following:
+
+* Option 1. If all  variables are not missed in the 5-year TS interval, then:
+                    4311 = 4308 + 4309 + 4310
+* Option 2. if  only 4310 is missing, then:
+                    4311 = 4308 + 4309 
+* Option 3. If only 4309 is missing, then:
+                    4311 = 4308 + 4310
+* Option 4. If only 4308 is missing, then:
+                    4311 = 4309 + 4310
+* Option 5. If both 4309 and 4310 are missing, then:
+                    4311 = 4308    (the primary variable)
+* Option 6. If both 4308 and 4310 are missing, then:
+                    4311 = 4309    
+* Option 7. If both 4308 and 4309 are missing, then:
+                    4311 = 4310  
+
+   Notice the hierarchy showing the importance of the variables for the indicator. In this specific example, the primary variable of the indicator 4311 is 4308 because its value is used as the primary surrogate of the indicator in case of all five first options fail.
+   
+   
