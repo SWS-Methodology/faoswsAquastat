@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AQUASTAT data | Migration of AQUASTAT Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="AQUASTAT data | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AQUASTAT data | Migration of AQUASTAT Statistical Processes into the SWS" />
+  
+  <meta name="twitter:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  
+
+<meta name="author" content="Francy Lisboa (ESSD - Mehtodological Innovation Team)">
+
+
+<meta name="date" content="2019-03-12">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="sws-resources.html">
+<link rel="next" href="the-faoswsaquastatbaseline-module.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<script src="libs/viz-0.3/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
+
+
+
+<link rel="stylesheet" href="ess.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="counterparts.html"><a href="counterparts.html"><i class="fa fa-check"></i>Counterparts</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i>SWS resources</a><ul>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i>Code lists</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#data-tables"><i class="fa fa-check"></i>Data tables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i>Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="aquastat-data.html"><a href="aquastat-data.html"><i class="fa fa-check"></i>AQUASTAT data</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html"><i class="fa fa-check"></i>The faoswsAquastatBaseline module</a><ul>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#aims"><i class="fa fa-check"></i>Aims</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#add-indicators"><i class="fa fa-check"></i>Add indicators</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#long-term-variables"><i class="fa fa-check"></i>Long-term variables</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#time-series-completeness"><i class="fa fa-check"></i>Time-Series completeness</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#geographic-coverage"><i class="fa fa-check"></i>Geographic coverage</a></li>
+<li class="chapter" data-level="" data-path="the-faoswsaquastatbaseline-module.html"><a href="the-faoswsaquastatbaseline-module.html#faostat-data"><i class="fa fa-check"></i>FAOSTAT data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i>Workflow</a><ul>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#faostat-annexation"><i class="fa fa-check"></i>FAOSTAT annexation</a></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#calculation"><i class="fa fa-check"></i>Calculation</a></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#imputations"><i class="fa fa-check"></i>Imputations</a></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#recalculation"><i class="fa fa-check"></i>Recalculation</a></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#flag-mapping-observation"><i class="fa fa-check"></i>Flag mapping (Observation)</a></li>
+<li class="chapter" data-level="" data-path="workflow.html"><a href="workflow.html#flag-mapping-method"><i class="fa fa-check"></i>Flag mapping (Method)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="running-the-module-in-the-sws.html"><a href="running-the-module-in-the-sws.html"><i class="fa fa-check"></i>Running the module in the SWS</a></li>
+<li class="chapter" data-level="" data-path="did-the-module.html"><a href="did-the-module.html"><i class="fa fa-check"></i>Did the module…</a><ul>
+<li class="chapter" data-level="" data-path="did-the-module.html"><a href="did-the-module.html#add-new-indicators"><i class="fa fa-check"></i>Add new indicators ?</a></li>
+<li class="chapter" data-level="" data-path="did-the-module.html"><a href="did-the-module.html#promote-time-series-completeness-and-higher-geographic-coverage"><i class="fa fa-check"></i>promote time-series completeness and higher geographic coverage ?</a></li>
+<li class="chapter" data-level="" data-path="did-the-module.html"><a href="did-the-module.html#correct-values-of-long-term-average-variables"><i class="fa fa-check"></i>correct values of Long-Term Average variables ?</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Migration of AQUASTAT Statistical Processes into the SWS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aquastat-data" class="section level1 unnumbered">
+<h1>AQUASTAT data</h1>
+<p>The next sections will treat the faoswsAquastatBaseline module as well as its datasets and data tables in more details. However, after describing the current SWS resources involved in the AQUASTAT - SWS migration framework, it is important to have a look at the data collected and disseminated by AQUASTAT. with the validation from the AQUASTAT focal point, The ESS - SWS counterpart has adapated and updated a reference table with the following information:</p>
+<ol style="list-style-type: decimal">
+<li><strong>element_code</strong>. The SWS code of AQUASTAT variable and indicators;</li>
+<li><strong>element_name</strong>. The description of the AQUASTAT variables and indicators;</li>
+<li><strong>disseminated</strong>. Column indicating whether the variable/indicator is for dissemination (<strong>D</strong>) or internal use (<strong>I</strong>);</li>
+<li><strong>calculated</strong>. Column indicating whether the variable is an ordinary variable (<strong>V</strong>) or an indicator (calculated varaible) (<strong>C</strong>);</li>
+<li><strong>Source</strong>. Column indicating the data source:
+<ul>
+<li><strong>A:</strong> data collected by AQUASTAT;</li>
+<li><strong>O:</strong> data copied by AQUASTAT from other international databases;</li>
+<li><strong>C:</strong> data calculated.</li>
+</ul></li>
+<li><strong>source</strong>. Collumn with the source description of AQUASTAT variables/indicators.
+<ul>
+<li><strong>AQUASTAT</strong> ordinary variable collected by AQUASTAT;</li>
+<li><strong>DERIVED</strong> indicator calculated from ordinary variables;</li>
+<li><strong>FAOSTAT</strong> variable or indicator collected from FAOSTAT database;</li>
+<li><strong>WORLD BANK</strong> variable or indicator collected from the World Bank;</li>
+<li><strong>ILO</strong> variable or indicator collected from the Internation Labour Organization;</li>
+<li><strong>JMP(WHO/UNICEF)</strong> variable or indicator collected from the World Health Organization/UNICEF.</li>
+</ul></li>
+</ol>
+<table>
+<caption><span id="tab:tab1">Table 1: </span>The description of AQUASTAT data</caption>
+<thead>
+<tr class="header">
+<th align="right">element_code</th>
+<th align="left">element_name</th>
+<th align="left">disseminated</th>
+<th align="left">calculated</th>
+<th align="left">Source</th>
+<th align="left">source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">4150</td>
+<td align="left">Long-term average annual precipitation in volume</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4151</td>
+<td align="left">Long-term average annual precipitation in depth</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">O</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4154</td>
+<td align="left">Groundwater produced internally</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4155</td>
+<td align="left">Surface water produced internally</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4156</td>
+<td align="left">Overlap between surface water and groundwater</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4157</td>
+<td align="left">Total internal renewable water resources (IRWR)</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4159</td>
+<td align="left">Surface water: entering the country (total)</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4160</td>
+<td align="left">Surface water: inflow not submitted to treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4161</td>
+<td align="left">Surface water: inflow submitted to treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4162</td>
+<td align="left">Surface water: inflow secured through treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4164</td>
+<td align="left">Surface water: accounted inflow</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4165</td>
+<td align="left">Surface water: total flow of border rivers</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4168</td>
+<td align="left">Surface water: accounted flow of border rivers</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4171</td>
+<td align="left">Surface water: leaving the country to other countries (total)</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4172</td>
+<td align="left">Surface water: outflow to other countries not submitted to treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4173</td>
+<td align="left">Surface water: outflow to other countries submitted to treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4174</td>
+<td align="left">Surface water: outflow to other countries secured through treaties</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4176</td>
+<td align="left">Surface water: total external renewable</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4177</td>
+<td align="left">Groundwater: entering the country (total)</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4178</td>
+<td align="left">Groundwater: leaving the country to other countries (total)</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4182</td>
+<td align="left">Water resources: total external renewable</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4185</td>
+<td align="left">Total renewable surface water</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4187</td>
+<td align="left">Total renewable groundwater</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4188</td>
+<td align="left">Total renewable water resources</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4192</td>
+<td align="left">Dependency ratio</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4193</td>
+<td align="left">Exploitable: regular renewable surface water</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4194</td>
+<td align="left">Exploitable: irregular renewable surface water</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4195</td>
+<td align="left">Exploitable: regular renewable groundwater</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4196</td>
+<td align="left">Total exploitable water resources</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4452</td>
+<td align="left">Groundwater: accounted inflow</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="odd">
+<td align="right">4453</td>
+<td align="left">Groundwater: accounted outflow to other countries</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">A</td>
+<td align="left">AQUASTAT</td>
+</tr>
+<tr class="even">
+<td align="right">4509</td>
+<td align="left">Exploitable: total renewable surface water</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="odd">
+<td align="right">4536</td>
+<td align="left">Overlap: between surface water and groundwater</td>
+<td align="left">D</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">DERIVED</td>
+</tr>
+<tr class="even">
+<td align="right">4549</td>
+<td align="left">Environmental Flow Requirements</td>
+<td align="left">D</td>
+<td align="left">V</td>
+<td align="left">O</td>
+<td align="left">UNKNOWN</td>
+</tr>
+</tbody>
+</table>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sws-resources.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-faoswsaquastatbaseline-module.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
