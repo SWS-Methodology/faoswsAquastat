@@ -1,1 +1,0 @@
-OneObservationColumns <- function(df) as.vector(which(colSums(!is.na(df)) == 1)) 
