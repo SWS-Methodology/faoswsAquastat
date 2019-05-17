@@ -1,4 +1,4 @@
-# **The faoswsAquastatExternal module** {#External}
+# **The faoswsAquastatExternal module** {#AquastatExternal}
 
 ## **Aims**
 
