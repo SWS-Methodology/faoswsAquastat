@@ -1,0 +1,1026 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	UNdata | record view | Gross Value Added by Kind of Economic Activity at current prices - US dollars
+</title><link type="text/css" rel="stylesheet" href="_Styles/Global.css" /><link rel="shortcut icon" href="_Images/favicon.ico" /><link rel="search" type="application/opensearchdescription+xml" href="OpenSearch.xml" title="UNdata" />
+    <script type="text/javascript" src="_Scripts/Ajax.js"></script>
+    <script type="text/javascript" src="_Scripts/Common.js"></script>
+<script type="text/javascript" src="_Scripts/Rollovers.js"></script><script type="text/javascript" src="_Scripts/DataCommon.js"></script><script type="text/javascript" src="_Scripts/QueryString.js"></script><link type="text/css" rel="Stylesheet" href="_Styles/Filters.css" /><link type="text/css" rel="Stylesheet" href="_Styles/Data.css" /><script type="text/javascript" src="_Scripts/Data.js"></script><script type="text/javascript" src="_Scripts/DataMartInfo.js"></script><script type="text/javascript" src="_Scripts/SeriesActions.js"></script><link type="text/css" rel="Stylesheet" href="_Styles/DataMartInfo.css" /><script type="text/javascript" src="_Scripts/SearchBox.js"></script><script type="text/javascript" src="_Scripts/PopupLibrary.js"></script><script type="text/javascript" src="_Scripts/Scroll/dw_scroll_dx.js"></script><link type="text/css" rel="Stylesheet" href="_Styles/Filters.css" /><script type="text/javascript" src="_Scripts/Filters.js"></script></head>
+<body>
+    <a name="Top"></a>
+    <div class="Container FloatWrap">
+    
+        <div class="TopBar">
+            <a href="http://www.facebook.com/group.php?gid=128384224664"><img src="_Images/Facebook.png" alt="Find UNdata on Facebook" title="Find UNdata on Facebook" /></a>
+            <a href="http://twitter.com/undata"><img src="_Images/Twitter.png" alt="Follow UNdata on Twitter" title="Follow UNdata on Twitter" /></a>
+            <a href="Feedback.aspx"><img src="_Images/SendFeedback.png" alt="Please send us your feedback" title="Please send us your feedback" /></a>
+        </div>
+        
+        <form name="aspnetForm" method="post" action="Data.aspx?q=gross+value+added+US+current&amp;d=SNAAMA&amp;f=grID%3a201%3bcurrID%3aUSD%3bpcFlag%3a0" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc0MTkwNjk4OWRkm7kHgApdAqkH3uK6/vwlCvJoOY4=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9ED6FB81" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWHQKGlKTfCgLg4a+PAgL0of+CDwLj38f4DwL8+6OhBwLWlrHDBgL3r5HQAQKrlMHOCwK4zeTvAQLF4cWQCAKi/afvAwL7+6OhBwLRlrHDBgLwr5HQAQKslMHOCwK4zejvAQLF4cmQCAKi/avvAwL6+6OhBwLQlrHDBgLxr5HQAQKtlMHOCwK4zezvAQLF4c2QCAKi/a/vAwKn6+uoDwLwhInHAwKsv9nZCQKrw9PhB+X6YOwZbdPbMtCpXqfpj9JWojx2" />
+            <div class="Content">
+                <div class="SearchHead">
+                    <a href="Default.aspx"><img src="_Images/logo_small.png" alt="logo" title="United Nations Data Retrieval System" /></a>
+                    <div id="ctl00_ctrlSearch_s" class="SearchBox">
+	
+    <div id="ctl00_ctrlSearch_divSearchTypes" class="SearchBoxTop">
+        <a href="Explorer.aspx">Datamarts</a>
+        <a href="UpdateCalendar.aspx">Update Calendar</a>
+        <a href="javascript:;" onclick="Redirect(this)" class="">Glossary</a>
+      
+        <a href="javascript:;" onclick="ShowInlinePopup('divAPI', this)" class="">API</a>
+        <a href="javascript:;" onclick="ShowInlinePopup('divMore', this)" class="">More</a> 
+    </div>
+
+    <div class="GapBottom FloatWrap">
+        <input name="ctl00$ctrlSearch$txtSearch" type="text" value="gross value added US current" id="ctl00_ctrlSearch_txtSearch" class="SearchBox" />
+        <input type="submit" name="ctl00$ctrlSearch$btnSearch" value="Search" id="ctl00_ctrlSearch_btnSearch" class="BtnSearch" />
+    </div>
+
+</div>
+
+<div id="divMore" class="More">
+    <ul>
+        <li><a href="Host.aspx?Content=About">About UNdata</a></li>
+        <li><a href="AdvancedSearch.aspx">Advanced search</a></li>
+     
+        <li><a href="Explorer.aspx">Explorer</a></li>
+    </ul>
+</div>
+
+<div id="divAPI" class="More">
+    <ul>
+        <li><a href="Host.aspx?Content=API">Documentation</a></li>
+        <li><a href="SdmxBrowser">Browse</a></li>
+        <li><a href="ws">Web Service</a></li>
+    </ul>
+</div>
+
+                </div>
+                
+                <div id="ctl00_divSearchBar" class="Clear SearchBar">
+                    <div class="Left"><b>Statistics</b></div>
+                    <div class="Right">&nbsp;</div>
+                </div>
+                
+                <div class="Clear">
+                      
+    
+<div id="divDownload" class="Popup OptionsBox DownloadBox">
+    <span><a href="javascript:HideDownloadPopup();" title="Close"><img src="_Images/Close.gif" alt="Close" /></a></span>
+    <h3>Select download format:</h3>
+    <table>
+        <tr>
+            <th colspan="3">Structured</th>
+        </tr>
+        <tr>
+            <td>
+                <a id="downloadXmlLink" title="Download data in XML format"><img src="_Images/IconXml28.png" alt="Download data in XML format" /><br />XML</a>
+            </td>    
+            <td style="background-color: #FFF;">
+                &nbsp;
+            </td>
+            <td style="background-color: #FFF;">
+                &nbsp;
+            </td>
+        </tr>    
+        <tr>
+            <th colspan="3">Value separated</th>
+        </tr>
+        <tr>
+            <td>
+                <a id="downloadCommaLink" title="Download data with values separated by a comma"><img src="_Images/IconCsv28.png" alt="Download data with values separated by a comma" /><br />Comma</a>
+            </td>
+            <td>
+                <a id="downloadSemicolonLink" title="Download data with values separated by a semicolon"><img src="_Images/IconSemi28.png" alt="Download data with values separated by a semicolon" /><br />Semicolon</a>
+            </td>
+            <td>
+                <a id="downloadPipeLink" title="Download data with values separated by a pipe"><img src="_Images/IconPipe28.png" alt="Download data with values separated by a pipe" /><br />Pipe</a>
+            </td>
+        </tr> 
+    </table>
+    
+    <div id="downloadNote" class="Note Hide">
+        <div class="Header"><img src="_Images/IconInfo_blue.png" alt="Info" /><span>Note</span></div>
+        <div class="Message">Please note: Only the first 100000 records may be downloaded using this facility.</div>
+    </div>
+</div>  
+    <div class="SideMargin">
+        <input type="hidden" id="boxDataMartId" value="SNAAMA" />
+        <input type="hidden" id="boxPivotColumn" value="" />
+        <input name="ctl00$main$boxCurrentDefinition" type="hidden" id="ctl00_main_boxCurrentDefinition" />
+
+        
+        <div id="ctl00_main_container">
+	
+            <div id="divMessages"></div>
+        
+            <div class="SeriesMeta">
+                <h2>Gross Value Added by Kind of Economic Activity at current prices - US dollars<span><img src="_Images/IconGoOut.png" alt="Go to" /><a id="ctl00_main_linkSearchGlossary" href="Glossary.aspx?q=Gross+Value+Added+by+Kind+of+Economic+Activity+at+current+prices+-+US+dollars">Search glossaries</a></span></h2>
+
+                Source: <a href="#SNAAMA" class="ds">National Accounts Estimates of Main Aggregates</a> | <span><a href="http://unstats.un.org/unsd" target="blank;" style="color: Green">United Nations Statistics Division</a></span>
+
+
+            </div>
+            
+	    <div style="float:left">
+<div class="IconBar">
+    
+    
+    <span id="ctl00_main_actions_download">
+        <a href="javascript:;" onclick="ShowDynamicDownloadPopup(this, 'SNAAMA', 100000)"><img src="_Images/IconDownload.png" alt="Download" title="Download this view of the data series" /></a>
+        <a href="javascript:;" onclick="ShowDynamicDownloadPopup(this, 'SNAAMA', 100000)" title="Download this view of the data series">Download</a>
+    </span>
+
+    <span id="ctl00_main_actions_browse">
+        <a href="Explorer.aspx?d=SNAAMA&f=grID%3a201%3bcurrID%3aUSD%3bpcFlag%3a0"><img src="_Images/IconBrowse.png" alt="Explore" title="Explore the series' database" /></a>
+        <a href="Explorer.aspx?d=SNAAMA&f=grID%3a201%3bcurrID%3aUSD%3bpcFlag%3a0" title="Explore the series' database">Explore</a>
+    </span>    
+   
+    
+            <span>
+                <a href="javascript:;" onclick="ShowInlinePopup('divView', this, 110, -15)"><img src="_Images/IconSelectCols.png" alt="Select columns" title="Select the columns to be displayed" /></a>
+                <a href="javascript:;" onclick="ShowInlinePopup('divView', this, 110, -15)" title="Select the columns to be displayed">Select columns</a>
+            </span>
+        
+            <span>
+                <a href="javascript:;" onclick="ShowInlinePopup('divSort', this, 110, -15)"><img src="_Images/IconSelectSort.png" alt="Select sort order" title="Select the sort order" /></a>
+                <a href="javascript:;" onclick="ShowInlinePopup('divSort', this, 110, -15)" title="Select the sort order">Select sort order</a>
+            </span>
+        
+            <span>
+                <a href="javascript:;" onclick="ShowInlinePopup('divPivot', this, 110, -15)"><img src="_Images/IconPivot.png" alt="Select pivot column" title="Select the pivot column" /></a>
+                <a href="javascript:;" onclick="ShowInlinePopup('divPivot', this, 110, -15)" title="Select the pivot column">Select pivot column</a>
+            </span>
+        
+            <span>
+                <a href="javascript:;" onclick="ShowInlinePopup('divLinkTo', this, 110, -15)"><img src="_Images/IconLink.png" alt="Link to this page" title="Link to this page" /></a>
+                <a href="javascript:;" onclick="ShowInlinePopup('divLinkTo', this, 110, -15)" title="Link to this page">Link to this page</a>
+            </span>
+        
+</div></div>
+	    <div class="IconBarAdditionalItems" id="MDGVisualizationLink" style="display:none"><a id="MDGVisualizationIcon" href="../visualization/"><img src="_Images/iconChart.png"></a>&nbsp;<a id="MDGVisualizationText" href="../visualization/" title="See charts for MDG indicators">View MDG Visualizations</a></div>
+            <div class="Clear"></div>
+            
+            <div class="LeftColumn">
+                
+
+<input type="hidden" id="boxDataFilter" value="grID:201;currID:USD;pcFlag:0" />
+<input type="hidden" id="boxAnchor" value="grID%3a201%3bcurrID%3aUSD%3bpcFlag%3afalse" />
+<input type="hidden" id="boxRequestHandler" value="SendFilterRequest" />
+
+<div id="divFilters">
+    <div class="FilterList BottomGap" style="display:none">
+        <h4>Current Filters:</h4>
+        <div class="Current" id="divCurrent">
+            
+        </div>
+        <div id="divRemoveAll" class="All" style="display:none">
+            
+            
+                    <a href="javascript:;" onclick="RemoveAll(SendFilterRequest)">
+                        <img src="_Images/RemoveFilter.png" alt="Remove" />&nbsp;Remove All
+                    </a>
+        </div>
+    </div>
+    
+    <div class="FilterList FloatWrap">
+        <h4>Select filters:</h4>
+        
+        <div class="Clear">
+            
+        <h5>Country or Area (220)</h5>
+        <div class="Filter">
+            <div id="divCountryorAreaOuter" class="Out">
+                <div id="divCountryorAreaInner" class="In">
+                    
+            <input type="checkbox" id="crID%3a4" value="crID%3a4" name="Afghanistan" />
+            <label for="crID%3a4">Afghanistan</label><br />
+            <input type="checkbox" id="crID%3a8" value="crID%3a8" name="Albania" />
+            <label for="crID%3a8">Albania</label><br />
+            <input type="checkbox" id="crID%3a12" value="crID%3a12" name="Algeria" />
+            <label for="crID%3a12">Algeria</label><br />
+            <input type="checkbox" id="crID%3a20" value="crID%3a20" name="Andorra" />
+            <label for="crID%3a20">Andorra</label><br />
+            <input type="checkbox" id="crID%3a24" value="crID%3a24" name="Angola" />
+            <label for="crID%3a24">Angola</label><br />
+            <input type="checkbox" id="crID%3a660" value="crID%3a660" name="Anguilla" />
+            <label for="crID%3a660">Anguilla</label><br />
+            <input type="checkbox" id="crID%3a28" value="crID%3a28" name="Antigua and Barbuda" />
+            <label for="crID%3a28">Antigua and Barbuda</label><br />
+            <input type="checkbox" id="crID%3a32" value="crID%3a32" name="Argentina" />
+            <label for="crID%3a32">Argentina</label><br />
+            <input type="checkbox" id="crID%3a51" value="crID%3a51" name="Armenia" />
+            <label for="crID%3a51">Armenia</label><br />
+            <input type="checkbox" id="crID%3a533" value="crID%3a533" name="Aruba" />
+            <label for="crID%3a533">Aruba</label><br />
+            <input type="checkbox" id="crID%3a36" value="crID%3a36" name="Australia" />
+            <label for="crID%3a36">Australia</label><br />
+            <input type="checkbox" id="crID%3a40" value="crID%3a40" name="Austria" />
+            <label for="crID%3a40">Austria</label><br />
+            <input type="checkbox" id="crID%3a31" value="crID%3a31" name="Azerbaijan" />
+            <label for="crID%3a31">Azerbaijan</label><br />
+            <input type="checkbox" id="crID%3a44" value="crID%3a44" name="Bahamas" />
+            <label for="crID%3a44">Bahamas</label><br />
+            <input type="checkbox" id="crID%3a48" value="crID%3a48" name="Bahrain" />
+            <label for="crID%3a48">Bahrain</label><br />
+            <input type="checkbox" id="crID%3a50" value="crID%3a50" name="Bangladesh" />
+            <label for="crID%3a50">Bangladesh</label><br />
+            <input type="checkbox" id="crID%3a52" value="crID%3a52" name="Barbados" />
+            <label for="crID%3a52">Barbados</label><br />
+            <input type="checkbox" id="crID%3a112" value="crID%3a112" name="Belarus" />
+            <label for="crID%3a112">Belarus</label><br />
+            <input type="checkbox" id="crID%3a56" value="crID%3a56" name="Belgium" />
+            <label for="crID%3a56">Belgium</label><br />
+            <input type="checkbox" id="crID%3a84" value="crID%3a84" name="Belize" />
+            <label for="crID%3a84">Belize</label><br />
+            <input type="checkbox" id="crID%3a204" value="crID%3a204" name="Benin" />
+            <label for="crID%3a204">Benin</label><br />
+            <input type="checkbox" id="crID%3a60" value="crID%3a60" name="Bermuda" />
+            <label for="crID%3a60">Bermuda</label><br />
+            <input type="checkbox" id="crID%3a64" value="crID%3a64" name="Bhutan" />
+            <label for="crID%3a64">Bhutan</label><br />
+            <input type="checkbox" id="crID%3a68" value="crID%3a68" name="Bolivia (Plurinational State of)" />
+            <label for="crID%3a68">Bolivia (Plurinational State of)</label><br />
+            <input type="checkbox" id="crID%3a70" value="crID%3a70" name="Bosnia and Herzegovina" />
+            <label for="crID%3a70">Bosnia and Herzegovina</label><br />
+            <input type="checkbox" id="crID%3a72" value="crID%3a72" name="Botswana" />
+            <label for="crID%3a72">Botswana</label><br />
+            <input type="checkbox" id="crID%3a76" value="crID%3a76" name="Brazil" />
+            <label for="crID%3a76">Brazil</label><br />
+            <input type="checkbox" id="crID%3a92" value="crID%3a92" name="British Virgin Islands" />
+            <label for="crID%3a92">British Virgin Islands</label><br />
+            <input type="checkbox" id="crID%3a96" value="crID%3a96" name="Brunei Darussalam" />
+            <label for="crID%3a96">Brunei Darussalam</label><br />
+            <input type="checkbox" id="crID%3a100" value="crID%3a100" name="Bulgaria" />
+            <label for="crID%3a100">Bulgaria</label><br />
+            <input type="checkbox" id="crID%3a854" value="crID%3a854" name="Burkina Faso" />
+            <label for="crID%3a854">Burkina Faso</label><br />
+            <input type="checkbox" id="crID%3a108" value="crID%3a108" name="Burundi" />
+            <label for="crID%3a108">Burundi</label><br />
+            <input type="checkbox" id="crID%3a132" value="crID%3a132" name="Cabo Verde" />
+            <label for="crID%3a132">Cabo Verde</label><br />
+            <input type="checkbox" id="crID%3a116" value="crID%3a116" name="Cambodia" />
+            <label for="crID%3a116">Cambodia</label><br />
+            <input type="checkbox" id="crID%3a120" value="crID%3a120" name="Cameroon" />
+            <label for="crID%3a120">Cameroon</label><br />
+            <input type="checkbox" id="crID%3a124" value="crID%3a124" name="Canada" />
+            <label for="crID%3a124">Canada</label><br />
+            <input type="checkbox" id="crID%3a136" value="crID%3a136" name="Cayman Islands" />
+            <label for="crID%3a136">Cayman Islands</label><br />
+            <input type="checkbox" id="crID%3a140" value="crID%3a140" name="Central African Republic" />
+            <label for="crID%3a140">Central African Republic</label><br />
+            <input type="checkbox" id="crID%3a148" value="crID%3a148" name="Chad" />
+            <label for="crID%3a148">Chad</label><br />
+            <input type="checkbox" id="crID%3a152" value="crID%3a152" name="Chile" />
+            <label for="crID%3a152">Chile</label><br />
+            <input type="checkbox" id="crID%3a344" value="crID%3a344" name="China, Hong Kong SAR" />
+            <label for="crID%3a344">China, Hong Kong SAR</label><br />
+            <input type="checkbox" id="crID%3a446" value="crID%3a446" name="China, Macao Special Administrative Region" />
+            <label for="crID%3a446">China, Macao Special Administrative Region</label><br />
+            <input type="checkbox" id="crID%3a156" value="crID%3a156" name="China, People's Republic of" />
+            <label for="crID%3a156">China, People's Republic of</label><br />
+            <input type="checkbox" id="crID%3a170" value="crID%3a170" name="Colombia" />
+            <label for="crID%3a170">Colombia</label><br />
+            <input type="checkbox" id="crID%3a174" value="crID%3a174" name="Comoros" />
+            <label for="crID%3a174">Comoros</label><br />
+            <input type="checkbox" id="crID%3a178" value="crID%3a178" name="Congo" />
+            <label for="crID%3a178">Congo</label><br />
+            <input type="checkbox" id="crID%3a184" value="crID%3a184" name="Cook Islands" />
+            <label for="crID%3a184">Cook Islands</label><br />
+            <input type="checkbox" id="crID%3a188" value="crID%3a188" name="Costa Rica" />
+            <label for="crID%3a188">Costa Rica</label><br />
+            <input type="checkbox" id="crID%3a384" value="crID%3a384" name="Côte d'Ivoire" />
+            <label for="crID%3a384">Côte d'Ivoire</label><br />
+            <input type="checkbox" id="crID%3a191" value="crID%3a191" name="Croatia" />
+            <label for="crID%3a191">Croatia</label><br />
+            <input type="checkbox" id="crID%3a192" value="crID%3a192" name="Cuba" />
+            <label for="crID%3a192">Cuba</label><br />
+            <input type="checkbox" id="crID%3a531" value="crID%3a531" name="Curaçao" />
+            <label for="crID%3a531">Curaçao</label><br />
+            <input type="checkbox" id="crID%3a196" value="crID%3a196" name="Cyprus" />
+            <label for="crID%3a196">Cyprus</label><br />
+            <input type="checkbox" id="crID%3a203" value="crID%3a203" name="Czechia" />
+            <label for="crID%3a203">Czechia</label><br />
+            <input type="checkbox" id="crID%3a408" value="crID%3a408" name="Democratic People's Republic of Korea" />
+            <label for="crID%3a408">Democratic People's Republic of Korea</label><br />
+            <input type="checkbox" id="crID%3a180" value="crID%3a180" name="Democratic Republic of the Congo" />
+            <label for="crID%3a180">Democratic Republic of the Congo</label><br />
+            <input type="checkbox" id="crID%3a208" value="crID%3a208" name="Denmark" />
+            <label for="crID%3a208">Denmark</label><br />
+            <input type="checkbox" id="crID%3a262" value="crID%3a262" name="Djibouti" />
+            <label for="crID%3a262">Djibouti</label><br />
+            <input type="checkbox" id="crID%3a212" value="crID%3a212" name="Dominica" />
+            <label for="crID%3a212">Dominica</label><br />
+            <input type="checkbox" id="crID%3a214" value="crID%3a214" name="Dominican Republic" />
+            <label for="crID%3a214">Dominican Republic</label><br />
+            <input type="checkbox" id="crID%3a218" value="crID%3a218" name="Ecuador" />
+            <label for="crID%3a218">Ecuador</label><br />
+            <input type="checkbox" id="crID%3a818" value="crID%3a818" name="Egypt" />
+            <label for="crID%3a818">Egypt</label><br />
+            <input type="checkbox" id="crID%3a222" value="crID%3a222" name="El Salvador" />
+            <label for="crID%3a222">El Salvador</label><br />
+            <input type="checkbox" id="crID%3a226" value="crID%3a226" name="Equatorial Guinea" />
+            <label for="crID%3a226">Equatorial Guinea</label><br />
+            <input type="checkbox" id="crID%3a232" value="crID%3a232" name="Eritrea" />
+            <label for="crID%3a232">Eritrea</label><br />
+            <input type="checkbox" id="crID%3a233" value="crID%3a233" name="Estonia" />
+            <label for="crID%3a233">Estonia</label><br />
+            <input type="checkbox" id="crID%3a231" value="crID%3a231" name="Ethiopia" />
+            <label for="crID%3a231">Ethiopia</label><br />
+            <input type="checkbox" id="crID%3a242" value="crID%3a242" name="Fiji" />
+            <label for="crID%3a242">Fiji</label><br />
+            <input type="checkbox" id="crID%3a246" value="crID%3a246" name="Finland" />
+            <label for="crID%3a246">Finland</label><br />
+            <input type="checkbox" id="crID%3a200" value="crID%3a200" name="Former Czechoslovakia" />
+            <label for="crID%3a200">Former Czechoslovakia</label><br />
+            <input type="checkbox" id="crID%3a230" value="crID%3a230" name="Former Ethiopia" />
+            <label for="crID%3a230">Former Ethiopia</label><br />
+            <input type="checkbox" id="crID%3a530" value="crID%3a530" name="Former Netherlands Antilles" />
+            <label for="crID%3a530">Former Netherlands Antilles</label><br />
+            <input type="checkbox" id="crID%3a736" value="crID%3a736" name="Former Sudan" />
+            <label for="crID%3a736">Former Sudan</label><br />
+            <input type="checkbox" id="crID%3a810" value="crID%3a810" name="Former USSR" />
+            <label for="crID%3a810">Former USSR</label><br />
+            <input type="checkbox" id="crID%3a890" value="crID%3a890" name="Former Yugoslavia" />
+            <label for="crID%3a890">Former Yugoslavia</label><br />
+            <input type="checkbox" id="crID%3a250" value="crID%3a250" name="France" />
+            <label for="crID%3a250">France</label><br />
+            <input type="checkbox" id="crID%3a258" value="crID%3a258" name="French Polynesia" />
+            <label for="crID%3a258">French Polynesia</label><br />
+            <input type="checkbox" id="crID%3a266" value="crID%3a266" name="Gabon" />
+            <label for="crID%3a266">Gabon</label><br />
+            <input type="checkbox" id="crID%3a270" value="crID%3a270" name="Gambia" />
+            <label for="crID%3a270">Gambia</label><br />
+            <input type="checkbox" id="crID%3a268" value="crID%3a268" name="Georgia" />
+            <label for="crID%3a268">Georgia</label><br />
+            <input type="checkbox" id="crID%3a276" value="crID%3a276" name="Germany" />
+            <label for="crID%3a276">Germany</label><br />
+            <input type="checkbox" id="crID%3a288" value="crID%3a288" name="Ghana" />
+            <label for="crID%3a288">Ghana</label><br />
+            <input type="checkbox" id="crID%3a300" value="crID%3a300" name="Greece" />
+            <label for="crID%3a300">Greece</label><br />
+            <input type="checkbox" id="crID%3a304" value="crID%3a304" name="Greenland" />
+            <label for="crID%3a304">Greenland</label><br />
+            <input type="checkbox" id="crID%3a308" value="crID%3a308" name="Grenada" />
+            <label for="crID%3a308">Grenada</label><br />
+            <input type="checkbox" id="crID%3a320" value="crID%3a320" name="Guatemala" />
+            <label for="crID%3a320">Guatemala</label><br />
+            <input type="checkbox" id="crID%3a324" value="crID%3a324" name="Guinea" />
+            <label for="crID%3a324">Guinea</label><br />
+            <input type="checkbox" id="crID%3a624" value="crID%3a624" name="Guinea-Bissau" />
+            <label for="crID%3a624">Guinea-Bissau</label><br />
+            <input type="checkbox" id="crID%3a328" value="crID%3a328" name="Guyana" />
+            <label for="crID%3a328">Guyana</label><br />
+            <input type="checkbox" id="crID%3a332" value="crID%3a332" name="Haiti" />
+            <label for="crID%3a332">Haiti</label><br />
+            <input type="checkbox" id="crID%3a340" value="crID%3a340" name="Honduras" />
+            <label for="crID%3a340">Honduras</label><br />
+            <input type="checkbox" id="crID%3a348" value="crID%3a348" name="Hungary" />
+            <label for="crID%3a348">Hungary</label><br />
+            <input type="checkbox" id="crID%3a352" value="crID%3a352" name="Iceland" />
+            <label for="crID%3a352">Iceland</label><br />
+            <input type="checkbox" id="crID%3a356" value="crID%3a356" name="India" />
+            <label for="crID%3a356">India</label><br />
+            <input type="checkbox" id="crID%3a360" value="crID%3a360" name="Indonesia" />
+            <label for="crID%3a360">Indonesia</label><br />
+            <input type="checkbox" id="crID%3a364" value="crID%3a364" name="Iran, Islamic Republic of" />
+            <label for="crID%3a364">Iran, Islamic Republic of</label><br />
+            <input type="checkbox" id="crID%3a368" value="crID%3a368" name="Iraq" />
+            <label for="crID%3a368">Iraq</label><br />
+            <input type="checkbox" id="crID%3a372" value="crID%3a372" name="Ireland" />
+            <label for="crID%3a372">Ireland</label><br />
+            <input type="checkbox" id="crID%3a376" value="crID%3a376" name="Israel" />
+            <label for="crID%3a376">Israel</label><br />
+            <input type="checkbox" id="crID%3a380" value="crID%3a380" name="Italy" />
+            <label for="crID%3a380">Italy</label><br />
+            <input type="checkbox" id="crID%3a388" value="crID%3a388" name="Jamaica" />
+            <label for="crID%3a388">Jamaica</label><br />
+            <input type="checkbox" id="crID%3a392" value="crID%3a392" name="Japan" />
+            <label for="crID%3a392">Japan</label><br />
+            <input type="checkbox" id="crID%3a400" value="crID%3a400" name="Jordan" />
+            <label for="crID%3a400">Jordan</label><br />
+            <input type="checkbox" id="crID%3a398" value="crID%3a398" name="Kazakhstan" />
+            <label for="crID%3a398">Kazakhstan</label><br />
+            <input type="checkbox" id="crID%3a404" value="crID%3a404" name="Kenya" />
+            <label for="crID%3a404">Kenya</label><br />
+            <input type="checkbox" id="crID%3a748" value="crID%3a748" name="Kingdom of Eswatini" />
+            <label for="crID%3a748">Kingdom of Eswatini</label><br />
+            <input type="checkbox" id="crID%3a296" value="crID%3a296" name="Kiribati" />
+            <label for="crID%3a296">Kiribati</label><br />
+            <input type="checkbox" id="crID%3a412" value="crID%3a412" name="Kosovo" />
+            <label for="crID%3a412">Kosovo</label><br />
+            <input type="checkbox" id="crID%3a414" value="crID%3a414" name="Kuwait" />
+            <label for="crID%3a414">Kuwait</label><br />
+            <input type="checkbox" id="crID%3a417" value="crID%3a417" name="Kyrgyzstan" />
+            <label for="crID%3a417">Kyrgyzstan</label><br />
+            <input type="checkbox" id="crID%3a418" value="crID%3a418" name="Lao People's Democratic Republic" />
+            <label for="crID%3a418">Lao People's Democratic Republic</label><br />
+            <input type="checkbox" id="crID%3a428" value="crID%3a428" name="Latvia" />
+            <label for="crID%3a428">Latvia</label><br />
+            <input type="checkbox" id="crID%3a422" value="crID%3a422" name="Lebanon" />
+            <label for="crID%3a422">Lebanon</label><br />
+            <input type="checkbox" id="crID%3a426" value="crID%3a426" name="Lesotho" />
+            <label for="crID%3a426">Lesotho</label><br />
+            <input type="checkbox" id="crID%3a430" value="crID%3a430" name="Liberia" />
+            <label for="crID%3a430">Liberia</label><br />
+            <input type="checkbox" id="crID%3a434" value="crID%3a434" name="Libya" />
+            <label for="crID%3a434">Libya</label><br />
+            <input type="checkbox" id="crID%3a438" value="crID%3a438" name="Liechtenstein" />
+            <label for="crID%3a438">Liechtenstein</label><br />
+            <input type="checkbox" id="crID%3a440" value="crID%3a440" name="Lithuania" />
+            <label for="crID%3a440">Lithuania</label><br />
+            <input type="checkbox" id="crID%3a442" value="crID%3a442" name="Luxembourg" />
+            <label for="crID%3a442">Luxembourg</label><br />
+            <input type="checkbox" id="crID%3a450" value="crID%3a450" name="Madagascar" />
+            <label for="crID%3a450">Madagascar</label><br />
+            <input type="checkbox" id="crID%3a454" value="crID%3a454" name="Malawi" />
+            <label for="crID%3a454">Malawi</label><br />
+            <input type="checkbox" id="crID%3a458" value="crID%3a458" name="Malaysia" />
+            <label for="crID%3a458">Malaysia</label><br />
+            <input type="checkbox" id="crID%3a462" value="crID%3a462" name="Maldives" />
+            <label for="crID%3a462">Maldives</label><br />
+            <input type="checkbox" id="crID%3a466" value="crID%3a466" name="Mali" />
+            <label for="crID%3a466">Mali</label><br />
+            <input type="checkbox" id="crID%3a470" value="crID%3a470" name="Malta" />
+            <label for="crID%3a470">Malta</label><br />
+            <input type="checkbox" id="crID%3a584" value="crID%3a584" name="Marshall Islands" />
+            <label for="crID%3a584">Marshall Islands</label><br />
+            <input type="checkbox" id="crID%3a478" value="crID%3a478" name="Mauritania" />
+            <label for="crID%3a478">Mauritania</label><br />
+            <input type="checkbox" id="crID%3a480" value="crID%3a480" name="Mauritius" />
+            <label for="crID%3a480">Mauritius</label><br />
+            <input type="checkbox" id="crID%3a484" value="crID%3a484" name="Mexico" />
+            <label for="crID%3a484">Mexico</label><br />
+            <input type="checkbox" id="crID%3a583" value="crID%3a583" name="Micronesia (Federated States of)" />
+            <label for="crID%3a583">Micronesia (Federated States of)</label><br />
+            <input type="checkbox" id="crID%3a492" value="crID%3a492" name="Monaco" />
+            <label for="crID%3a492">Monaco</label><br />
+            <input type="checkbox" id="crID%3a496" value="crID%3a496" name="Mongolia" />
+            <label for="crID%3a496">Mongolia</label><br />
+            <input type="checkbox" id="crID%3a499" value="crID%3a499" name="Montenegro" />
+            <label for="crID%3a499">Montenegro</label><br />
+            <input type="checkbox" id="crID%3a500" value="crID%3a500" name="Montserrat" />
+            <label for="crID%3a500">Montserrat</label><br />
+            <input type="checkbox" id="crID%3a504" value="crID%3a504" name="Morocco" />
+            <label for="crID%3a504">Morocco</label><br />
+            <input type="checkbox" id="crID%3a508" value="crID%3a508" name="Mozambique" />
+            <label for="crID%3a508">Mozambique</label><br />
+            <input type="checkbox" id="crID%3a104" value="crID%3a104" name="Myanmar" />
+            <label for="crID%3a104">Myanmar</label><br />
+            <input type="checkbox" id="crID%3a516" value="crID%3a516" name="Namibia" />
+            <label for="crID%3a516">Namibia</label><br />
+            <input type="checkbox" id="crID%3a520" value="crID%3a520" name="Nauru" />
+            <label for="crID%3a520">Nauru</label><br />
+            <input type="checkbox" id="crID%3a524" value="crID%3a524" name="Nepal" />
+            <label for="crID%3a524">Nepal</label><br />
+            <input type="checkbox" id="crID%3a528" value="crID%3a528" name="Netherlands" />
+            <label for="crID%3a528">Netherlands</label><br />
+            <input type="checkbox" id="crID%3a540" value="crID%3a540" name="New Caledonia" />
+            <label for="crID%3a540">New Caledonia</label><br />
+            <input type="checkbox" id="crID%3a554" value="crID%3a554" name="New Zealand" />
+            <label for="crID%3a554">New Zealand</label><br />
+            <input type="checkbox" id="crID%3a558" value="crID%3a558" name="Nicaragua" />
+            <label for="crID%3a558">Nicaragua</label><br />
+            <input type="checkbox" id="crID%3a562" value="crID%3a562" name="Niger" />
+            <label for="crID%3a562">Niger</label><br />
+            <input type="checkbox" id="crID%3a566" value="crID%3a566" name="Nigeria" />
+            <label for="crID%3a566">Nigeria</label><br />
+            <input type="checkbox" id="crID%3a578" value="crID%3a578" name="Norway" />
+            <label for="crID%3a578">Norway</label><br />
+            <input type="checkbox" id="crID%3a512" value="crID%3a512" name="Oman" />
+            <label for="crID%3a512">Oman</label><br />
+            <input type="checkbox" id="crID%3a586" value="crID%3a586" name="Pakistan" />
+            <label for="crID%3a586">Pakistan</label><br />
+            <input type="checkbox" id="crID%3a585" value="crID%3a585" name="Palau" />
+            <label for="crID%3a585">Palau</label><br />
+            <input type="checkbox" id="crID%3a591" value="crID%3a591" name="Panama" />
+            <label for="crID%3a591">Panama</label><br />
+            <input type="checkbox" id="crID%3a598" value="crID%3a598" name="Papua New Guinea" />
+            <label for="crID%3a598">Papua New Guinea</label><br />
+            <input type="checkbox" id="crID%3a600" value="crID%3a600" name="Paraguay" />
+            <label for="crID%3a600">Paraguay</label><br />
+            <input type="checkbox" id="crID%3a604" value="crID%3a604" name="Peru" />
+            <label for="crID%3a604">Peru</label><br />
+            <input type="checkbox" id="crID%3a608" value="crID%3a608" name="Philippines" />
+            <label for="crID%3a608">Philippines</label><br />
+            <input type="checkbox" id="crID%3a616" value="crID%3a616" name="Poland" />
+            <label for="crID%3a616">Poland</label><br />
+            <input type="checkbox" id="crID%3a620" value="crID%3a620" name="Portugal" />
+            <label for="crID%3a620">Portugal</label><br />
+            <input type="checkbox" id="crID%3a630" value="crID%3a630" name="Puerto Rico" />
+            <label for="crID%3a630">Puerto Rico</label><br />
+            <input type="checkbox" id="crID%3a634" value="crID%3a634" name="Qatar" />
+            <label for="crID%3a634">Qatar</label><br />
+            <input type="checkbox" id="crID%3a410" value="crID%3a410" name="Republic of Korea" />
+            <label for="crID%3a410">Republic of Korea</label><br />
+            <input type="checkbox" id="crID%3a498" value="crID%3a498" name="Republic of Moldova" />
+            <label for="crID%3a498">Republic of Moldova</label><br />
+            <input type="checkbox" id="crID%3a642" value="crID%3a642" name="Romania" />
+            <label for="crID%3a642">Romania</label><br />
+            <input type="checkbox" id="crID%3a643" value="crID%3a643" name="Russian Federation" />
+            <label for="crID%3a643">Russian Federation</label><br />
+            <input type="checkbox" id="crID%3a646" value="crID%3a646" name="Rwanda" />
+            <label for="crID%3a646">Rwanda</label><br />
+            <input type="checkbox" id="crID%3a659" value="crID%3a659" name="Saint Kitts and Nevis" />
+            <label for="crID%3a659">Saint Kitts and Nevis</label><br />
+            <input type="checkbox" id="crID%3a662" value="crID%3a662" name="Saint Lucia" />
+            <label for="crID%3a662">Saint Lucia</label><br />
+            <input type="checkbox" id="crID%3a670" value="crID%3a670" name="Saint Vincent and the Grenadines" />
+            <label for="crID%3a670">Saint Vincent and the Grenadines</label><br />
+            <input type="checkbox" id="crID%3a882" value="crID%3a882" name="Samoa" />
+            <label for="crID%3a882">Samoa</label><br />
+            <input type="checkbox" id="crID%3a674" value="crID%3a674" name="San Marino" />
+            <label for="crID%3a674">San Marino</label><br />
+            <input type="checkbox" id="crID%3a678" value="crID%3a678" name="Sao Tome and Principe" />
+            <label for="crID%3a678">Sao Tome and Principe</label><br />
+            <input type="checkbox" id="crID%3a682" value="crID%3a682" name="Saudi Arabia" />
+            <label for="crID%3a682">Saudi Arabia</label><br />
+            <input type="checkbox" id="crID%3a686" value="crID%3a686" name="Senegal" />
+            <label for="crID%3a686">Senegal</label><br />
+            <input type="checkbox" id="crID%3a688" value="crID%3a688" name="Serbia" />
+            <label for="crID%3a688">Serbia</label><br />
+            <input type="checkbox" id="crID%3a690" value="crID%3a690" name="Seychelles" />
+            <label for="crID%3a690">Seychelles</label><br />
+            <input type="checkbox" id="crID%3a694" value="crID%3a694" name="Sierra Leone" />
+            <label for="crID%3a694">Sierra Leone</label><br />
+            <input type="checkbox" id="crID%3a702" value="crID%3a702" name="Singapore" />
+            <label for="crID%3a702">Singapore</label><br />
+            <input type="checkbox" id="crID%3a534" value="crID%3a534" name="Sint Maarten (Dutch part)" />
+            <label for="crID%3a534">Sint Maarten (Dutch part)</label><br />
+            <input type="checkbox" id="crID%3a703" value="crID%3a703" name="Slovakia" />
+            <label for="crID%3a703">Slovakia</label><br />
+            <input type="checkbox" id="crID%3a705" value="crID%3a705" name="Slovenia" />
+            <label for="crID%3a705">Slovenia</label><br />
+            <input type="checkbox" id="crID%3a90" value="crID%3a90" name="Solomon Islands" />
+            <label for="crID%3a90">Solomon Islands</label><br />
+            <input type="checkbox" id="crID%3a706" value="crID%3a706" name="Somalia" />
+            <label for="crID%3a706">Somalia</label><br />
+            <input type="checkbox" id="crID%3a710" value="crID%3a710" name="South Africa" />
+            <label for="crID%3a710">South Africa</label><br />
+            <input type="checkbox" id="crID%3a728" value="crID%3a728" name="South Sudan" />
+            <label for="crID%3a728">South Sudan</label><br />
+            <input type="checkbox" id="crID%3a724" value="crID%3a724" name="Spain" />
+            <label for="crID%3a724">Spain</label><br />
+            <input type="checkbox" id="crID%3a144" value="crID%3a144" name="Sri Lanka" />
+            <label for="crID%3a144">Sri Lanka</label><br />
+            <input type="checkbox" id="crID%3a275" value="crID%3a275" name="State of Palestine" />
+            <label for="crID%3a275">State of Palestine</label><br />
+            <input type="checkbox" id="crID%3a729" value="crID%3a729" name="Sudan" />
+            <label for="crID%3a729">Sudan</label><br />
+            <input type="checkbox" id="crID%3a740" value="crID%3a740" name="Suriname" />
+            <label for="crID%3a740">Suriname</label><br />
+            <input type="checkbox" id="crID%3a752" value="crID%3a752" name="Sweden" />
+            <label for="crID%3a752">Sweden</label><br />
+            <input type="checkbox" id="crID%3a756" value="crID%3a756" name="Switzerland" />
+            <label for="crID%3a756">Switzerland</label><br />
+            <input type="checkbox" id="crID%3a760" value="crID%3a760" name="Syrian Arab Republic" />
+            <label for="crID%3a760">Syrian Arab Republic</label><br />
+            <input type="checkbox" id="crID%3a762" value="crID%3a762" name="Tajikistan" />
+            <label for="crID%3a762">Tajikistan</label><br />
+            <input type="checkbox" id="crID%3a764" value="crID%3a764" name="Thailand" />
+            <label for="crID%3a764">Thailand</label><br />
+            <input type="checkbox" id="crID%3a807" value="crID%3a807" name="The former Yugoslav Republic of Macedonia" />
+            <label for="crID%3a807">The former Yugoslav Republic of Macedonia</label><br />
+            <input type="checkbox" id="crID%3a626" value="crID%3a626" name="Timor-Leste" />
+            <label for="crID%3a626">Timor-Leste</label><br />
+            <input type="checkbox" id="crID%3a768" value="crID%3a768" name="Togo" />
+            <label for="crID%3a768">Togo</label><br />
+            <input type="checkbox" id="crID%3a776" value="crID%3a776" name="Tonga" />
+            <label for="crID%3a776">Tonga</label><br />
+            <input type="checkbox" id="crID%3a780" value="crID%3a780" name="Trinidad and Tobago" />
+            <label for="crID%3a780">Trinidad and Tobago</label><br />
+            <input type="checkbox" id="crID%3a788" value="crID%3a788" name="Tunisia" />
+            <label for="crID%3a788">Tunisia</label><br />
+            <input type="checkbox" id="crID%3a792" value="crID%3a792" name="Turkey" />
+            <label for="crID%3a792">Turkey</label><br />
+            <input type="checkbox" id="crID%3a795" value="crID%3a795" name="Turkmenistan" />
+            <label for="crID%3a795">Turkmenistan</label><br />
+            <input type="checkbox" id="crID%3a796" value="crID%3a796" name="Turks and Caicos Islands" />
+            <label for="crID%3a796">Turks and Caicos Islands</label><br />
+            <input type="checkbox" id="crID%3a798" value="crID%3a798" name="Tuvalu" />
+            <label for="crID%3a798">Tuvalu</label><br />
+            <input type="checkbox" id="crID%3a800" value="crID%3a800" name="Uganda" />
+            <label for="crID%3a800">Uganda</label><br />
+            <input type="checkbox" id="crID%3a804" value="crID%3a804" name="Ukraine" />
+            <label for="crID%3a804">Ukraine</label><br />
+            <input type="checkbox" id="crID%3a784" value="crID%3a784" name="United Arab Emirates" />
+            <label for="crID%3a784">United Arab Emirates</label><br />
+            <input type="checkbox" id="crID%3a826" value="crID%3a826" name="United Kingdom of Great Britain and Northern Ireland" />
+            <label for="crID%3a826">United Kingdom of Great Britain and Northern Ireland</label><br />
+            <input type="checkbox" id="crID%3a835" value="crID%3a835" name="United Republic of Tanzania: Mainland" />
+            <label for="crID%3a835">United Republic of Tanzania: Mainland</label><br />
+            <input type="checkbox" id="crID%3a836" value="crID%3a836" name="United Republic of Tanzania: Zanzibar" />
+            <label for="crID%3a836">United Republic of Tanzania: Zanzibar</label><br />
+            <input type="checkbox" id="crID%3a840" value="crID%3a840" name="United States" />
+            <label for="crID%3a840">United States</label><br />
+            <input type="checkbox" id="crID%3a858" value="crID%3a858" name="Uruguay" />
+            <label for="crID%3a858">Uruguay</label><br />
+            <input type="checkbox" id="crID%3a860" value="crID%3a860" name="Uzbekistan" />
+            <label for="crID%3a860">Uzbekistan</label><br />
+            <input type="checkbox" id="crID%3a548" value="crID%3a548" name="Vanuatu" />
+            <label for="crID%3a548">Vanuatu</label><br />
+            <input type="checkbox" id="crID%3a862" value="crID%3a862" name="Venezuela (Bolivarian Republic of)" />
+            <label for="crID%3a862">Venezuela (Bolivarian Republic of)</label><br />
+            <input type="checkbox" id="crID%3a704" value="crID%3a704" name="Viet Nam" />
+            <label for="crID%3a704">Viet Nam</label><br />
+            <input type="checkbox" id="crID%3a887" value="crID%3a887" name="Yemen" />
+            <label for="crID%3a887">Yemen</label><br />
+            <input type="checkbox" id="crID%3a720" value="crID%3a720" name="Yemen: Former Democratic Yemen" />
+            <label for="crID%3a720">Yemen: Former Democratic Yemen</label><br />
+            <input type="checkbox" id="crID%3a886" value="crID%3a886" name="Yemen: Former Yemen Arab Republic" />
+            <label for="crID%3a886">Yemen: Former Yemen Arab Republic</label><br />
+            <input type="checkbox" id="crID%3a894" value="crID%3a894" name="Zambia" />
+            <label for="crID%3a894">Zambia</label><br />
+            <input type="checkbox" id="crID%3a716" value="crID%3a716" name="Zimbabwe" />
+            <label for="crID%3a716">Zimbabwe</label><br />
+                    
+                    
+                </div>
+            </div>
+            
+            <div id="scrollCountryorArea" class="Scroll">
+                <div id="upCountryorArea" class="Up"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divCountryorAreaOuter','up')" onmouseout="dw_scrollObj.stopScroll('divCountryorAreaOuter')" onmousedown="dw_scrollObj.doubleSpeed('divCountryorAreaOuter')" onmouseup="dw_scrollObj.resetSpeed('divCountryorAreaOuter')"><img src="_Images/ScrollUp.png" alt="Up" /></a></div>
+                <div id="trackCountryorArea" class="Track"><div id="dragCountryorArea" class="Drag"></div></div>
+                <div id="downCountryorArea" class="Down"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divCountryorAreaOuter','down')" onmouseout="dw_scrollObj.stopScroll('divCountryorAreaOuter')" onmousedown="dw_scrollObj.doubleSpeed('divCountryorAreaOuter')" onmouseup="dw_scrollObj.resetSpeed('divCountryorAreaOuter')"><img src="_Images/ScrollDown.png" alt="Down" /></a></div>
+            </div> 
+        </div>
+        <script type="text/javascript">InitScrollBar('CountryorArea');</script>
+    
+        <h5>Year (48)</h5>
+        <div class="Filter">
+            <div id="divYearOuter" class="Out">
+                <div id="divYearInner" class="In">
+                    
+            <input type="checkbox" id="yr%3a2017" value="yr%3a2017" name="2017" />
+            <label for="yr%3a2017">2017</label><br />
+            <input type="checkbox" id="yr%3a2016" value="yr%3a2016" name="2016" />
+            <label for="yr%3a2016">2016</label><br />
+            <input type="checkbox" id="yr%3a2015" value="yr%3a2015" name="2015" />
+            <label for="yr%3a2015">2015</label><br />
+            <input type="checkbox" id="yr%3a2014" value="yr%3a2014" name="2014" />
+            <label for="yr%3a2014">2014</label><br />
+            <input type="checkbox" id="yr%3a2013" value="yr%3a2013" name="2013" />
+            <label for="yr%3a2013">2013</label><br />
+            <input type="checkbox" id="yr%3a2012" value="yr%3a2012" name="2012" />
+            <label for="yr%3a2012">2012</label><br />
+            <input type="checkbox" id="yr%3a2011" value="yr%3a2011" name="2011" />
+            <label for="yr%3a2011">2011</label><br />
+            <input type="checkbox" id="yr%3a2010" value="yr%3a2010" name="2010" />
+            <label for="yr%3a2010">2010</label><br />
+            <input type="checkbox" id="yr%3a2009" value="yr%3a2009" name="2009" />
+            <label for="yr%3a2009">2009</label><br />
+            <input type="checkbox" id="yr%3a2008" value="yr%3a2008" name="2008" />
+            <label for="yr%3a2008">2008</label><br />
+            <input type="checkbox" id="yr%3a2007" value="yr%3a2007" name="2007" />
+            <label for="yr%3a2007">2007</label><br />
+            <input type="checkbox" id="yr%3a2006" value="yr%3a2006" name="2006" />
+            <label for="yr%3a2006">2006</label><br />
+            <input type="checkbox" id="yr%3a2005" value="yr%3a2005" name="2005" />
+            <label for="yr%3a2005">2005</label><br />
+            <input type="checkbox" id="yr%3a2004" value="yr%3a2004" name="2004" />
+            <label for="yr%3a2004">2004</label><br />
+            <input type="checkbox" id="yr%3a2003" value="yr%3a2003" name="2003" />
+            <label for="yr%3a2003">2003</label><br />
+            <input type="checkbox" id="yr%3a2002" value="yr%3a2002" name="2002" />
+            <label for="yr%3a2002">2002</label><br />
+            <input type="checkbox" id="yr%3a2001" value="yr%3a2001" name="2001" />
+            <label for="yr%3a2001">2001</label><br />
+            <input type="checkbox" id="yr%3a2000" value="yr%3a2000" name="2000" />
+            <label for="yr%3a2000">2000</label><br />
+            <input type="checkbox" id="yr%3a1999" value="yr%3a1999" name="1999" />
+            <label for="yr%3a1999">1999</label><br />
+            <input type="checkbox" id="yr%3a1998" value="yr%3a1998" name="1998" />
+            <label for="yr%3a1998">1998</label><br />
+            <input type="checkbox" id="yr%3a1997" value="yr%3a1997" name="1997" />
+            <label for="yr%3a1997">1997</label><br />
+            <input type="checkbox" id="yr%3a1996" value="yr%3a1996" name="1996" />
+            <label for="yr%3a1996">1996</label><br />
+            <input type="checkbox" id="yr%3a1995" value="yr%3a1995" name="1995" />
+            <label for="yr%3a1995">1995</label><br />
+            <input type="checkbox" id="yr%3a1994" value="yr%3a1994" name="1994" />
+            <label for="yr%3a1994">1994</label><br />
+            <input type="checkbox" id="yr%3a1993" value="yr%3a1993" name="1993" />
+            <label for="yr%3a1993">1993</label><br />
+            <input type="checkbox" id="yr%3a1992" value="yr%3a1992" name="1992" />
+            <label for="yr%3a1992">1992</label><br />
+            <input type="checkbox" id="yr%3a1991" value="yr%3a1991" name="1991" />
+            <label for="yr%3a1991">1991</label><br />
+            <input type="checkbox" id="yr%3a1990" value="yr%3a1990" name="1990" />
+            <label for="yr%3a1990">1990</label><br />
+            <input type="checkbox" id="yr%3a1989" value="yr%3a1989" name="1989" />
+            <label for="yr%3a1989">1989</label><br />
+            <input type="checkbox" id="yr%3a1988" value="yr%3a1988" name="1988" />
+            <label for="yr%3a1988">1988</label><br />
+            <input type="checkbox" id="yr%3a1987" value="yr%3a1987" name="1987" />
+            <label for="yr%3a1987">1987</label><br />
+            <input type="checkbox" id="yr%3a1986" value="yr%3a1986" name="1986" />
+            <label for="yr%3a1986">1986</label><br />
+            <input type="checkbox" id="yr%3a1985" value="yr%3a1985" name="1985" />
+            <label for="yr%3a1985">1985</label><br />
+            <input type="checkbox" id="yr%3a1984" value="yr%3a1984" name="1984" />
+            <label for="yr%3a1984">1984</label><br />
+            <input type="checkbox" id="yr%3a1983" value="yr%3a1983" name="1983" />
+            <label for="yr%3a1983">1983</label><br />
+            <input type="checkbox" id="yr%3a1982" value="yr%3a1982" name="1982" />
+            <label for="yr%3a1982">1982</label><br />
+            <input type="checkbox" id="yr%3a1981" value="yr%3a1981" name="1981" />
+            <label for="yr%3a1981">1981</label><br />
+            <input type="checkbox" id="yr%3a1980" value="yr%3a1980" name="1980" />
+            <label for="yr%3a1980">1980</label><br />
+            <input type="checkbox" id="yr%3a1979" value="yr%3a1979" name="1979" />
+            <label for="yr%3a1979">1979</label><br />
+            <input type="checkbox" id="yr%3a1978" value="yr%3a1978" name="1978" />
+            <label for="yr%3a1978">1978</label><br />
+            <input type="checkbox" id="yr%3a1977" value="yr%3a1977" name="1977" />
+            <label for="yr%3a1977">1977</label><br />
+            <input type="checkbox" id="yr%3a1976" value="yr%3a1976" name="1976" />
+            <label for="yr%3a1976">1976</label><br />
+            <input type="checkbox" id="yr%3a1975" value="yr%3a1975" name="1975" />
+            <label for="yr%3a1975">1975</label><br />
+            <input type="checkbox" id="yr%3a1974" value="yr%3a1974" name="1974" />
+            <label for="yr%3a1974">1974</label><br />
+            <input type="checkbox" id="yr%3a1973" value="yr%3a1973" name="1973" />
+            <label for="yr%3a1973">1973</label><br />
+            <input type="checkbox" id="yr%3a1972" value="yr%3a1972" name="1972" />
+            <label for="yr%3a1972">1972</label><br />
+            <input type="checkbox" id="yr%3a1971" value="yr%3a1971" name="1971" />
+            <label for="yr%3a1971">1971</label><br />
+            <input type="checkbox" id="yr%3a1970" value="yr%3a1970" name="1970" />
+            <label for="yr%3a1970">1970</label><br />
+                    
+                    
+                </div>
+            </div>
+            
+            <div id="scrollYear" class="Scroll">
+                <div id="upYear" class="Up"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divYearOuter','up')" onmouseout="dw_scrollObj.stopScroll('divYearOuter')" onmousedown="dw_scrollObj.doubleSpeed('divYearOuter')" onmouseup="dw_scrollObj.resetSpeed('divYearOuter')"><img src="_Images/ScrollUp.png" alt="Up" /></a></div>
+                <div id="trackYear" class="Track"><div id="dragYear" class="Drag"></div></div>
+                <div id="downYear" class="Down"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divYearOuter','down')" onmouseout="dw_scrollObj.stopScroll('divYearOuter')" onmousedown="dw_scrollObj.doubleSpeed('divYearOuter')" onmouseup="dw_scrollObj.resetSpeed('divYearOuter')"><img src="_Images/ScrollDown.png" alt="Down" /></a></div>
+            </div> 
+        </div>
+        <script type="text/javascript">InitScrollBar('Year');</script>
+    
+
+
+            <div id="AdvancedFilters" style="display: block">
+                
+        <h5>Item (8)</h5>
+        <div class="Filter">
+            <div id="divItemOuter" class="Out">
+                <div id="divItemInner" class="In">
+                    
+            <input type="checkbox" id="itID%3a10" value="itID%3a10" name="Agriculture, hunting, forestry, fishing (ISIC A-B)" />
+            <label for="itID%3a10">Agriculture, hunting, forestry, fishing (ISIC A-B)</label><br />
+            <input type="checkbox" id="itID%3a11" value="itID%3a11" name="Mining, Manufacturing, Utilities (ISIC C-E)" />
+            <label for="itID%3a11">Mining, Manufacturing, Utilities (ISIC C-E)</label><br />
+            <input type="checkbox" id="itID%3a12" value="itID%3a12" name="Manufacturing (ISIC D)" />
+            <label for="itID%3a12">Manufacturing (ISIC D)</label><br />
+            <input type="checkbox" id="itID%3a13" value="itID%3a13" name="Construction (ISIC F)" />
+            <label for="itID%3a13">Construction (ISIC F)</label><br />
+            <input type="checkbox" id="itID%3a14" value="itID%3a14" name="Wholesale, retail trade, restaurants and hotels (ISIC G-H)" />
+            <label for="itID%3a14">Wholesale, retail trade, restaurants and hotels (ISIC G-H)</label><br />
+            <input type="checkbox" id="itID%3a15" value="itID%3a15" name="Transport, storage and communication (ISIC I)" />
+            <label for="itID%3a15">Transport, storage and communication (ISIC I)</label><br />
+            <input type="checkbox" id="itID%3a16" value="itID%3a16" name="Other Activities (ISIC J-P)" />
+            <label for="itID%3a16">Other Activities (ISIC J-P)</label><br />
+            <input type="checkbox" id="itID%3a17" value="itID%3a17" name="Total Value Added" />
+            <label for="itID%3a17">Total Value Added</label><br />
+                    
+                    
+                </div>
+            </div>
+            
+            <div id="scrollItem" class="Scroll">
+                <div id="upItem" class="Up"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divItemOuter','up')" onmouseout="dw_scrollObj.stopScroll('divItemOuter')" onmousedown="dw_scrollObj.doubleSpeed('divItemOuter')" onmouseup="dw_scrollObj.resetSpeed('divItemOuter')"><img src="_Images/ScrollUp.png" alt="Up" /></a></div>
+                <div id="trackItem" class="Track"><div id="dragItem" class="Drag"></div></div>
+                <div id="downItem" class="Down"><a href="javascript:;" onclick="return false" onmouseover="dw_scrollObj.initScroll('divItemOuter','down')" onmouseout="dw_scrollObj.stopScroll('divItemOuter')" onmousedown="dw_scrollObj.doubleSpeed('divItemOuter')" onmouseup="dw_scrollObj.resetSpeed('divItemOuter')"><img src="_Images/ScrollDown.png" alt="Down" /></a></div>
+            </div> 
+        </div>
+        <script type="text/javascript">InitScrollBar('Item');</script>
+    
+
+
+            </div>
+        </div>
+        <div class="Links">
+            <div class="AdvancedFiltersToggle">
+            
+                <a id="linkAdvancedFiltersToggle" href="javascript:;" onclick="ToggleAdvancedFiltersDisplay()" style="color: #666;" >More >></a> 
+            </div>
+            <div class="All">
+                <img src="_Images/IconUpdateResults.png" alt="Update" width="11px" height="11px" title="Apply filters" />&nbsp;<a href="javascript:;" id="ctl00_main_filters_anchorApplyBottom" title="Apply filters" onclick="ApplyFilters(SendFilterRequest);">Apply Filters</a>
+                
+            </div>
+        </div>
+        <!-- The InitScrollBar call in FilterRepeater fails if the AdvancedFilters are styled display: none 
+        so this will hide them after all InitScrollBar calls have completed -->
+        <script type="text/javascript">ToggleAdvancedFiltersDisplay();</script>       
+    </div>
+</div>
+
+            </div>
+
+            <div id="divDataMain" class="DataMain">
+                <div id="divLoading" class="Data"><img src="_Images/loading.gif" alt="Spinner" /></div>
+                <div id="divRecordsB" class="Records">
+                    <span id="spanRecordCountB">77000</span> records | Page <span id="spanPageIndexB">1</span> of <span id="spanPageCountB">1540</span>&nbsp;|&nbsp;
+                    <div id="divPageB" class="Page">
+                        <a id="linkFirstB" href="javascript:;" title="First page" onclick="GoTo('First')" style="display:none"><img src="_Images/GoToFirst.gif" alt="First" title="First page" /></a>
+                        <a id="linkPrevB" href="javascript:;" title="Previous page" onclick="Page(-1)" style="display:none"><img src="_Images/GoToPrevious.gif" alt="Previous" title="Previous page" /></a> 
+                        <span id="spanSepB" style="display:none">&nbsp;</span>
+                        <a id="linkNextB" href="javascript:;" title="Next page" style="" onclick="Page(1)"><img src="_Images/GoToNext.gif" alt="Next" title="Next page" /></a>
+                        <a id="linkLastB" href="javascript:;" title="Last page" onclick="GoTo('Last')" style=""><img src="_Images/GoToLast.gif" alt="Last" title="Last page" /></a>
+                    </div>
+                </div> 
+
+                <div class="Data" id="divData">
+                    <div class="DataContainer"><table cellpadding="0" cellspacing="0" border="0"><tr><th>Country or Area</th><th>Year</th><th>Item</th><th style="text-align:right;">Value</th></tr><tr><td>Afghanistan</td><td>2017</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">5,049,567,934</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,614,124,442</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,440,725,788</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Construction (ISIC F)</td><td style="text-align:right;">2,045,023,579</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,789,450,444</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">5,294,024,254</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">4,343,244,858</td></tr><tr><td>Afghanistan</td><td>2017</td><td>Total Value Added</td><td style="text-align:right;">21,135,435,510</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">4,663,743,259</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,397,103,032</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,229,965,060</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Construction (ISIC F)</td><td style="text-align:right;">1,868,075,911</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,570,976,119</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">4,886,181,312</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">3,987,857,427</td></tr><tr><td>Afghanistan</td><td>2016</td><td>Total Value Added</td><td style="text-align:right;">19,373,937,059</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">4,482,948,677</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,452,936,033</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,296,795,053</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Construction (ISIC F)</td><td style="text-align:right;">2,032,596,730</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,752,648,563</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">5,043,580,985</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">4,017,617,634</td></tr><tr><td>Afghanistan</td><td>2015</td><td>Total Value Added</td><td style="text-align:right;">19,782,328,622</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">5,136,259,225</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,540,442,814</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,373,710,642</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Construction (ISIC F)</td><td style="text-align:right;">1,877,287,218</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,736,599,852</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">5,032,778,724</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">4,275,209,793</td></tr><tr><td>Afghanistan</td><td>2014</td><td>Total Value Added</td><td style="text-align:right;">20,598,577,625</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">5,331,948,896</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,547,568,959</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,365,310,821</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Construction (ISIC F)</td><td style="text-align:right;">1,695,056,657</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,826,120,717</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">5,303,543,858</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">4,052,154,877</td></tr><tr><td>Afghanistan</td><td>2013</td><td>Total Value Added</td><td style="text-align:right;">20,756,393,963</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">5,416,563,567</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,780,167,081</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Manufacturing (ISIC D)</td><td style="text-align:right;">2,569,646,553</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Construction (ISIC F)</td><td style="text-align:right;">1,595,694,541</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Wholesale, retail trade, restaurants and hotels (ISIC G-H)</td><td style="text-align:right;">1,871,433,228</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Transport, storage and communication (ISIC I)</td><td style="text-align:right;">4,763,812,464</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Other Activities (ISIC J-P)</td><td style="text-align:right;">4,090,339,476</td></tr><tr><td>Afghanistan</td><td>2012</td><td>Total Value Added</td><td style="text-align:right;">20,518,010,357</td></tr><tr><td>Afghanistan</td><td>2011</td><td>Agriculture, hunting, forestry, fishing (ISIC A-B)</td><td style="text-align:right;">5,171,304,254</td></tr><tr><td>Afghanistan</td><td>2011</td><td>Mining, Manufacturing, Utilities (ISIC C-E)</td><td style="text-align:right;">2,741,801,159</td></tr></table></div>
+                </div>
+                <div class="PageHeading TopGap">Source</div>
+                
+                   <div><?xml version="1.0" encoding="utf-16"?><div class="DataMart" id="SNAAMA" xmlns:unsd="http://unstats.un.org/unsd/drs/"><h1>National Accounts Estimates of Main Aggregates</h1><h2>Source:  <span><a target="blank" href="http://unstats.un.org/unsd">United Nations Statistics Division</a></span></h2><div class="MetaInfo"><p>The Economic Statistics Branch of the United Nations Statistics Division (UNSD) maintains and annually updates the National Accounts Main Aggregates database. It consists of a complete and consistent set of time series, from 1970 onwards, of the main National Accounts aggregates of all UN Members States and other territories in the world for which National Accounts information is available. Its contents are based on the official data reported to UNSD through the annual National Accounts Questionnaire, supplemented with data estimates for any years and countries with incomplete or inconsistent information. </p>
+<p>Estimates are done when no official data are available. The final aggregates are provided in national currency and in United States dollars. The main aggregates in the database include Gross Domestic Product (GDP) by type of expenditure and Gross Value Added by kind of economic activity, both at current and at constant market prices. It also contains Gross National Income (GNI) at current prices and analytical indicators and ratios that reflect economic structure and trends of countries and areas. These analytical indicators are: annual per capita GDP and GNI (calculated using actual population or annual population estimates from the UN Population Division); annual growth rates of GDP; annual shares in total GDP and total Gross Value added of their respective components; and price trends as defined by the implicit price deflators of GDP.</p>
+<p>The National Accounts Main Aggregates database is the product of a global cooperation effort between UNSD, international statistical agencies, and the national statistical services of more than 200 countries and territories. It has been prepared in response to a request by the Statistical Commission during its first session in 1947, and is in agreement with the resolution 48/223 C of the UN General Assembly, which mandates the Committee on Contributions to prepare the Scale of Assessment for UN Member States on the basis of the most recent reliable and verifiable available data on national accounts of as many countries and areas as possible, and that these data be published and disseminated regularly. </p><br><a href="http://data.un.org/_Docs/UNdata_footnotes.xls">Download the footnotes in Excel format</a></div><div class="Update">Last update in UNdata: 2019/01/15<br />Next update in UNdata: 2020/01/06</div><div class="LinkTable"><table border="0"><tr><td class="Icon"><img src="_Images/IconGoTo.png" alt="Browse" /></td><td><a target="blank" href="http://unstats.un.org/unsd/snaama/introduction.asp">Online data</a></td></tr><tr><td class="Icon"><img src="_Images/IconGoTo.png" alt="Browse" /></td><td><a target="blank" href="http://unstats.un.org/unsd/snaama/methodology.pdf">Methodology for Data Estimation</a></td></tr><tr><td class="Icon"><img src="_Images/IconGoTo.png" alt="Browse" /></td><td><a target="blank" href="http://unstats.un.org/unsd/snaama/metasearch.asp">Metadata by country</a></td></tr><tr><td class="Icon"><img src="_Images/IconGoTo.png" alt="Browse" /></td><td><a target="blank" href="http://unstats.un.org/unsd/nationalaccount/default.asp">Homepage</a></td></tr><tr><td><img src="_Images/IconGoTo.png" alt="Browse" /></td><td><a href="mailto:sna@un.org">Contact</a></td></tr></table></div></div></div>
+            </div>
+        
+</div>
+    </div>
+    
+<div class="SiteFoot">
+    <div class="Links">
+        <a href="Default.aspx">Home</a> | 
+        <a href="Host.aspx?Content=About">About Us</a> | 
+        <a href="Host.aspx?Content=FAQ">FAQ</a> | 
+        <a href="Feedback.aspx">Feedback</a> | 
+        <a href="Host.aspx?Content=Usage">Site usage</a>
+    </div>
+    <div></div>
+    <div><a href="Host.aspx?Content=UNdataUse">Copyright &copy; 2019 - Conditions of Use </a><br />
+    <a href="http://unstats.un.org" target="_blank">United Nations Statistics Division</a></div>
+    <div><a href="History.aspx">Version v0.14.6 Beta</a></div>
+</div>
+
+    
+    <div id="divView" class="Popup OptionsBox">
+        <span><a href="javascript:;" title="Close"><img src="_Images/Close.gif" alt="Close" /></a></span>
+        <h3>Select columns to be displayed:</h3>
+        <div style="height: 15em; overflow-y:auto">
+            <div>
+            
+                    <input type="checkbox" id="v__grCurrPcfID"  />
+                    <label for="v__grCurrPcfID">Table Code</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_crID"  />
+                    <label for="v_crID">Country or Area Code</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_crEngName" checked="checked" />
+                    <label for="v_crEngName">Country or Area</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_yr" checked="checked" />
+                    <label for="v_yr">Year</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_itID"  />
+                    <label for="v_itID">Item Code</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_itEngName" checked="checked" />
+                    <label for="v_itEngName">Item</label>
+                    <br />
+                
+                    <input type="checkbox" id="v_maValue" checked="checked" />
+                    <label for="v_maValue">Value</label>
+                    <br />
+                
+            </div>
+        </div>
+        <div class="Note">
+            <div class="Header"><img src="_Images/IconInfo_blue.png" alt="Info" /><span>Note</span></div>
+            <div class="Message">Code columns are usually hidden by default.</div>
+        </div>  
+        <div class="Links">
+            <a href="javascript:;" onclick="UpdateView()" rel="event" title="Update the visible columns">Update</a>&nbsp;|
+            <a href="javascript:;" title="Close and do not update">Close</a>
+        </div>
+       
+    </div>
+    
+    <div id="divSort" class="Popup OptionsBox" style="width:20em">
+        <span><a href="javascript:;" title="Close"><img src="_Images/Close.gif" alt="Close" /></a></span>
+        <h3>Select sort order:</h3>
+        <div>
+            <div>Sort by:</div>
+            <div style="margin: 0em 0.5em 0.5em 0.5em"> 
+                <select name="ctl00$main$ddlSortColumn1" id="ctl00_main_ddlSortColumn1">
+	<option value="">[none]</option>
+	<option value="crID">Country or Area Code</option>
+	<option selected="selected" value="_crEngNameOrderBy">Country or Area</option>
+	<option value="yr">Year</option>
+
+</select>
+            </div>
+            <div id="sortByDirectionRadios1" style="margin: 0em 0.5em 0em">
+                <span id="ctl00_main_rdlSortByDirection1"><input id="ctl00_main_rdlSortByDirection1_0" type="radio" name="ctl00$main$rdlSortByDirection1" value="asc" checked="checked" /><label for="ctl00_main_rdlSortByDirection1_0">Ascending</label><input id="ctl00_main_rdlSortByDirection1_1" type="radio" name="ctl00$main$rdlSortByDirection1" value="desc" /><label for="ctl00_main_rdlSortByDirection1_1">Descending</label></span>
+            </div>
+            <hr />
+            <div>Then by:</div>
+            <div style="margin: 0em 0.5em 0.5em 0.5em">             
+                <select name="ctl00$main$ddlSortColumn2" id="ctl00_main_ddlSortColumn2">
+	<option value="">[none]</option>
+	<option value="crID">Country or Area Code</option>
+	<option value="_crEngNameOrderBy">Country or Area</option>
+	<option selected="selected" value="yr">Year</option>
+
+</select>
+            </div>
+            <div id="sortByDirectionRadios2" style="margin: 0em 0.5em 0em">            
+                <span id="ctl00_main_rdlSortByDirection2"><input id="ctl00_main_rdlSortByDirection2_0" type="radio" name="ctl00$main$rdlSortByDirection2" value="asc" /><label for="ctl00_main_rdlSortByDirection2_0">Ascending</label><input id="ctl00_main_rdlSortByDirection2_1" type="radio" name="ctl00$main$rdlSortByDirection2" value="desc" checked="checked" /><label for="ctl00_main_rdlSortByDirection2_1">Descending</label></span>
+            </div>
+            <hr />
+            <div>Then by:</div>
+            <div style="margin: 0em 0.5em 0.5em 0.5em">
+                <select name="ctl00$main$ddlSortColumn3" id="ctl00_main_ddlSortColumn3">
+	<option selected="selected" value="">[none]</option>
+	<option value="crID">Country or Area Code</option>
+	<option value="_crEngNameOrderBy">Country or Area</option>
+	<option value="yr">Year</option>
+
+</select>
+            </div>
+            <div id="sortByDirectionRadios3" style="margin: 0em 0.5em 0em">            
+                <span id="ctl00_main_rdlSortByDirection3"><input id="ctl00_main_rdlSortByDirection3_0" type="radio" name="ctl00$main$rdlSortByDirection3" value="asc" checked="checked" /><label for="ctl00_main_rdlSortByDirection3_0">Ascending</label><input id="ctl00_main_rdlSortByDirection3_1" type="radio" name="ctl00$main$rdlSortByDirection3" value="desc" /><label for="ctl00_main_rdlSortByDirection3_1">Descending</label></span>
+            </div>
+        </div>
+        
+        <div class="Links">
+            <a href="javascript:;" onclick="UpdateSort()" rel="event" title="Update the sort order">Update</a>&nbsp;|
+            <a href="javascript:;" title="Close and do not update">Close</a>
+        </div>
+    </div>
+    
+    <div id="divPivot" class="Popup OptionsBox" style="width:20em">
+        <span><a href="javascript:;" title="Close"><img src="_Images/Close.gif" alt="Close" /></a></span>
+        <h3>Select the pivot column:</h3>
+        <div>
+            <div>Pivot on:</div>
+            <div style="margin: 0em 0.5em 0.5em 0.5em"> 
+                <select name="ctl00$main$ddlPivotColumn" id="ctl00_main_ddlPivotColumn">
+	<option selected="selected" value="">[none]</option>
+	<option value="yr">Year</option>
+	<option value="_crEngNameOrderBy">Country or Area</option>
+	<option value="_grCurrPcfItID">Item</option>
+
+</select>
+            </div>
+        </div>  
+
+        <div class="Note">
+            <div class="Header"><img src="_Images/IconInfo_blue.png" alt="Info" /><span>Note</span></div>
+            <div class="Message">Changing the pivot column will reset the column selection and sort order.</div>
+       </div>      
+        <div class="Links">
+            <a href="javascript:;" onclick="UpdatePivot()" rel="event" title="Update the pivot column">Update</a>&nbsp;|
+            <a href="javascript:;" title="Close and do not update">Close</a>
+        </div>
+    </div>
+    <div id="divLinkTo" class="Popup OptionsBox" style="width:20em">
+        <span><a href="javascript:;" title="Close"><img src="_Images/Close.gif" alt="Close" /></a></span>
+        <h3>Link to this page:</h3>
+        <div style="padding-left: 0.5em">
+            Clicking Update will rewrite the URL in the address bar allowing you to bookmark this page.
+        </div>
+        <div class="Links">
+            <a href="javascript:;" onclick="UpdateUrl();return false;" rel="event" title="Update the address bar">Update</a>&nbsp;|
+            <a href="javascript:;" title="Close and do not update">Close</a>
+        </div>        
+    </div>
+
+                </div>
+            </div>
+        </form>
+        
+        
+    </div>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-3839409-1");
+            pageTracker._initData();
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>    
+</body>
+</html>

@@ -1,0 +1,17 @@
+current: qa # The current config set. Corresponds to a heading below
+all: 
+  share: //hqlprsws1.hq.un.fao.org/sws_r_share
+qa: 
+  certdir:  ~/.R/QA # Path to certificate directory
+  server: https://hqlqasws1.hq.un.fao.org:8181/sws
+  #token: 284c38f0-7294-4efa-b739-b37397fee7a6
+  #token: 7e2c1fd3-4c57-4a5f-a5b7-f75bad0d8da6 # mainv3
+  #token: 2abc220d-8a36-4a7d-adb6-de4e7754918e # 10/04/2019
+  #token: e56f43dd-4b22-4b53-915f-81f195b980e8 # 29/04/2019
+  token: 4df657b7-6cc4-4086-8a4b-550bffcfafd2
+    
+production:
+  certdir: ~/.R/Production/
+  server: https://hqlprswsas1.hq.un.fao.org:8181/sws
+  token: 473b9bf1-524b-4026-aa16-a76fca6cc50e
+
