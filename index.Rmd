@@ -1,6 +1,6 @@
 --- 
 title: "Migration of AQUASTAT Statistical Processes into the SWS"
-author: "Francy Lisboa (Agronomist/Statistician, ESSD - Methodological Innovation Team)"
+author: "Francy Lisboa <address class='author_afil'>Agronomist/Statistician, ESSD - Methodological Innovation Team</address>"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
