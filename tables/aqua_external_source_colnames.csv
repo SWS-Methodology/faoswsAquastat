@@ -1,0 +1,7 @@
+Field,Description
+element_code,Element code 
+element_name,Element name
+source,Source
+source_item_code,Item code in the Source
+source_element_code,Element code in the Source
+data_link,Link of the data

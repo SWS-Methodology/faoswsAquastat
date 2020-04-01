@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 2 The faoswsAquastaUpdate module | Migration of AQUASTAT Statistical Processes into the SWS</title>
-  <meta name="description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 The faoswsAquastaUpdate module | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta property="og:title" content="Chapter 2 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta property="og:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 The faoswsAquastaUpdate module | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta name="twitter:title" content="Chapter 2 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   
-  <meta name="twitter:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   
 
 
 
-<meta name="date" content="2019-05-17">
+<meta name="date" content="2020-03-17" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="AquastatExternal.html">
-<link rel="next" href="Aggregation.html">
+<link rel="prev" href="AquastatExternal.html"/>
+<link rel="next" href="Aggregation.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -48,10 +50,6 @@
 
 
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
-<script src="libs/viz-0.3/viz.js"></script>
-<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
 
 
 
@@ -72,9 +70,6 @@
 <li><a href="index.html#data-collection"><strong>Data Collection</strong></a></li>
 <li><a href="index.html#questionnaire"><strong>Questionnaire</strong></a></li>
 <li><a href="index.html#the-current-aquastat-information-management"><strong>The current AQUASTAT information management</strong></a></li>
-<li><a href="index.html#code-lists"><strong>Code lists</strong></a></li>
-<li><a href="index.html#data-tables"><strong>Data tables</strong></a></li>
-<li><a href="index.html#datasets"><strong>Datasets</strong></a></li>
 <li><a href="index.html#international-classification-systems"><strong>International Classification Systems</strong></a></li>
 <li><a href="index.html#the-sws-aquastat_reference-data-table"><strong>The SWS aquastat_reference data table</strong></a><ul>
 <li><a href="index.html#current-aquastat-variables"><strong>Current AQUASTAT Variables</strong></a></li>
@@ -88,9 +83,7 @@
 <li class="chapter" data-level="1.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>1.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
 <li class="chapter" data-level="1.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>1.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#workflow"><i class="fa fa-check"></i><b>1.2</b> <strong>Workflow</strong></a><ul>
-<li class="chapter" data-level="1.2.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#only-possible-workflow"><i class="fa fa-check"></i><b>1.2.1</b> <em>Only Possible</em> <strong>Workflow</strong></a></li>
-</ul></li>
+<li class="chapter" data-level="1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#workflow"><i class="fa fa-check"></i><b>1.2</b> <strong>Workflow</strong></a></li>
 <li class="chapter" data-level="1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>1.3</b> <strong>Running the module</strong></a></li>
 <li class="chapter" data-level="1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#did-the-module.."><i class="fa fa-check"></i><b>1.4</b> <strong>Did the module..</strong></a></li>
 </ul></li>
@@ -133,6 +126,21 @@
 <li class="chapter" data-level="4.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>4.3</b> <strong>Running the module in the SWS</strong></a></li>
 <li class="chapter" data-level="4.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#did-the-module-1"><i class="fa fa-check"></i><b>4.4</b> <strong>Did the module</strong>…</a></li>
 </ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
+<li class="chapter" data-level="A.1" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i><b>A.1</b> Code lists</a></li>
+<li class="chapter" data-level="A.2" data-path="sws-resources.html"><a href="sws-resources.html#datatables"><i class="fa fa-check"></i><b>A.2</b> Datatables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-reference"><i class="fa fa-check"></i>AQUASTAT Reference</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-faostat-mapping"><i class="fa fa-check"></i>AQUASTAT FAOSTAT Mapping</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sources"><i class="fa fa-check"></i>AQUASTAT Sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#calculation-rule"><i class="fa fa-check"></i>Calculation Rule</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-dam-reservoir"><i class="fa fa-check"></i>Global Dam Reservoir</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-map-of-irrigated-area"><i class="fa fa-check"></i>Global Map of Irrigated Area</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sdg-aggregates"><i class="fa fa-check"></i>AQUASTAT SDG Aggregates</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
+<li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -142,7 +150,8 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Migration of AQUASTAT Statistical Processes into the SWS</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AQUASTAT: Migration of the Statistical Processes
+into the SWS</a>
           </h1>
         </div>
 
@@ -154,7 +163,7 @@
 <h1><span class="header-section-number">Chapter 2</span> <strong>The faoswsAquastaUpdate module</strong></h1>
 <div id="aims-1" class="section level2">
 <h2><span class="header-section-number">2.1</span> <strong>Aims</strong></h2>
-<p>The <strong>faoswsAquastatUpdate</strong> module is the <em>heart</em> of the AQUASTAT migration into the SWS since it runs the periodic update of the AQUASTAT legacy whenever new data from questionnaire and/or external sources are available. The module aims to:</p>
+<p>The <strong>faoswsAquastatUpdate</strong> module is the <em>heart</em> of the AQUASTAT migration into the SWS since it runs the periodic update of the <code>aquastat_update</code> whenever new data from questionnaire and/or external sources are available. The module aims to:</p>
 <div id="harmonize-data-source-dimensions" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> <strong>Harmonize data source dimensions</strong></h3>
 <p>The module uses the <strong>aquastat_legacy</strong>, <strong>aquastat_questionnaire</strong>, and <strong>aquastat_external</strong> as inputs. The very first thing that the modules does after reading in these inputs is to ensure that all inputs have the same variable names: <strong>geographicAreaM49</strong>, <strong>measuredElement</strong>, <strong>timePointYears</strong>, and <strong>flagAquastat</strong>. The variable <strong>flagAquastat</strong> persists until the end of the processing when the module replaces it by <strong>flagObservationStatus</strong>.</p>
@@ -1128,14 +1137,14 @@ Area equipped for full control irrigation: sprinkler irrigation
 <ol style="list-style-type: decimal">
 <li><p>Expands variables and indicators time-series <strong>from the first observed value last observed value</strong> as agreed by the technical unit;</p></li>
 <li><p>Removes <strong>0M</strong> value-flags to prevent the imputation algorithm, particularly the linear interpolation, from taking the zero values into account.</p></li>
-<li><p>Fills the generated missing values using the following guideline:</p></li>
-</ol>
+<li><p>Fills the generated missing values using the following guideline:</p>
 <ul>
 <li>Applies <strong>Last Observation Carried Forward</strong> to missing values in time-series where the observed values <strong>DO NOT VARY</strong>;</li>
 <li>Applies <strong>Last Observation Carried Forward</strong> to missing values in time-series of Long-Term average variables;</li>
 <li>Applies <strong>Last Observation Carried Forward</strong> to missing values in time-series with only one observed value;</li>
 <li>Applies <strong>Linear Interpolation</strong> to missing values in time-series with two or more different observed values.</li>
-</ul>
+</ul></li>
+</ol>
 <p><br></p>
 </div>
 <div id="recalculate-indicators" class="section level3">
@@ -1230,14 +1239,50 @@ p (Collected manually from databases)
 </div>
 <div id="workflow-1" class="section level2">
 <h2><span class="header-section-number">2.2</span> <strong>Workflow</strong></h2>
-<div class="figure"><span id="fig:fig1"></span>
-<div id="htmlwidget-7b671644a2c0e38cdbb1" style="width:100%;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7b671644a2c0e38cdbb1">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\n# Inputs\naquabase [label = \"Dataset: \n SWS aquastat_legacy \n from the faoswsAquastatLegacy module\", shape = folder, fillcolor = Beige]\naquaquest [label = \"Dataset: \n SWS aquastat_questionnaire \n from the questionnaire harvester\", shape = folder, fillcolor = Beige]\naquaexter [label = \"Dataset: \n SWS aquastat_external \n from the faoswsAquastatExternal module\", shape = folder, fillcolor = Beige]\n\n# data tables\nrefer [label = \"Data table: \n SWS aquastat_reference data table\", shape = folder, fillcolor = LightGrey]\ncalc [label = \"Data table: \n SWS calculation_rule data table\", shape = folder, fillcolor = LightGrey]\n\n# processing\nProcessing [label = \"Processing: \n 1. Harmonize dimensions \n 2. Replace/Update aquastat_legacy \n with aquastat_questionnaire \n and aquastat_external dataset, \n 3. Map out flag of observation, \n 4. Calculation, \n 5. Imputation (LOCF, Linear Interpolation), \n 6. Recalculation, \n 7. Map out flag Method\", shape = square, fillcolor = LightBlue]\n\n# Output\nOutput [label = \"Dataset: \n aquastat_update dataset\", shape = folder, fillcolor = Beige]\n\n#Save\nSave [label = \"Database: \n aquastat_update dataset \n saved in the SWS\", shape = folder, fillcolor = Beige]\n\n\n# Flow\n# edge definitions with the node IDs\n{aquaquest, aquabase, aquaexter} -> Processing  -> Output -> Save\n{refer, calc} -> Processing\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="figure" style="text-align: center"><span id="fig:fig4"></span>
+<img src="images/faoswsAquastatUpdate.png" alt="Workflow of the faoswsAquastatUpdate module" width="90%" />
 <p class="caption">
-Figure 2.1: Workflow of the faoswsAquastatUpdate module.
+Figure 2.1: Workflow of the faoswsAquastatUpdate module
 </p>
 </div>
-<p><br> <br></p>
+<!--```{r fig1, echo=FALSE, out.width='100%', out.width='100%', fig.cap='Workflow of the faoswsAquastatUpdate module.'}
+
+library(DiagrammeR)
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = Linen]
+
+# Inputs
+aquabase [label = 'Dataset: \n SWS aquastat_legacy \n from the faoswsAquastatLegacy module', shape = folder, fillcolor = Beige]
+aquaquest [label = 'Dataset: \n SWS aquastat_questionnaire \n from the questionnaire harvester', shape = folder, fillcolor = Beige]
+aquaexter [label = 'Dataset: \n SWS aquastat_external \n from the faoswsAquastatExternal module', shape = folder, fillcolor = Beige]
+
+# data tables
+refer [label = 'Data table: \n SWS aquastat_reference data table', shape = folder, fillcolor = LightGrey]
+calc [label = 'Data table: \n SWS calculation_rule data table', shape = folder, fillcolor = LightGrey]
+
+# processing
+Processing [label = 'Processing: \n 1. Harmonize dimensions \n 2. Replace/Update aquastat_legacy \n with aquastat_questionnaire \n and aquastat_external dataset, \n 3. Map out flag of observation, \n 4. Calculation, \n 5. Imputation (LOCF, Linear Interpolation), \n 6. Recalculation, \n 7. Map out flag Method', shape = square, fillcolor = LightBlue]
+
+# Output
+Output [label = 'Dataset: \n aquastat_update dataset', shape = folder, fillcolor = Beige]
+
+#Save
+Save [label = 'Database: \n aquastat_update dataset \n saved in the SWS', shape = folder, fillcolor = Beige]
+
+
+# Flow
+# edge definitions with the node IDs
+{aquaquest, aquabase, aquaexter} -> Processing  -> Output -> Save
+{refer, calc} -> Processing
+}")
+
+```-->
+<p><br>
+<br></p>
 <div class="rmdimportant">
 <p>
 <strong>AGAIN…</strong> <br> The harvester for data in AQUASTAT questionnaire has not yet been developed by CIO; therefore, the faoswsAquastat module is currently using the aquastat_questionnaire data saved in the sws-share drive (<strong>/AquastatValidation/data/Update/aquastat_questionnaire.csv</strong>).
@@ -1279,14 +1324,17 @@ If the aquastat_update dataset has never been generated and saved in the SWS dat
 Figure 2.3: Select the faoswsAquastatUpdate and run it in the SWS.
 </p>
 </div>
-<br> 8. Wait for the results to appear in the session; <br>
+<br>
+8. Wait for the results to appear in the session;
+<br>
 <div class="figure"><span id="fig:up8"></span>
 <img src="images/update_8.PNG" alt="Wait for the end of the processing (~ 15 minutes)." width="100%" />
 <p class="caption">
 Figure 2.4: Wait for the end of the processing (~ 15 minutes).
 </p>
 </div>
-<p><br> 9. Check the populated session and click on <strong>Save to dataset</strong> after validation.</p>
+<p><br>
+9. Check the populated session and click on <strong>Save to dataset</strong> after validation.</p>
 <br>
 <div class="figure"><span id="fig:up9"></span>
 <img src="images/update_9.PNG" alt="Wait for the end of the processing (~ 15 minutes)." width="100%" />
@@ -4602,7 +4650,7 @@ Zambia
 <th style="text-align:left;">
 geographicAreaM49_description
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;">
 timePointYears
 </th>
 <th style="text-align:right;">
@@ -4618,7 +4666,7 @@ Value_corrected
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1963
 </td>
 <td style="text-align:right;">
@@ -4632,7 +4680,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1964
 </td>
 <td style="text-align:right;">
@@ -4646,7 +4694,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1965
 </td>
 <td style="text-align:right;">
@@ -4660,7 +4708,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1966
 </td>
 <td style="text-align:right;">
@@ -4674,7 +4722,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1968
 </td>
 <td style="text-align:right;">
@@ -4688,7 +4736,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1969
 </td>
 <td style="text-align:right;">
@@ -4702,7 +4750,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1970
 </td>
 <td style="text-align:right;">
@@ -4716,7 +4764,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1971
 </td>
 <td style="text-align:right;">
@@ -4730,7 +4778,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1973
 </td>
 <td style="text-align:right;">
@@ -4744,7 +4792,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1974
 </td>
 <td style="text-align:right;">
@@ -4758,7 +4806,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1975
 </td>
 <td style="text-align:right;">
@@ -4772,7 +4820,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1976
 </td>
 <td style="text-align:right;">
@@ -4786,7 +4834,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1978
 </td>
 <td style="text-align:right;">
@@ -4800,7 +4848,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1979
 </td>
 <td style="text-align:right;">
@@ -4814,7 +4862,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1980
 </td>
 <td style="text-align:right;">
@@ -4828,7 +4876,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1981
 </td>
 <td style="text-align:right;">
@@ -4842,7 +4890,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1983
 </td>
 <td style="text-align:right;">
@@ -4856,7 +4904,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1984
 </td>
 <td style="text-align:right;">
@@ -4870,7 +4918,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1985
 </td>
 <td style="text-align:right;">
@@ -4884,7 +4932,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1986
 </td>
 <td style="text-align:right;">
@@ -4898,7 +4946,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1988
 </td>
 <td style="text-align:right;">
@@ -4912,7 +4960,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1989
 </td>
 <td style="text-align:right;">
@@ -4926,7 +4974,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1990
 </td>
 <td style="text-align:right;">
@@ -4940,7 +4988,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1991
 </td>
 <td style="text-align:right;">
@@ -4954,7 +5002,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1993
 </td>
 <td style="text-align:right;">
@@ -4968,7 +5016,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1994
 </td>
 <td style="text-align:right;">
@@ -4982,7 +5030,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1995
 </td>
 <td style="text-align:right;">
@@ -4996,7 +5044,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1996
 </td>
 <td style="text-align:right;">
@@ -5010,7 +5058,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1998
 </td>
 <td style="text-align:right;">
@@ -5024,7 +5072,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1999
 </td>
 <td style="text-align:right;">
@@ -5038,7 +5086,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2000
 </td>
 <td style="text-align:right;">
@@ -5052,7 +5100,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2001
 </td>
 <td style="text-align:right;">
@@ -5066,7 +5114,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2003
 </td>
 <td style="text-align:right;">
@@ -5080,7 +5128,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2004
 </td>
 <td style="text-align:right;">
@@ -5094,7 +5142,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2005
 </td>
 <td style="text-align:right;">
@@ -5108,7 +5156,7 @@ Afghanistan
 <td style="text-align:left;">
 Afghanistan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2006
 </td>
 <td style="text-align:right;">
@@ -5120,7 +5168,8 @@ Afghanistan
 </tr>
 </tbody>
 </table>
-<p><br> <br></p>
+<p><br>
+<br></p>
 <div class="rmdnote">
 <p>
 <strong>FINAL REMARKS:</strong>
@@ -5144,11 +5193,13 @@ Afghanistan
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -5156,12 +5207,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -5173,6 +5223,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

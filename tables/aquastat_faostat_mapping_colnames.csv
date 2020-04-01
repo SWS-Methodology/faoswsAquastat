@@ -1,0 +1,6 @@
+Field,Description
+aqua_element_code,AQUASTAT element code
+element_name,AQUASTAT element name
+item_code,FAOSTAT item code
+element_code,FAOSTAT element code
+element_code_sws,FAOSTAT element code in the SWS

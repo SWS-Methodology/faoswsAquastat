@@ -1,0 +1,32 @@
+Field,Description
+id,
+Country,Name of country
+Admin1,Name of Admin1
+Admin2,Name of Admin2
+Admin3,Name of Admin3
+Area(ha),Area in ha
+Year,
+Flag_src,
+AEI(ha),
+AEI_GW(ha),
+AEI_SW(ha),
+AEI_NC(ha),
+AAI(ha),
+AAI_GW(ha),
+AAI_SW(ha),
+AAI_NC(ha),
+AEI_MIRCA(ha),
+AHI_MIRCA(ha),
+MMGA_MIRCA(ha),
+ICWU_GCWM(m3 yr-1),
+cs1,
+cs1*MMGA_MIRCA,
+cs2,
+ICWU(m3 yr-1),
+ICWU_GW(m3 yr-1),
+ICWU_SW(m3 yr-1),
+ICWU_NC(m3 yr-1),
+AEI_GW_PCT,
+AEI_GW_FRAC,
+AEI_SW_PCT,
+AEI_SW_FRAC,

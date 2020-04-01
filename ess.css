@@ -1,11 +1,14 @@
+.book .book-summary ul.summary li span {
+  color: white;
+  opacity: .5;
+}
 p {
   line-height: 1.5em;
   text-align: justify;
 }
 
-.book .book header h1 {
-  opacity: 1;
-  text-align: left;
+.book .book-body .page-wrapper .page-inner {
+  max-width: 90%;
 }
 
 #header .title {

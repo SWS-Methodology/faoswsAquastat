@@ -1,0 +1,8 @@
+Field,Description
+group_area_code,FAOSTAT group area code
+group_area_name,Group area name
+fs_area_code,FAOSTAT area code
+fs_area_name,FAOSTAT area name
+m49,M49 area code
+iso2,ISO two-letter country code
+iso3,ISO three-letetr country code

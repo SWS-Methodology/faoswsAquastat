@@ -1,9 +1,18 @@
 # **The faoswsAquastatValidation module** {#AquastatValidation}
 
-## **Aims**
+The **faoswsAquastatValidation** emerges as a demand for quality assurance and quality checking tool (QA/QC) that screens AQUASTAT data sets to identify potential issues in the data. The idea is to identify and output a data set containing the information on **what** (elements), **where** (geographic areas), and **when** (year) the domain-knowledge in form of validation rules (logical tests) was violated. 
 
-The faoswsAquastatValidation emerges as a demand for quality assurance and quality checking tool (QA/QC) that screens AQUASTAT data sets to identify potential issues in the data. The idea is to identify and output a data set containing the information on **what** (elements), **where** (geographic areas), and **when** (year) the domain-knowledge in form of validation rules (logical tests) was violated. Thus, the faoswsAquastatValidation module: 
 
+```{r  figWORKFLOWValidation, echo=FALSE, out.width="60%", fig.align="center", fig.cap='Workflow of the faoswsAquastatValidation module'}
+knitr::include_graphics("images/faoswsAquastatValidation.png")
+
+```
+
+The **faoswsAquastatValidation** module shows that it is possible to use the domain-knowledge translated into validation rules stored as SWS data table to identify and locate potential errors in AQUASTAT - SWS framework data sets. By returning the areas, years, elements, values, flags, and expressions with potentially erroneous values, the module gives ammunition to the user to reduce the scope of the Quality Assurance and Quality Control process. As a consequence, the tool makes it easier to identify the nature of the errors and implement data correction based on the user domain - knowledge.
+
+## **Steps**
+
+Below you find the description of the process to validate the data.
 
 ### **Applies validation rules**
 
@@ -54,9 +63,7 @@ With geographicAreaM49 and AQUASTAT elements in the output facilitating the inte
 
 - **expression**. The validation rule that was violated and detected by the module.
 
-
-## **Workflow**
-```{r val, echo=FALSE, fig.cap='faoswsAquastatValidation module workflow', message=FALSE, warning=FALSE}
+<!--```{r val, echo=FALSE, fig.cap='faoswsAquastatValidation module workflow', message=FALSE, warning=FALSE}
 require(DiagrammeR)
 DiagrammeR::grViz("digraph {
                   
@@ -81,7 +88,7 @@ DiagrammeR::grViz("digraph {
                   # edge definitions with the node IDs
                   {aqualegorig, aquaext,aquaquest, aquaup } -> module  -> output
                   }")
-```
+```-->
 
 <br>
 <br>
@@ -100,20 +107,20 @@ DiagrammeR::grViz("digraph {
 
 6. Click on **Run** beside the save button to query the data;
 
-```{r  fig17, echo=FALSE, out.width="100%", fig.cap=' Running the module in SWS: steps 1 to 6'}
-knitr::include_graphics("images/query.JPG")
+```{r  fig17, echo=FALSE, out.width="85%", fig.align="center", fig.cap=' Running the module in SWS: steps 1 to 6'}
+knitr::include_graphics("images/validation_plugin_session_selection.png")
 ```  
 
 7. Click on the **Run plugin** button;
 
 8. Select the faoswsAquastatValidation module and click on the **Run plugin** button;
 
-```{r  fig18, echo=FALSE, out.width="100%", fig.cap=' Running the module in SWS: steps 7 to 8'}
+```{r  fig18, echo=FALSE, out.width="65%", fig.align="center", fig.cap=' Running the module in SWS: steps 7 to 8'}
 knitr::include_graphics("images/validationselectplugin.PNG")
 ```  
 
 9. Wait for the output in your FAO email inbox; 
-```{r  fig19, echo=FALSE, out.width="100%", fig.cap=' Running the module in SWS: step 9'}
+```{r  fig19, echo=FALSE, out.width="65%", fig.align="center", fig.cap=' Running the module in SWS: step 9'}
 knitr::include_graphics("images/validationwaitemail.PNG")
 ```  
 
@@ -125,19 +132,3 @@ knitr::include_graphics("images/validationwaitemail.PNG")
 ```{r  fig20, echo=FALSE, out.width="100%", fig.cap=' Running the module in SWS: step 10'}
 knitr::include_graphics("images/validationfaoemail.PNG")
 ```  
-  
-
-
-## **Did the module**...
-
-```{block , type='rmdnote'}
-
-**FINAL REMARKS:**
-
-*The faoswsAquastatValidation module shows that it is possible to use the domain-knowledge translated into validation rules stored as SWS data table to identify and locate potential errors in AQUASTAT - SWS framework data sets. By returning the areas, years, elements, values, flags, and expressions with potentially erroneous values, the module gives ammunition to the user to reduce the scope of the Quality Assurance and Quality Control process. As a consequence, the tool makes it easier to identify the nature of the errors and implement data correction based on the user domain - knowledge.*
-
-```
- 
-
-
-

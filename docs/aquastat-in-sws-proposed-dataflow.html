@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AQUASTAT in SWS: proposed dataflow | Migration of AQUASTAT Statistical Processes into the SWS</title>
-  <meta name="description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>AQUASTAT in SWS: proposed dataflow | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="AQUASTAT in SWS: proposed dataflow | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta property="og:title" content="AQUASTAT in SWS: proposed dataflow | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta property="og:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AQUASTAT in SWS: proposed dataflow | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta name="twitter:title" content="AQUASTAT in SWS: proposed dataflow | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   
-  <meta name="twitter:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   
 
 
 
-<meta name="date" content="2019-05-17">
+<meta name="date" content="2020-03-26" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="new-aquastat-methodology.html">
-<link rel="next" href="sws-resources.html">
+<link rel="prev" href="new-aquastat-methodology.html"/>
+<link rel="next" href="aquastat-elements.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +39,7 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,10 +47,12 @@
 
 
 
-<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
-<script src="libs/viz-0.3/viz.js"></script>
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
+<script src="libs/grViz-binding-1.0.5/grViz.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -68,79 +70,78 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#introduction"><strong>Introduction</strong></a></li>
-<li><a href="migration-actors.html#migration-actors"><strong>Migration actors</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
+<li><a href="migration-team.html#migration-team"><strong>Migration Team</strong></a></li>
 <li><a href="new-aquastat-methodology.html#new-aquastat-methodology"><strong>New AQUASTAT methodology</strong></a><ul>
 <li><a href="new-aquastat-methodology.html#data-collection"><strong>Data Collection</strong></a></li>
 <li><a href="new-aquastat-methodology.html#questionnaire"><strong>Questionnaire</strong></a></li>
 <li><a href="new-aquastat-methodology.html#the-current-aquastat-information-management"><strong>The current AQUASTAT information management</strong></a></li>
 </ul></li>
 <li><a href="aquastat-in-sws-proposed-dataflow.html#aquastat-in-sws-proposed-dataflow"><strong>AQUASTAT in SWS: proposed dataflow</strong></a></li>
-<li><a href="sws-resources.html#sws-resources"><strong>SWS resources</strong></a><ul>
-<li><a href="sws-resources.html#code-lists"><strong>Code lists</strong></a></li>
-<li><a href="sws-resources.html#data-tables"><strong>Data tables</strong></a></li>
-<li><a href="sws-resources.html#datasets"><strong>Datasets</strong></a></li>
-</ul></li>
 <li><a href="aquastat-elements.html#aquastat-elements"><strong>AQUASTAT Elements</strong></a><ul>
 <li><a href="aquastat-elements.html#international-classification-systems"><strong>International Classification Systems</strong></a></li>
 <li><a href="aquastat-elements.html#the-sws-aquastat_reference-data-table"><strong>The SWS aquastat_reference data table</strong></a><ul>
 <li><a href="aquastat-elements.html#current-aquastat-variables"><strong>Current AQUASTAT Variables</strong></a></li>
-<li><a href="aquastat-elements.html#current-aquastat-indicators"><strong>Current AQUASTAT indicators</strong></a></li>
-<li><a href="aquastat-elements.html#current-external-data"><strong>Current External data</strong></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>1</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
-<li class="chapter" data-level="1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#aims"><i class="fa fa-check"></i><b>1.1</b> <strong>Aims</strong></a><ul>
+<li class="chapter" data-level="1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#steps"><i class="fa fa-check"></i><b>1.1</b> Steps</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>1.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
 <li class="chapter" data-level="1.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>1.1.2</b> <strong>Reshapes the data sources</strong></a></li>
 <li class="chapter" data-level="1.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>1.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
 <li class="chapter" data-level="1.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>1.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
 <li class="chapter" data-level="1.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>1.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#workflow"><i class="fa fa-check"></i><b>1.2</b> <strong>Workflow</strong></a><ul>
-<li class="chapter" data-level="1.2.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#only-possible-workflow"><i class="fa fa-check"></i><b>1.2.1</b> <em>Only Possible</em> <strong>Workflow</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>1.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>1.3</b> <strong>Running the module</strong></a></li>
-<li class="chapter" data-level="1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#did-the-module.."><i class="fa fa-check"></i><b>1.4</b> <strong>Did the module..</strong></a></li>
+<li class="chapter" data-level="2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
+<li class="chapter" data-level="2.1" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#methods"><i class="fa fa-check"></i><b>2.1</b> Methods</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#calculate-indicators-first-calculation"><i class="fa fa-check"></i><b>2.1.1</b> <strong>Calculate indicators (<em>First Calculation</em>)</strong></a></li>
+<li class="chapter" data-level="2.1.2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#vertical-imputation-components"><i class="fa fa-check"></i><b>2.1.2</b> <strong>Vertical Imputation (components)</strong></a></li>
+<li class="chapter" data-level="2.1.3" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>2.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
+<li class="chapter" data-level="2.1.4" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>2.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
-<li class="chapter" data-level="2.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#aims-1"><i class="fa fa-check"></i><b>2.1</b> <strong>Aims</strong></a><ul>
-<li class="chapter" data-level="2.1.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#harmonize-data-source-dimensions"><i class="fa fa-check"></i><b>2.1.1</b> <strong>Harmonize data source dimensions</strong></a></li>
-<li class="chapter" data-level="2.1.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#replaceupdate-the-legacy-data"><i class="fa fa-check"></i><b>2.1.2</b> <strong>Replace/update the legacy data</strong></a></li>
-<li class="chapter" data-level="2.1.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#map-out-flags-observation"><i class="fa fa-check"></i><b>2.1.3</b> <strong>Map out flags (Observation)</strong></a></li>
-<li class="chapter" data-level="2.1.4" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#calculate-indicators"><i class="fa fa-check"></i><b>2.1.4</b> <strong>Calculate indicators</strong></a></li>
-<li class="chapter" data-level="2.1.5" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#apply-primary-variable-approach"><i class="fa fa-check"></i><b>2.1.5</b> <strong>Apply Primary Variable Approach</strong></a></li>
-<li class="chapter" data-level="2.1.6" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#impute-missing-data"><i class="fa fa-check"></i><b>2.1.6</b> <strong>Impute missing data</strong></a></li>
-<li class="chapter" data-level="2.1.7" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#recalculate-indicators"><i class="fa fa-check"></i><b>2.1.7</b> <strong>Recalculate indicators</strong></a></li>
-<li class="chapter" data-level="2.1.8" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#map-out-flags-method"><i class="fa fa-check"></i><b>2.1.8</b> <strong>Map out flags (Method)</strong></a></li>
-</ul></li>
-<li class="chapter" data-level="2.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#workflow-1"><i class="fa fa-check"></i><b>2.2</b> <strong>Workflow</strong></a></li>
-<li class="chapter" data-level="2.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#running-the-module-1"><i class="fa fa-check"></i><b>2.3</b> <strong>Running the module</strong></a></li>
-<li class="chapter" data-level="2.4" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#did-the-module"><i class="fa fa-check"></i><b>2.4</b> <strong>Did the module…</strong></a><ul>
-<li class="chapter" data-level="2.4.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#add-new-indicators"><i class="fa fa-check"></i><b>2.4.1</b> Add new indicators ?</a></li>
-<li class="chapter" data-level="2.4.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#promote-time-series-completeness-and-higher-geographic-coverage"><i class="fa fa-check"></i><b>2.4.2</b> promote time-series completeness and higher geographic coverage ?</a></li>
-<li class="chapter" data-level="2.4.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#correct-values-of-long-term-average-variables"><i class="fa fa-check"></i><b>2.4.3</b> correct values of Long-Term Average variables ?</a></li>
+<li class="chapter" data-level="2.2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#running-the-module-1"><i class="fa fa-check"></i><b>2.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="2.3" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#flag-assignment"><i class="fa fa-check"></i><b>2.3</b> Flag Assignment</a></li>
+<li class="chapter" data-level="2.4" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#aquastat-network"><i class="fa fa-check"></i><b>2.4</b> AQUASTAT Network</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#add-new-indicators"><i class="fa fa-check"></i><b>2.4.1</b> Add new indicators ?</a></li>
+<li class="chapter" data-level="2.4.2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#promote-time-series-completeness-and-higher-geographic-coverage"><i class="fa fa-check"></i><b>2.4.2</b> promote time-series completeness and higher geographic coverage ?</a></li>
+<li class="chapter" data-level="2.4.3" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#correct-values-of-long-term-average-variables"><i class="fa fa-check"></i><b>2.4.3</b> correct values of Long-Term Average variables ?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
-<li class="chapter" data-level="3.1" data-path="Aggregation.html"><a href="Aggregation.html#aims-2"><i class="fa fa-check"></i><b>3.1</b> <strong>Aims</strong></a><ul>
+<li class="chapter" data-level="3.1" data-path="Aggregation.html"><a href="Aggregation.html#steps-1"><i class="fa fa-check"></i><b>3.1</b> Steps</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
 <li class="chapter" data-level="3.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
 <li class="chapter" data-level="3.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Send the result to the user email</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="Aggregation.html"><a href="Aggregation.html#workflow-2"><i class="fa fa-check"></i><b>3.2</b> <strong>Workflow</strong></a></li>
-<li class="chapter" data-level="3.3" data-path="Aggregation.html"><a href="Aggregation.html#did-the-module..-1"><i class="fa fa-check"></i><b>3.3</b> <strong>Did the module..</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="Aggregation.html"><a href="Aggregation.html#running-the-module-2"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
-<li class="chapter" data-level="4.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#aims-3"><i class="fa fa-check"></i><b>4.1</b> <strong>Aims</strong></a><ul>
+<li class="chapter" data-level="4.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#aims"><i class="fa fa-check"></i><b>4.1</b> <strong>Aims</strong></a><ul>
 <li class="chapter" data-level="4.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>4.1.1</b> <strong>Applies validation rules</strong></a></li>
 <li class="chapter" data-level="4.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>4.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
 <li class="chapter" data-level="4.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
 <li class="chapter" data-level="4.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Sends the output to the user email</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#workflow-3"><i class="fa fa-check"></i><b>4.2</b> <strong>Workflow</strong></a></li>
+<li class="chapter" data-level="4.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#workflow"><i class="fa fa-check"></i><b>4.2</b> <strong>Workflow</strong></a></li>
 <li class="chapter" data-level="4.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>4.3</b> <strong>Running the module in the SWS</strong></a></li>
-<li class="chapter" data-level="4.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#did-the-module-1"><i class="fa fa-check"></i><b>4.4</b> <strong>Did the module</strong>…</a></li>
+<li class="chapter" data-level="4.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#did-the-module"><i class="fa fa-check"></i><b>4.4</b> <strong>Did the module</strong>…</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
+<li class="chapter" data-level="A.1" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i><b>A.1</b> Code lists</a></li>
+<li class="chapter" data-level="A.2" data-path="sws-resources.html"><a href="sws-resources.html#datatables"><i class="fa fa-check"></i><b>A.2</b> Datatables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-reference"><i class="fa fa-check"></i>AQUASTAT Reference</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-faostat-mapping"><i class="fa fa-check"></i>AQUASTAT FAOSTAT Mapping</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sources"><i class="fa fa-check"></i>AQUASTAT Sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#calculation-rule"><i class="fa fa-check"></i>Calculation Rule</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-dam-reservoir"><i class="fa fa-check"></i>Global Dam Reservoir</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-map-of-irrigated-area"><i class="fa fa-check"></i>Global Map of Irrigated Area</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sdg-aggregates"><i class="fa fa-check"></i>AQUASTAT SDG Aggregates</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
+<li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
 </ul></li>
 </ul>
 
@@ -151,7 +152,8 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Migration of AQUASTAT Statistical Processes into the SWS</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AQUASTAT: Migration of the Statistical Processes
+into the SWS</a>
           </h1>
         </div>
 
@@ -163,13 +165,14 @@
 <h1><strong>AQUASTAT in SWS: proposed dataflow</strong></h1>
 <p>AQUASTAT dataflow will predominantly be triggered by the filling and compilation of the <strong>Water and Agriculture questionnaire</strong> by the AQUASTAT network of National Correspondents. The CIO - SWS counterpart is responsible for creating a tailored questionnaire harvesters to automatically extract data from filled surveys and output it as an SWS compliant dataset. Once in the SWS, the technical unit will benefit from the tools and other features that have been developed to make the AQUASTAT dataflow as seamless as possible. On this basis, the flowchart below gives the AQUASTAT dataflow that has been fostered by the ESS - SWS team.</p>
 <div class="figure"><span id="fig:fig2"></span>
-<div id="htmlwidget-1b5b7676fafbc352c290" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b5b7676fafbc352c290">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\n# Inputs\ncoordination [label = \"Source \n coordination \n between agencies\", shape = folder, fillcolor = Beige]\nSurveys [label = \"Source \n Country surveys \n and census\", shape = folder, fillcolor = Beige]\nLiterature [label = \"Source \n Literature review\", shape = folder, fillcolor = Beige]\n\nfocalpoint [label = \"Compilation: \n questionnaire filling \n by AQUASTAT \n national correspondent\", shape = folder, fillcolor = Beige]\n\nSWSQH [label = \"Harvester: \n questionnaire harvesting \n by CIO - SWS\", fillcolor = LightBlue]\n\nNewdata [label = \"Dataset: \n data harvested from questionnaire \n and SWS compliant\", shape = folder, fillcolor = Beige]\n\nQA1 [label = \"QAQC \n Manual Quality control \n of data harvested from questionnaire\", fillcolor = PaleGreen]\n\nNewdata_val [label = \"Dataset: \n aquastat_questionnaire\", shape = folder, fillcolor = Beige]\n\nAPIsourcing [label = \"Process: \n faoswsAquastatExternal module\", fillcolor = PaleGreen]\n\nAPIdata [label = \"Dataset: \n aquastat_external\", shape = folder, fillcolor = Beige]\n\noldsystem [label = \"Database: \n Old Aquastat Working System\", shape = folder, fillcolor = Beige]\n\nMigration [label = \"Migration: \n legacy data into the SWS \n done by CIO - SWS\", fillcolor = LightBlue]\n\nlegacydata [label = \"Dataset: \n aquastat_legacy dataset \", shape = folder, fillcolor = Beige]\n\nupdate [label = \"Process:: \n SWS faoswsAquastatUpdate module: \n 1. merges the questionnaire data, external data, and aquastat_legacy_corr \n 2. flag conversion, \n 3. apply calculations, 4. impute data, 5.  apply recalculations\", shape = losangle, fillcolor = PaleGreen]\n\nupdateddata [label = \"Dataset: \n aquastat_update \n from SWS faoswsAquastatUpdate module \", shape = folder, fillcolor = Beige]\n\nagg_proc [label = \"Process: \n faoswsAquastatAggregation module \n (Get regional SDG aggregations)\", fillcolor = PaleGreen]\nagg_out [label = \"Dataset: \n aquastat_aggregation \n sent to the user by email (.csv file)\", shape = folder, fillcolor = Beige]\n\nQA2 [label = \"Process: \n Automate Quality control \n by faoswsAquatsatValidation module\", fillcolor = PaleGreen]\n\nvalidationemail [label = \"Dataset: \n Validation output \n sent to the user by email (.csv file)\", shape = folder, fillcolor = Beige]\n\nQA3 [label = \"Process: \n Manual Quality control \n of faoswsAquatsatValidation module output\", fillcolor = PaleGreen]\n\nvalidated [label = \"Dataset: \n aquastat_update \n cleared by technical division\", shape = folder, fillcolor = Beige]\n\nAQUASWSdb [label = \"Dataset: \n aquastat_update \n saved in the SWS database\", shape = folder, fillcolor = Beige]\n\nDiss [label = \"Dissemination: \n  Web, publications, Apps\", shape = folder, fillcolor = LightGrey]\n\n\n# Flow\n# edge definitions with the node IDs\n{coordination, Surveys, Literature} -> focalpoint -> SWSQH -> Newdata -> QA1 -> Newdata_val -> update\n{oldsystem} -> Migration -> legacydata -> update \n{APIsourcing} -> APIdata -> update -> updateddata -> QA2 -> validationemail -> QA3 -> validated -> AQUASWSdb -> Diss\n{validated} -> agg_proc -> agg_out -> Diss\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-24c4991190ca6a173e39" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-24c4991190ca6a173e39">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\n# Inputs\ncoordination [label = \"Source \n coordination \n between agencies\", shape = folder, fillcolor = Beige]\nSurveys [label = \"Source \n Country surveys \n and census\", shape = folder, fillcolor = Beige]\nLiterature [label = \"Source \n Literature review\", shape = folder, fillcolor = Beige]\n\nfocalpoint [label = \"Compilation: \n questionnaire filling \n by AQUASTAT \n national correspondent\", shape = folder, fillcolor = Beige]\n\nSWSQH [label = \"Harvester: \n questionnaire harvesting \n by CIO - SWS\", fillcolor = LightBlue]\n\nNewdata [label = \"Dataset: \n data harvested from questionnaire \n and SWS compliant\", shape = folder, fillcolor = Beige]\n\nQA1 [label = \"QAQC \n Manual Quality control \n of data harvested from questionnaire\", fillcolor = PaleGreen]\n\nNewdata_val [label = \"Dataset: \n aquastat_questionnaire\", shape = folder, fillcolor = Beige]\n\nAPIsourcing [label = \"Process: \n faoswsAquastatExternal module\", fillcolor = PaleGreen]\n\nAPIdata [label = \"Dataset: \n aquastat_external\", shape = folder, fillcolor = Beige]\n\noldsystem [label = \"Database: \n Old Aquastat Working System\", shape = folder, fillcolor = Beige]\n\nMigration [label = \"Migration: \n legacy data into the SWS \n done by CIO - SWS\", fillcolor = LightBlue]\n\nlegacydata [label = \"Dataset: \n aquastat_legacy dataset \", shape = folder, fillcolor = Beige]\n\nupdate [label = \"Process:: \n SWS faoswsAquastatUpdate module: \n 1. merges the questionnaire data, external data, and aquastat_legacy_corr \n 2. flag conversion, \n 3. apply calculations, 4. impute data, 5.  apply recalculations\", shape = losangle, fillcolor = PaleGreen]\n\nupdateddata [label = \"Dataset: \n aquastat_update \n from SWS faoswsAquastatUpdate module \", shape = folder, fillcolor = Beige]\n\nagg_proc [label = \"Process: \n faoswsAquastatAggregation module \n (Get regional SDG aggregations)\", fillcolor = PaleGreen]\nagg_out [label = \"Dataset: \n aquastat_aggregation \n sent to the user by email (.csv file)\", shape = folder, fillcolor = Beige]\n\nQA2 [label = \"Process: \n Automate Quality control \n by faoswsAquatsatValidation module\", fillcolor = PaleGreen]\n\nvalidationemail [label = \"Dataset: \n Validation output \n sent to the user by email (.csv file)\", shape = folder, fillcolor = Beige]\n\nQA3 [label = \"Process: \n Manual Quality control \n of faoswsAquatsatValidation module output\", fillcolor = PaleGreen]\n\nvalidated [label = \"Dataset: \n aquastat_update \n cleared by technical division\", shape = folder, fillcolor = Beige]\n\nAQUASWSdb [label = \"Dataset: \n aquastat_update \n saved in the SWS database\", shape = folder, fillcolor = Beige]\n\nDiss [label = \"Dissemination: \n  Web, publications, Apps\", shape = folder, fillcolor = LightGrey]\n\n\n# Flow\n# edge definitions with the node IDs\n{coordination, Surveys, Literature} -> focalpoint -> SWSQH -> Newdata -> QA1 -> Newdata_val -> update\n{oldsystem} -> Migration -> legacydata -> update \n{APIsourcing} -> APIdata -> update -> updateddata -> QA2 -> validationemail -> QA3 -> validated -> AQUASWSdb -> Diss\n{validated} -> agg_proc -> agg_out -> Diss\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
-Figure .: Developed AQUATAST - SWS dataflow
+Figure 0.2: Developed AQUATAST - SWS dataflow
 </p>
 </div>
-<br> <br>
+<br>
+<br>
 <div class="rmdimportant">
 <p>
 <strong>IMPORTANT:</strong>
@@ -184,7 +187,6 @@ Notice that the questionnaire harvester produced by CIO - SWS counterpart repres
 When updating the aquastat_questionnaire file to be saved in the (<strong>/AquastatValidation/data/Update/aquastat_questionnaire.csv</strong>) please remember that the columns must be named as <strong>geographicAreaM49</strong> (M49 codes), <strong>aquastatElement</strong>, <strong>timePointYears</strong>, <strong>flagAquastat</strong>.
 </p>
 </div>
-<p><br> <br></p>
 </div>
             </section>
 
@@ -192,16 +194,18 @@ When updating the aquastat_questionnaire file to be saved in the (<strong>/Aquas
         </div>
       </div>
 <a href="new-aquastat-methodology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sws-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="aquastat-elements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -209,12 +213,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -226,6 +229,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

@@ -1,0 +1,9 @@
+Field,Description
+calculation_rule,The formula for the indicator
+indicator_code,The indicator code
+primary_variable,"The primary variable, if any"
+indicator_unit,Unit of the indicator
+indicator_name,Name of the indicator
+component_code,Components code
+component_name,Name of the components
+order_calc,Order of the calculation

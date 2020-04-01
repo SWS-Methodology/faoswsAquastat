@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SWS resources | Migration of AQUASTAT Statistical Processes into the SWS</title>
-  <meta name="description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A SWS resources | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="SWS resources | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta property="og:title" content="A SWS resources | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta property="og:image" content="images/cover_book.png" />
+  <meta property="og:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="SWS resources | Migration of AQUASTAT Statistical Processes into the SWS" />
+  <meta name="twitter:title" content="A SWS resources | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   
-  <meta name="twitter:description" content="This online book describes the migration the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
-  
+  <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="twitter:image" content="images/cover_book.png" />
 
 
 
-<meta name="date" content="2019-05-17">
+<meta name="date" content="2020-04-01" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="aquastat-in-sws-proposed-dataflow.html">
-<link rel="next" href="aquastat-elements.html">
+<link rel="prev" href="Aggregation.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +39,7 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,10 +47,8 @@
 
 
 
-<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
-<script src="libs/viz-0.3/viz.js"></script>
-<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
+
+
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -68,79 +66,80 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#introduction"><strong>Introduction</strong></a></li>
-<li><a href="migration-actors.html#migration-actors"><strong>Migration actors</strong></a></li>
-<li><a href="new-aquastat-methodology.html#new-aquastat-methodology"><strong>New AQUASTAT methodology</strong></a><ul>
-<li><a href="new-aquastat-methodology.html#data-collection"><strong>Data Collection</strong></a></li>
-<li><a href="new-aquastat-methodology.html#questionnaire"><strong>Questionnaire</strong></a></li>
-<li><a href="new-aquastat-methodology.html#the-current-aquastat-information-management"><strong>The current AQUASTAT information management</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
+<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
+<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="preface.html#migration-team"><strong>Migration Team</strong></a></li>
 </ul></li>
-<li><a href="aquastat-in-sws-proposed-dataflow.html#aquastat-in-sws-proposed-dataflow"><strong>AQUASTAT in SWS: proposed dataflow</strong></a></li>
-<li><a href="sws-resources.html#sws-resources"><strong>SWS resources</strong></a><ul>
-<li><a href="sws-resources.html#code-lists"><strong>Code lists</strong></a></li>
-<li><a href="sws-resources.html#data-tables"><strong>Data tables</strong></a></li>
-<li><a href="sws-resources.html#datasets"><strong>Datasets</strong></a></li>
-</ul></li>
-<li><a href="aquastat-elements.html#aquastat-elements"><strong>AQUASTAT Elements</strong></a><ul>
-<li><a href="aquastat-elements.html#international-classification-systems"><strong>International Classification Systems</strong></a></li>
-<li><a href="aquastat-elements.html#the-sws-aquastat_reference-data-table"><strong>The SWS aquastat_reference data table</strong></a><ul>
-<li><a href="aquastat-elements.html#current-aquastat-variables"><strong>Current AQUASTAT Variables</strong></a></li>
-<li><a href="aquastat-elements.html#current-aquastat-indicators"><strong>Current AQUASTAT indicators</strong></a></li>
-<li><a href="aquastat-elements.html#current-external-data"><strong>Current External data</strong></a></li>
+<li class="chapter" data-level="1" data-path="AquastatFramework.html"><a href="AquastatFramework.html"><i class="fa fa-check"></i><b>1</b> <strong>AQUASTAT Framework</strong></a><ul>
+<li class="chapter" data-level="1.1" data-path="AquastatFramework.html"><a href="AquastatFramework.html#data-collection"><i class="fa fa-check"></i><b>1.1</b> <strong>Data Collection</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="AquastatFramework.html"><a href="AquastatFramework.html#questionnaire"><i class="fa fa-check"></i><b>1.2</b> <strong>Questionnaire</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="AquastatFramework.html"><a href="AquastatFramework.html#the-current-aquastat-information-management"><i class="fa fa-check"></i><b>1.3</b> <strong>The current AQUASTAT information management</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="AquastatFramework.html"><a href="AquastatFramework.html#aquastat-in-sws-proposed-dataflow"><i class="fa fa-check"></i><b>1.4</b> <strong>AQUASTAT in SWS: proposed dataflow</strong></a></li>
+<li class="chapter" data-level="1.5" data-path="AquastatFramework.html"><a href="AquastatFramework.html#aquastat-elements"><i class="fa fa-check"></i><b>1.5</b> <strong>AQUASTAT Elements</strong></a><ul>
+<li class="chapter" data-level="1.5.1" data-path="AquastatFramework.html"><a href="AquastatFramework.html#international-classification-systems"><i class="fa fa-check"></i><b>1.5.1</b> <strong>International Classification Systems</strong></a></li>
+<li class="chapter" data-level="1.5.2" data-path="AquastatFramework.html"><a href="AquastatFramework.html#current-aquastat-variables"><i class="fa fa-check"></i><b>1.5.2</b> <strong>Current AQUASTAT Variables</strong></a></li>
+<li class="chapter" data-level="1.5.3" data-path="AquastatFramework.html"><a href="AquastatFramework.html#current-aquastat-indicators"><i class="fa fa-check"></i><b>1.5.3</b> <strong>Current AQUASTAT indicators</strong></a></li>
+<li class="chapter" data-level="1.5.4" data-path="AquastatFramework.html"><a href="AquastatFramework.html#current-external-data"><i class="fa fa-check"></i><b>1.5.4</b> <strong>Current External data</strong></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>1</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
-<li class="chapter" data-level="1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#aims"><i class="fa fa-check"></i><b>1.1</b> <strong>Aims</strong></a><ul>
-<li class="chapter" data-level="1.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>1.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
-<li class="chapter" data-level="1.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>1.1.2</b> <strong>Reshapes the data sources</strong></a></li>
-<li class="chapter" data-level="1.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>1.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
-<li class="chapter" data-level="1.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>1.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
-<li class="chapter" data-level="1.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>1.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
+<li class="chapter" data-level="2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastatQuestionnaire module</strong></a><ul>
+<li class="chapter" data-level="2.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>2.1</b> <strong>Steps</strong></a></li>
+<li class="chapter" data-level="2.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>2.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#workflow"><i class="fa fa-check"></i><b>1.2</b> <strong>Workflow</strong></a><ul>
-<li class="chapter" data-level="1.2.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#only-possible-workflow"><i class="fa fa-check"></i><b>1.2.1</b> <em>Only Possible</em> <strong>Workflow</strong></a></li>
+<li class="chapter" data-level="3" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
+<li class="chapter" data-level="3.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#steps-1"><i class="fa fa-check"></i><b>3.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="3.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
+<li class="chapter" data-level="3.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Reshapes the data sources</strong></a></li>
+<li class="chapter" data-level="3.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
+<li class="chapter" data-level="3.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>3.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
+<li class="chapter" data-level="3.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>3.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>1.3</b> <strong>Running the module</strong></a></li>
-<li class="chapter" data-level="1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#did-the-module.."><i class="fa fa-check"></i><b>1.4</b> <strong>Did the module..</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module-1"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
-<li class="chapter" data-level="2.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#aims-1"><i class="fa fa-check"></i><b>2.1</b> <strong>Aims</strong></a><ul>
-<li class="chapter" data-level="2.1.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#harmonize-data-source-dimensions"><i class="fa fa-check"></i><b>2.1.1</b> <strong>Harmonize data source dimensions</strong></a></li>
-<li class="chapter" data-level="2.1.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#replaceupdate-the-legacy-data"><i class="fa fa-check"></i><b>2.1.2</b> <strong>Replace/update the legacy data</strong></a></li>
-<li class="chapter" data-level="2.1.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#map-out-flags-observation"><i class="fa fa-check"></i><b>2.1.3</b> <strong>Map out flags (Observation)</strong></a></li>
-<li class="chapter" data-level="2.1.4" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#calculate-indicators"><i class="fa fa-check"></i><b>2.1.4</b> <strong>Calculate indicators</strong></a></li>
-<li class="chapter" data-level="2.1.5" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#apply-primary-variable-approach"><i class="fa fa-check"></i><b>2.1.5</b> <strong>Apply Primary Variable Approach</strong></a></li>
-<li class="chapter" data-level="2.1.6" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#impute-missing-data"><i class="fa fa-check"></i><b>2.1.6</b> <strong>Impute missing data</strong></a></li>
-<li class="chapter" data-level="2.1.7" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#recalculate-indicators"><i class="fa fa-check"></i><b>2.1.7</b> <strong>Recalculate indicators</strong></a></li>
-<li class="chapter" data-level="2.1.8" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#map-out-flags-method"><i class="fa fa-check"></i><b>2.1.8</b> <strong>Map out flags (Method)</strong></a></li>
+<li class="chapter" data-level="4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
+<li class="chapter" data-level="4.1" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#methods"><i class="fa fa-check"></i><b>4.1</b> <strong>Methods</strong></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#calculate-indicators-first-calculation"><i class="fa fa-check"></i><b>4.1.1</b> <strong>Calculate indicators (<em>First Calculation</em>)</strong></a></li>
+<li class="chapter" data-level="4.1.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#vertical-imputation-components"><i class="fa fa-check"></i><b>4.1.2</b> <strong>Vertical Imputation (components)</strong></a></li>
+<li class="chapter" data-level="4.1.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
+<li class="chapter" data-level="4.1.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#workflow-1"><i class="fa fa-check"></i><b>2.2</b> <strong>Workflow</strong></a></li>
-<li class="chapter" data-level="2.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#running-the-module-1"><i class="fa fa-check"></i><b>2.3</b> <strong>Running the module</strong></a></li>
-<li class="chapter" data-level="2.4" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#did-the-module"><i class="fa fa-check"></i><b>2.4</b> <strong>Did the module…</strong></a><ul>
-<li class="chapter" data-level="2.4.1" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#add-new-indicators"><i class="fa fa-check"></i><b>2.4.1</b> Add new indicators ?</a></li>
-<li class="chapter" data-level="2.4.2" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#promote-time-series-completeness-and-higher-geographic-coverage"><i class="fa fa-check"></i><b>2.4.2</b> promote time-series completeness and higher geographic coverage ?</a></li>
-<li class="chapter" data-level="2.4.3" data-path="AquastatUpdate.html"><a href="AquastatUpdate.html#correct-values-of-long-term-average-variables"><i class="fa fa-check"></i><b>2.4.3</b> correct values of Long-Term Average variables ?</a></li>
+<li class="chapter" data-level="4.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#running-the-module-2"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
+<li class="chapter" data-level="4.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>5</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
+<li class="chapter" data-level="5.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#steps-2"><i class="fa fa-check"></i><b>5.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="5.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>5.1.1</b> <strong>Applies validation rules</strong></a></li>
+<li class="chapter" data-level="5.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>5.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
+<li class="chapter" data-level="5.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>5.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
+<li class="chapter" data-level="5.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>5.1.4</b> <strong>Sends the output to the user email</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
-<li class="chapter" data-level="3.1" data-path="Aggregation.html"><a href="Aggregation.html#aims-2"><i class="fa fa-check"></i><b>3.1</b> <strong>Aims</strong></a><ul>
-<li class="chapter" data-level="3.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
-<li class="chapter" data-level="3.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
-<li class="chapter" data-level="3.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Send the result to the user email</strong></a></li>
+<li class="chapter" data-level="5.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>5.2</b> <strong>Running the module in the SWS</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="Aggregation.html"><a href="Aggregation.html#workflow-2"><i class="fa fa-check"></i><b>3.2</b> <strong>Workflow</strong></a></li>
-<li class="chapter" data-level="3.3" data-path="Aggregation.html"><a href="Aggregation.html#did-the-module..-1"><i class="fa fa-check"></i><b>3.3</b> <strong>Did the module..</strong></a></li>
+<li class="chapter" data-level="6" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>6</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
+<li class="chapter" data-level="6.1" data-path="Aggregation.html"><a href="Aggregation.html#steps-3"><i class="fa fa-check"></i><b>6.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="6.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>6.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
+<li class="chapter" data-level="6.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>6.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
+<li class="chapter" data-level="6.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>6.1.3</b> <strong>Send the result to the user email</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
-<li class="chapter" data-level="4.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#aims-3"><i class="fa fa-check"></i><b>4.1</b> <strong>Aims</strong></a><ul>
-<li class="chapter" data-level="4.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>4.1.1</b> <strong>Applies validation rules</strong></a></li>
-<li class="chapter" data-level="4.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>4.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
-<li class="chapter" data-level="4.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
-<li class="chapter" data-level="4.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Sends the output to the user email</strong></a></li>
+<li class="chapter" data-level="6.2" data-path="Aggregation.html"><a href="Aggregation.html#running-the-module-3"><i class="fa fa-check"></i><b>6.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#workflow-3"><i class="fa fa-check"></i><b>4.2</b> <strong>Workflow</strong></a></li>
-<li class="chapter" data-level="4.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>4.3</b> <strong>Running the module in the SWS</strong></a></li>
-<li class="chapter" data-level="4.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#did-the-module-1"><i class="fa fa-check"></i><b>4.4</b> <strong>Did the module</strong>…</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
+<li class="chapter" data-level="A.1" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i><b>A.1</b> Code lists</a></li>
+<li class="chapter" data-level="A.2" data-path="sws-resources.html"><a href="sws-resources.html#datatables"><i class="fa fa-check"></i><b>A.2</b> Datatables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-reference"><i class="fa fa-check"></i>AQUASTAT Reference</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-faostat-mapping"><i class="fa fa-check"></i>AQUASTAT FAOSTAT Mapping</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sources"><i class="fa fa-check"></i>AQUASTAT Sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#calculation-rule"><i class="fa fa-check"></i>Calculation Rule</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-dam-reservoir"><i class="fa fa-check"></i>Global Dam Reservoir</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-map-of-irrigated-area"><i class="fa fa-check"></i>Global Map of Irrigated Area</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sdg-aggregates"><i class="fa fa-check"></i>AQUASTAT SDG Aggregates</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
+<li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
 </ul></li>
 </ul>
 
@@ -151,7 +150,8 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Migration of AQUASTAT Statistical Processes into the SWS</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AQUASTAT: Migration of the Statistical Processes
+into the SWS</a>
           </h1>
         </div>
 
@@ -159,101 +159,1575 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sws-resources" class="section level1 unnumbered">
-<h1><strong>SWS resources</strong></h1>
-<p>SWS resources are R modules, data tables, data sets, and code lists comprising a migration framework. Data tables are typically used as auxiliary data to help R modules to achieve their goals, often a long-format four-to-six dimensional data set. The statistical domains in SWS, through code/reference lists, define the dimensions of the datasets. Therefore, datasets are primarily used to store code list - referenced values as either input and output in the SWS. The general relationship between the data table, datasets, and R modules is :</p>
-<div class="figure"><span id="fig:fig3"></span>
-<div id="htmlwidget-0b82b31e4c21064b915c" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0b82b31e4c21064b915c">{"x":{"diagram":"digraph {\n                  \n                  graph [layout = dot, rankdir = TB]\n                  \n                  # define the global styles of the nodes. We can override these in box if we wish\n                  node [shape = rectangle, style = filled, fillcolor = Linen]\n                  \n                  # Inputs\n                  SWSdb [label = \"Input \n data living in SWS datatabe\", shape = folder, fillcolor = Beige]\n                  SWSsharedrive [label = \"Input \n  data living in the SWS share drive\", shape = folder, fillcolor = Beige]\n                  SWSsession [label = \"Input \n  data living in the session\", shape = folder, fillcolor = Beige]\n\n                  SWSdb2 [label = \"Output \n  data saved in SWS datatabe\", shape = folder, fillcolor = Beige]\n                  SWSsharedrive2 [label = \"Output \n  data saved in the SWS share drive\", shape = folder, fillcolor = Beige]\n                  SWSsession2 [label = \"Output \n  data saved in the session\", shape = folder, fillcolor = Beige]\n\n\n                  dataset1 [label = \"Input \n long-format four-to-six dimensional dataset\", shape = folder, fillcolor = Beige]\n                  module [label = \"R module \n data processing and analysis\", shape = square, fillcolor = LightBlue]\n                  datatable1 [label = \"Data table(s) \n (auxiliary information)\", shape = folder, fillcolor = LightGrey]\n                  dataset2 [label =  \"Output \n long-format four-to-six dimensional dataset\", shape = folder, fillcolor = Beige]\n                  \n                  # Flow\n                  # edge definitions with the node IDs\n                  {SWSdb, SWSsharedrive, SWSsession} -> dataset1 -> module  \n                  {datatable1} -> module\n                  dataset2 -> {SWSdb2, SWSsharedrive2, SWSsession2}\n                  {module} -> dataset2\n                  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<p class="caption">
-Figure .: Generic data table, dataset, and R module relationship in the SWS context
-</p>
-</div>
-<div id="code-lists" class="section level2 unnumbered">
-<h2><strong>Code lists</strong></h2>
-<p>Code lists, also called reference lists in SWS parlance, are the dimensions making up the data sets that are designed by the user to store analytical results from SWS modules. The dimensions are statistical - domain-specific and are defined by the technical unit to reflect its needs regarding data collection, processing, and dissemination while meeting FAO standards. Each data set dimension has a set of codes and their associated descriptions. Thus, code lists serve to the purpose of standardization, visualization, and metadata by associating standardized codes to standardized names in the SWS data set outputs. A typical SWS compliant data set has, therefore, the following dimensions/reference lists:</p>
-<ol style="list-style-type: decimal">
+<div id="sws-resources" class="section level1">
+<h1><span class="header-section-number">A</span> SWS resources</h1>
+<p>SWS resources are R modules, datatables, data sets, and code lists comprising a migration framework. Data tables are typically used as auxiliary data to help R modules to achieve their goals. The statistical domains in SWS, through code/reference lists, define the dimensions of the datasets. Therefore, datasets are primarily used to store code list - referenced values as either input and output in the SWS.</p>
+<!--```{r fig3, echo=FALSE, fig.cap='Generic data table, dataset, and R module relationship in the SWS context', message=FALSE, warning=FALSE}
+require(DiagrammeR)
+DiagrammeR::grViz("digraph {
+                  
+                  graph [layout = dot, rankdir = TB]
+                  
+                  # define the global styles of the nodes. We can override these in box if we wish
+                  node [shape = rectangle, style = filled, fillcolor = Linen]
+                  
+                  # Inputs
+                  SWSdb [label = 'Input \n data living in SWS datatabe', shape = folder, fillcolor = Beige]
+                  SWSsharedrive [label = 'Input \n  data living in the SWS share drive', shape = folder, fillcolor = Beige]
+                  SWSsession [label = 'Input \n  data living in the session', shape = folder, fillcolor = Beige]
+
+                  SWSdb2 [label = 'Output \n  data saved in SWS datatabe', shape = folder, fillcolor = Beige]
+                  SWSsharedrive2 [label = 'Output \n  data saved in the SWS share drive', shape = folder, fillcolor = Beige]
+                  SWSsession2 [label = 'Output \n  data saved in the session', shape = folder, fillcolor = Beige]
+
+
+                  dataset1 [label = 'Input \n long-format four-to-six dimensional dataset', shape = folder, fillcolor = Beige]
+                  module [label = 'R module \n data processing and analysis', shape = square, fillcolor = LightBlue]
+                  datatable1 [label = 'Data table(s) \n (auxiliary information)', shape = folder, fillcolor = LightGrey]
+                  dataset2 [label =  'Output \n long-format four-to-six dimensional dataset', shape = folder, fillcolor = Beige]
+                  
+                  # Flow
+                  # edge definitions with the node IDs
+                  {SWSdb, SWSsharedrive, SWSsession} -> dataset1 -> module  
+                  {datatable1} -> module
+                  dataset2 -> {SWSdb2, SWSsharedrive2, SWSsession2}
+                  {module} -> dataset2
+                  }")
+```-->
+<div id="code-lists" class="section level2">
+<h2><span class="header-section-number">A.1</span> Code lists</h2>
+<p>Code lists, also called reference lists in SWS parlance, are the dimensions making up the data sets that are designed by the user to store analytical results from SWS modules. The dimensions are statistical-domain-specific and are defined by the technical unit to reflect its needs regarding data collection, processing, and dissemination while meeting FAO standards. Each data set dimension has a set of codes and their associated descriptions. Thus, code lists serve to the purpose of standardization, visualization, and metadata by associating standardized codes to standardized names in the SWS data set outputs. A typical SWS compliant data set has, therefore, the following dimensions/reference lists:</p>
+<ul>
 <li><p><strong>Geographic area</strong>. Representing a spatial scale the information is measured at. For example, countries, territories, regional aggregates, regional special groups aggregates, global aggregates. In SWS, the geographic area dimension used by AQUASTAT data sets is named <strong>geographicAreaM49</strong>.</p></li>
 <li><p><strong>Items</strong>. Those one wants to take a measurement from. For example, commodities, commodity groups, land use types, species, etc. Typical item dimension names are <strong>measuredItemCPC</strong>, *<strong>measuredItemHS</strong>, <strong>measuredItem</strong>. The AQUASTAT - SWS framework does not include item code/reference list.</p></li>
-<li><p><strong>Elements</strong>. Often representing a measurement that can be taken across different items. For example, area, production, share. In SWS, the element dimension/code list used by AQUASTAT <strong>aquastat_legacy</strong> dataset is named <strong>aquastatElement</strong>.</p></li>
-</ol>
-<div class="rmdnote">
-<p>
-The <strong>aquastatElement</strong> variable in the aquastat_legacy dataset is not SWS compliant. However, the SWS reference list used by the system to map out element codes to definitions is also named <strong>aquastatElement</strong>. It is OK to keep <strong>aquastatElement</strong> as variable name in the legacy data, but the idea is that all datasets produced in the SWS should adhere to SWS standards.
-</p>
-</div>
-<ol start="4" style="list-style-type: decimal">
+<li><p><strong>Elements</strong>. Often representing a measurement that can be taken across different items. For example, area, production, share. In SWS, the element dimension/code list used by AQUASTAT is <strong>aquastatElement</strong>.</p></li>
+</ul>
+<!-- ```{block , type='rmdnote'}
+
+The **aquastatElement** variable in the aquastat_legacy dataset is not SWS compliant. However, the SWS reference list used by the system to map out element codes to definitions is also named **aquastatElement**. It is OK to keep **aquastatElement** as variable name in the legacy data, but the idea is that all datasets produced in the SWS should adhere to SWS standards.
+
+```-->
+<ul>
 <li><p><strong>Time</strong> (the time unit the data is displayed for: year, months, etc). In SWS, the time dimension used by AQUASTAT data sets is named <strong>timePointYears</strong>.</p></li>
-<li><strong>Flag</strong> (A standardized label indicating origin and/or nature of a number in the data set, e.g. <blank> (Official number)). In SWS, the flag dimension used by AQUASTAT data sets is named <strong>flagObservationStatus</strong>. Please check the <a href="http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/">OCS statistical standards</a> and the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS1_Flags.pdf">flags document</a> to understand the flagObservationStatus rational and obtain the description of flags. <br>
-<div class="figure"><span id="fig:fig4"></span>
-<img src="images/flagobstatus_rev2.png" alt=" Description of flag of observations in the SWS" width="100%" />
-<p class="caption">
-Figure .:  Description of flag of observations in the SWS
-</p>
-</div>
-<br></li>
-<li><p><strong>Method</strong> (A standardized label indicating method utilized to obtain a number in the data set. In SWS, the method dimension used by AQUASTAT data sets is named <strong>flagMethod</strong>. Please check the <a href="http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/">OCS statistical standards</a> and the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS1_Flags.pdf">flags document</a> to understand the flagMethod rational and obtain the description of flags.</p></li>
-</ol>
-<div class="figure"><span id="fig:fig5"></span>
-<img src="images/flagmethod_rev2.png" alt=" Description of flag of methods in the SWS" width="100%" />
-<p class="caption">
-Figure .:  Description of flag of methods in the SWS
-</p>
-</div>
+<li><p><strong>Flag</strong> (A standardized label indicating origin and/or nature of a number in the data set, e.g. <blank> (Official number)). In SWS, the flag dimension used by AQUASTAT data sets is named <strong>flagObservationStatus</strong>. Please check the <a href="http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/">OCS statistical standards</a> and the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS_Observation_Status_Codes__Flags__endorsed__December_2016_.pdf">flags document</a> to understand the flagObservationStatus rational and obtain the description of flags.
+<br></p></li>
+</ul>
+<!--```{r  fig4, echo=FALSE, out.width="100%", fig.cap=' Description of flag of observations in the SWS'}
+knitr::include_graphics("images/flagobstatus_rev2.png")
+
+```-->
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tabFlagObservationStatus">Table A.1: </span>Observation Status Flags Annotations
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Flag
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Annotation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+&lt;blank&gt;
+</td>
+<td style="text-align:left;">
+Official figure
+</td>
+<td style="text-align:left;">
+Observation reported to FAO by official statistical government agencies.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+Time series break
+</td>
+<td style="text-align:left;">
+Break observations are characterized as such whendifferent content exist or a different methodology has beenapplied to this observation as compared with the preceding one (the one given for the previous period).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:left;">
+Estimated value
+</td>
+<td style="text-align:left;">
+Observation obtained through an estimation methodology (e.g. to produce back-casts) or based on the use of a limited amount of data or ad hoc sampling and through additional calculations (e.g. to produce a value at an early stage of the production stage while not all data are available). It may also be used in case of experimental data (e.g. in the context of a pilot ahead of a full scale production process) or in case of data of (anticipated/assessed) low quality. If needed, additional (uncoded) information can be provided through (free text) “comments” at the observation level or at a higher level.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:left;">
+Forecast value
+</td>
+<td style="text-align:left;">
+Value deemed to assess the magnitude which a quantity will assume at some future point of time (as distinct from "“estimated value”" which attempts to assess the magnitude of an already existent quantity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+Imputed value
+</td>
+<td style="text-align:left;">
+Observation imputed by FAO to replace or fill gaps in national data series, in line with the recommendations of the Committee for the Coordination of Statistical Activities (CCSA).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+O
+</td>
+<td style="text-align:left;">
+Missing value
+</td>
+<td style="text-align:left;">
+This code is to be used when no distinction is made between the reasons why data are missing. Data can be missing due to various reasons: data do not exist, are insignificant (or not collected because they are below a certain threshold), are unreliable, are not relevant for the period, or other reason not elsewhere specified.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+M
+</td>
+<td style="text-align:left;">
+Missing value (data cannot exist, not applicable)
+</td>
+<td style="text-align:left;">
+Used to denote empty cells resulting from the impossibility to collect a statistical value (e.g. a particular education level or type of institution may be not applicable to a given country’s education system).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q
+</td>
+<td style="text-align:left;">
+Missing value; suppressed
+</td>
+<td style="text-align:left;">
+Used when data are suppressed due to statistical confidentiality considerations.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+Not significant (negligible)
+</td>
+<td style="text-align:left;">
+An observation is below the unit precision level.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+P
+</td>
+<td style="text-align:left;">
+Provisional value
+</td>
+<td style="text-align:left;">
+An observation is characterized as “provisional” when the source agency –while it bases its calculations on its standard production methodology –considers that the data, almost certainly, are expected to be revised.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+Revised
+</td>
+<td style="text-align:left;">
+Revised official figure.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+Exceptional event
+</td>
+<td style="text-align:left;">
+Exceptional events such as earthquake, massive forest fire, draught and flooding that occurred in the corresponding period that may have affected the observation or caused a missing value.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+T
+</td>
+<td style="text-align:left;">
+Unofficial figure
+</td>
+<td style="text-align:left;">
+Observation reported by non-official or semi-official sources. Includes semi-official figure. Includes data from trade organizations (e.g. International Grain Council, International Sugar Organization etc.).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+Figure from international organizations
+</td>
+<td style="text-align:left;">
+Observations, both official and non-official, reported by governmental international organizations (e.g. UN, ILO, WB, UNESCO, Eurostat etc. specification on which international organization is provided in the metadata).
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+- <strong>Method</strong> (A standardized label indicating method utilized to obtain a number in the data set. In SWS, the method dimension used by AQUASTAT data sets is named <strong>flagMethod</strong>. Please check the <a href="http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/">OCS statistical standards</a> and the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS_Observation_Status_Codes__Flags__endorsed__December_2016_.pdf">flags document</a> to understand the flagMethod rational and obtain the description of flags.</p>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tabFlagMethod">Table A.2: </span>Method flags
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Flag
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li></td>
+<td style="text-align:left;">
+Unknown collection method
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+b
+</td>
+<td style="text-align:left;">
+Balancing item
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+c
+</td>
+<td style="text-align:left;">
+Copied from elsewhere in the working system
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+e
+</td>
+<td style="text-align:left;">
+Estimate automatically generated by a statistical algorithm (short: statistical estimate)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+f
+</td>
+<td style="text-align:left;">
+Estimate manually derived, also on the basis of expert judgement (short: manual estimate)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+h
+</td>
+<td style="text-align:left;">
+Collected using automatic data harvesting
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i
+</td>
+<td style="text-align:left;">
+Calculated as identity (e.g. yield)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n
+</td>
+<td style="text-align:left;">
+Value not collected or estimated, but can be assumed to be negligible
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:left;">
+Collected (manually) from publications or databases
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+q
+</td>
+<td style="text-align:left;">
+Collected via a questionnaire (e.g. APQ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+s
+</td>
+<td style="text-align:left;">
+Calculated as sum (e.g. Grand Total, or High-income countries)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+t
+</td>
+<td style="text-align:left;">
+Carry-forward estimate
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+u
+</td>
+<td style="text-align:left;">
+Value not known
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<!--``````{r  fig5, echo=FALSE, out.width="100%", fig.cap=' Description of flag of methods in the SWS'}
+knitr::include_graphics("images/flagmethod_rev2.png")
+
+```-->
 <p><br></p>
-<div class="figure"><span id="fig:fig6"></span>
-<div id="htmlwidget-bed7957e41341880ed9e" style="width:100%;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bed7957e41341880ed9e">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\n# Inputs\narea [label = \"geographicAreaM49\", shape = folder, fillcolor = Beige]\nelement [label = \"measuredElement\", shape = folder, fillcolor = Beige]\ntime [label = \"timePointYears\", shape = folder, fillcolor = Beige]\nflagObs [label = \"flagObservationStatus\", shape = folder, fillcolor = Beige]\nflagMeth [label = \"flagMethod\", shape = folder, fillcolor = Beige]\naquadataset [label = \"Typical SWS-compliant aquastat dataset\", shape = folder, fillcolor = LightBlue]\n\n\n# Flow\n# edge definitions with the node IDs\n{area, element, time, flagObs, flagMeth} -> aquadataset \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="figure" style="text-align: center"><span id="fig:fig4"></span>
+<img src="images/typical_dataset_aquastat.png" alt="Typical dimensions (SWS code/reference lists) composing a AQUASTAT SWS - compliant input/output dataset" width="65%" />
 <p class="caption">
-Figure .: Typical dimensions (SWS code/reference lists) composing a AQUASTAT SWS - compliant input/output dataset.
+Figure A.1: Typical dimensions (SWS code/reference lists) composing a AQUASTAT SWS - compliant input/output dataset
 </p>
 </div>
+<!--```{r fig6, echo=FALSE, out.width="100%", fig.cap='Typical dimensions (SWS code/reference lists) composing a AQUASTAT SWS - compliant input/output dataset.', message=FALSE, warning=FALSE}
+require(DiagrammeR)
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = Linen]
+
+# Inputs
+area [label = 'geographicAreaM49', shape = folder, fillcolor = Beige]
+element [label = 'measuredElement', shape = folder, fillcolor = Beige]
+time [label = 'timePointYears', shape = folder, fillcolor = Beige]
+flagObs [label = 'flagObservationStatus', shape = folder, fillcolor = Beige]
+flagMeth [label = 'flagMethod', shape = folder, fillcolor = Beige]
+aquadataset [label = 'Typical SWS-compliant aquastat dataset', shape = folder, fillcolor = LightBlue]
+
+
+# Flow
+# edge definitions with the node IDs
+{area, element, time, flagObs, flagMeth} -> aquadataset 
+}")
+```-->
 <p><br></p>
 </div>
-<div id="data-tables" class="section level2 unnumbered">
-<h2><strong>Data tables</strong></h2>
-<p>Data tables are mainly used to store information helping R modules to output analytical results. Information in data tables can be of a number of types. For example, conversion factors, arithmetic formulas, mapping between flags, mapping between international classifications, etc. In SWS hierarchy. all data tables reside in a given statistical domain. In the AQUASTAT - SWS migration framework, the data tables are in the <strong>Aquastat domain</strong>. Below is a list of current available and filled data tables in the Aquastat domain:</p>
-<ol style="list-style-type: decimal">
-<li><p><strong>aquastat_reference</strong>. A data table listing AQUASTAT element codes, names, dissemination status, variable/indicator status, sources, long-term average variable status, the primary variable rule status.</p></li>
-<li><p><strong>aquastat_faostat_mapping</strong>. A data table mapping out AQUASTAT elements to FAOSTAT elements.</p></li>
-<li><p><strong>aquastat_sources</strong>. A data table storing AQUASTAT data source references.</p></li>
-<li><p><strong>calculation_rule</strong>. A data table storing the pre-defined calculation rules used to obtain AQUASTAT indicators/derived variables. This table is used by the <strong>faoswsAquastatUpdate</strong> module</p></li>
-<li><p><strong>aquastat_validation</strong>. A data table storing the a set of logic tests to be applied to AQUASTAT inputs and outputs for the purpose of quality assurance and quality check. This table is used by the <strong>faoswsAquastatValidation</strong> module.</p></li>
-<li><p><strong>Global Dam Reservoir</strong>. A data table storing national expert - provided information on the major Dams at the country level and used to calculate Dam capacity time-series.</p></li>
-<li><p><strong>Global Map of Irrigated Area</strong>. A data table storing information for the update of spatial representation of irrigated areas at the national level.</p></li>
-<li><p><strong>Global Map of Irrigated Area/subnational</strong>. A data table storing information for the update of spatial representation of irrigated areas at the national and sub-national levels.</p></li>
-<li><p><strong>aqua_sdg_agg</strong>. A data table storing the calculation rules to apply to aggregation of the SDG 6.4.2 (Water Stress) at the regional level and used by the <strong>faoswsAquastatAggregation</strong>.</p></li>
-<li><p><strong>aqua_external_source</strong>. A data table with the mapping between AQUASTAT and Data used by AQUASTAT from external agencies and used by the <strong>faoswsAquastatExternal</strong> module.</p></li>
-<li><p><strong>m49_fs_iso_mapping</strong>. A data table with the correspondence between FAOSTAT, UNSDM49, ISO3, and ISO3 codes. This table is used by the <strong>faoswsAquastatExternal</strong> module.</p></li>
-</ol>
+<div id="datatables" class="section level2">
+<h2><span class="header-section-number">A.2</span> Datatables</h2>
+<p>Datatables are mainly used to store information helping R modules to output analytical results. Information in datatables can be of a number of types. For example, conversion factors, arithmetic formulas, mapping between flags, mapping between international classifications, etc. In SWS hierarchy. all datatables reside in a given statistical domain.
+Variable names (aka column names) in SWS datatables are more flexible in terms of the names they can take than SWS datasets. One can find SWS datatables naming variables as element_code, element_code_sws, element_code_faostat, etc. Likewise, columns describing countries across different datatable may have different classification systems. This flexibility in datatables is beneficial as it allows to accommodate different auxiliary information.
+In the AQUASTAT - SWS migration framework, the data tables are in the <strong>Aquastat domain</strong>. Below is a list of current available and filled data tables in the Aquastat domain.</p>
+</div>
+<div id="aquastat-reference" class="section level2 unnumbered">
+<h2>AQUASTAT Reference</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>aquastat_reference</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> This is a reference table listing AQUASTAT element codes, names, dissemination status, variable/indicator status, sources, long-term average variable status and the primary variable rule status.</li>
+</ul>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tab1">Table A.3: </span>Columns description of the datatable: aquastat_reference
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+element_code
+</td>
+<td style="text-align:left;">
+AQUASTAT element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+element_name
+</td>
+<td style="text-align:left;">
+AQUASTAT element name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+disseminated
+</td>
+<td style="text-align:left;">
+Flag of disseminated (D = disseminated , I = internal)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+calculated
+</td>
+<td style="text-align:left;">
+Flag of calculated
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source
+</td>
+<td style="text-align:left;">
+Source of the element (e.g. FAOSTAT, AQUASTAT, ILO)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+lta
+</td>
+<td style="text-align:left;">
+Flag of Long Term Average ( 1 = TRUE, 0 = FALSE)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pr
+</td>
+<td style="text-align:left;">
+Flag of Primary Variable (1 = TRUE, 0 = FALSE)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="aquastat-faostat-mapping" class="section level2 unnumbered">
+<h2>AQUASTAT FAOSTAT Mapping</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>aquastat_faostat_mapping</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> This datatable maps out AQUASTAT elements to FAOSTAT elements.</li>
+</ul>
+<table class="table table" style="font-size: 18px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tabMappingColumns">Table A.4: </span>Columns description of the datatable: aquastat_faostat_mapping
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+aqua_element_code
+</td>
+<td style="text-align:left;">
+AQUASTAT element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+element_name
+</td>
+<td style="text-align:left;">
+AQUASTAT element name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+item_code
+</td>
+<td style="text-align:left;">
+FAOSTAT item code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+element_code
+</td>
+<td style="text-align:left;">
+FAOSTAT element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+element_code_sws
+</td>
+<td style="text-align:left;">
+FAOSTAT element code in the SWS
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="aquastat-sources" class="section level2 unnumbered">
+<h2>AQUASTAT Sources</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>aquastat_sources</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> This datatable stores AQUASTAT data source references.</li>
+</ul>
+<table class="table" style="font-size: 18px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+(#tab:tab_source_names)Columns description of the datatable: aquastat_sources
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Source_Id
+</td>
+<td style="text-align:left;">
+ID source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Title
+</td>
+<td style="text-align:left;">
+Title of the ID source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Personal_Author
+</td>
+<td style="text-align:left;">
+Name of author
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Corporate_Author
+</td>
+<td style="text-align:left;">
+Name of corporate author
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Journal_Title
+</td>
+<td style="text-align:left;">
+Name of journal
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Publication_Year
+</td>
+<td style="text-align:left;">
+Year of publication
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Editor
+</td>
+<td style="text-align:left;">
+Name of editor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Comments
+</td>
+<td style="text-align:left;">
+Comments about the publication
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hidden
+</td>
+<td style="text-align:left;">
+Flag of hidden
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+area_id
+</td>
+<td style="text-align:left;">
+FAOSTAT Area code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Area_name
+</td>
+<td style="text-align:left;">
+FAOSTAT Area name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source_file
+</td>
+<td style="text-align:left;">
+Source of the file
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source_url
+</td>
+<td style="text-align:left;">
+URL of the source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Source_type
+</td>
+<td style="text-align:left;">
+Type of source
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="calculation-rule" class="section level2 unnumbered">
+<h2>Calculation Rule</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>calculation_rule</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> This datatable stores the pre-defined calculation rules used to obtain AQUASTAT indicators/derived variables. This table is used by the <strong>faoswsAquastatUpdate</strong> module.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab4">Table A.5: </span>Columns description of the datatable: calculation_rule
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+calculation_rule
+</td>
+<td style="text-align:left;">
+The formula for the indicator
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+indicator_code
+</td>
+<td style="text-align:left;">
+The indicator code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+primary_variable
+</td>
+<td style="text-align:left;">
+The primary variable, if any
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+indicator_unit
+</td>
+<td style="text-align:left;">
+Unit of the indicator
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+indicator_name
+</td>
+<td style="text-align:left;">
+Name of the indicator
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+component_code
+</td>
+<td style="text-align:left;">
+Components code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+component_name
+</td>
+<td style="text-align:left;">
+Name of the components
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+order_calc
+</td>
+<td style="text-align:left;">
+Order of the calculation
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="global-dam-reservoir" class="section level2 unnumbered">
+<h2>Global Dam Reservoir</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>global_dam_reservoir</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> A datatable storing national expert - provided information on the major Dams at the country level and used to calculate Dam capacity time-series.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab5">Table A.6: </span>Columns description of the datatable: global_dam_reservoir
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+id
+</td>
+<td style="text-align:left;">
+ID of the dam
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Country
+</td>
+<td style="text-align:left;">
+Name of country
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Name of Dam
+</td>
+<td style="text-align:left;">
+Name of dam
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alternate Dam Name
+</td>
+<td style="text-align:left;">
+Unit of the indicator
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ISO alpha-3
+</td>
+<td style="text-align:left;">
+Country name (ISO)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Region
+</td>
+<td style="text-align:left;">
+Region of country
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Administrative Unit
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nearest city
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+River
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Major basin
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sub-basin
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Completed/operational since
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dam height(m)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Reservoir capacity (million m3)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dam Category
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Reservoir area (km2)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Yearly ETO (mm/m)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Evaporation
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Evaporation/Capacity
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sedimentation (latest known) (%)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Irrigation
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Water supply
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Flood control
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hydroelectricity MIW
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Navigation
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Recreation
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pollution control
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Livestock rearing
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Other
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Decimal degree latitude
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Decimal degree longitude
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Validated
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+National reference(s)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Other reference(s)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Internal metadata
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GEO NOTES
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Comments
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="global-map-of-irrigated-area" class="section level2 unnumbered">
+<h2>Global Map of Irrigated Area</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>Global Map of Irrigated Area</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> A datatable storing information for the update of spatial representation of irrigated areas at the national level.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab6">Table A.7: </span>Columns description of the datatable: Global Map of Irrigated Area
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+id
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Country
+</td>
+<td style="text-align:left;">
+Name of country
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Admin1
+</td>
+<td style="text-align:left;">
+Name of Admin1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Admin2
+</td>
+<td style="text-align:left;">
+Name of Admin2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Admin3
+</td>
+<td style="text-align:left;">
+Name of Admin3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Area(ha)
+</td>
+<td style="text-align:left;">
+Area in ha
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Year
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Flag_src
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_GW(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_SW(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_NC(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AAI(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AAI_GW(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AAI_SW(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AAI_NC(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_MIRCA(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AHI_MIRCA(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MMGA_MIRCA(ha)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICWU_GCWM(m3 yr-1)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+cs1
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+cs1*MMGA_MIRCA
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+cs2
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICWU(m3 yr-1)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICWU_GW(m3 yr-1)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICWU_SW(m3 yr-1)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICWU_NC(m3 yr-1)
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_GW_PCT
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_GW_FRAC
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_SW_PCT
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AEI_SW_FRAC
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="aquastat-sdg-aggregates" class="section level2 unnumbered">
+<h2>AQUASTAT SDG Aggregates</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>aqua_sdg_agg</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> A datatable storing the calculation rules to apply to aggregation of the SDG 6.4.2 (Water Stress) at the regional level and used by the <strong>faoswsAquastatAggregation</strong>.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab7">Table A.8: </span>Columns description of the datatable: aqua_sdg_agg
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+region_el_code
+</td>
+<td style="text-align:left;">
+Element code for the SDG region
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+relevant_el_code
+</td>
+<td style="text-align:left;">
+Relevant element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+country_el_code
+</td>
+<td style="text-align:left;">
+Country code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+addition
+</td>
+<td style="text-align:left;">
+Formula
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sdg_region
+</td>
+<td style="text-align:left;">
+Code of SDG region
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+group_order_name
+</td>
+<td style="text-align:left;">
+Name of the group
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+column_to_select
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+transboundary
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+indicator
+</td>
+<td style="text-align:left;">
+Element code of the indicator
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="aquastat-external-sources" class="section level2 unnumbered">
+<h2>AQUASTAT External sources</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>aqua_external_source</code></li>
+<li><strong>Domain:</strong> AQUASTAT</li>
+<li><strong>Usage:</strong> A data table with the mapping between AQUASTAT and data used by AQUASTAT from external agencies and used by the <strong>faoswsAquastatExternal</strong> module.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab8">Table A.9: </span>Columns description of the datatable: aqua_external_source
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+element_code
+</td>
+<td style="text-align:left;">
+Element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+element_name
+</td>
+<td style="text-align:left;">
+Element name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source
+</td>
+<td style="text-align:left;">
+Source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source_item_code
+</td>
+<td style="text-align:left;">
+Item code in the Source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source_element_code
+</td>
+<td style="text-align:left;">
+Element code in the Source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+data_link
+</td>
+<td style="text-align:left;">
+Link of the data
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="m49-fs-iso-mapping" class="section level2 unnumbered">
+<h2>M49 FS ISO Mapping</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>m49_fs_iso_mapping</code></li>
+<li><strong>Domain:</strong> Common Domain</li>
+<li><strong>Usage:</strong> A datatable with the correspondence between FAOSTAT, UNSDM49, ISO3, and ISO3 codes. This table is used by the <strong>faoswsAquastatExternal</strong> module.</li>
+</ul>
+<table>
+<caption>
+<span id="tab:tab9">Table A.10: </span>Columns description of the datatable: m49_fs_iso_mapping
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Field
+</th>
+<th style="text-align:left;background-color: #b6c5d4 !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+group_area_code
+</td>
+<td style="text-align:left;">
+FAOSTAT group area code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+group_area_name
+</td>
+<td style="text-align:left;">
+Group area name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fs_area_code
+</td>
+<td style="text-align:left;">
+FAOSTAT area code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fs_area_name
+</td>
+<td style="text-align:left;">
+FAOSTAT area name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+m49
+</td>
+<td style="text-align:left;">
+M49 area code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+iso2
+</td>
+<td style="text-align:left;">
+ISO two-letter country code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+iso3
+</td>
+<td style="text-align:left;">
+ISO three-letetr country code
+</td>
+</tr>
+</tbody>
+</table>
 <div class="rmdnote">
-<p>
-Variable names (aka column names) in SWS data tables are more flexible in terms of the names they can take than SWS datasets. One can find SWS data tables naming variables as element_code, element_code_sws, element_code_faostat, etc. Likewise, columns describing countries across different data table may have different classification systems. This flexibility in data tables is beneficial as it allows to accommodate different auxiliary information.
-</p>
-<p>
-<strong>IMPORTANT</strong>: The data tables <strong>aqua_calculation_rule</strong> and <strong>aqua_external_source</strong> are work in progress.
-</p>
+
 </div>
+<p><br></p>
 </div>
-<div id="datasets" class="section level2 unnumbered">
-<h2><strong>Datasets</strong></h2>
+<div id="datasets" class="section level2">
+<h2><span class="header-section-number">A.3</span> Datasets</h2>
 <p>Datasets in the SWS are interchangeably used as module inputs/outputs and are composed by dimensions (aka reference/code lists). Because SWS datasets contain code lists following international standards as dimensions, there is little space for variation of dimension names across SWS datasets for the sake of standardization. In the AQUASTAT - SWS framework, the available data sets are:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>aquastat_legacy</strong>. Currently named as <strong>aquastat_enr</strong>, the <strong>aquastat_legacy</strong> is an SWS dataset with the legacy data from the ‘Old’ AQUASTAT working system. The CIO - SWS has migrated the aquastat_legacy dataset into the SWS in order to be updated by the faoswsAquastatUpdate module (see Chapter <a href="AquastatUpdate.html#AquastatUpdate">2</a>). The <strong>aquastat_legacy</strong> dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables).</p></li>
-<li><p><strong>aquastat_questionnaire</strong>. An SWS dataset output from the questionnaire harvester produced by CIO. This dataset feeds, along with the aquastat_legacy_corr and the aquastat_external datasets, the faoswsAquastatUpdate module.</p></li>
+<li><p><strong>aquastat_legacy</strong>. The <strong>aquastat_legacy</strong> is an SWS dataset with the legacy data from the ‘Old’ AQUASTAT working system. The CIO - SWS has migrated the aquastat_legacy dataset into the SWS in order to store the whole data coming from the old system. The <strong>aquastat_legacy</strong> dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables).</p></li>
+<li><p><strong>aquastat_questionnaire</strong>. An SWS dataset output from the questionnaire harvester produced by module <code>faoswsAquastatQeustionnaire</code>. This dataset feeds, along with the aquastat_external and the aquastat_update datasets, the <code>faoswsAquastatUpdate</code> module. More information is found in the chapter <a href="AquastatQuestionnaire.html#AquastatQuestionnaire">2</a>.</p></li>
+<li><p><strong>aquastat_external</strong>. An SWS dataset output from the <strong>faoswsAquastatExternal</strong> module which replaces the lack of a proper CIO-developed harvester for external source data used by AQUASTAT. More information is found in the chapter <a href="AquastatExternal.html#AquastatExternal">3</a>.</p></li>
+<li><p><strong>aquastat_update</strong>. This dataset is the most complete dataset, storing the AQUASTAT compiled data. For more details, please see chapter <a href="faoswsAquastatUpdate.html#faoswsAquastatUpdate">4</a>.</p></li>
 </ol>
-<div class="rmdnote">
-<p>
-<strong>REMEMBER</strong>
-</p>
-<p>
-The harvester for data in AQUASTAT questionnaire has not yet been developed by CIO; therefore, the Update module is currently using the aquastat_questionnaire dataset saved in the sws-share drive. The file path is: (<strong>/AquastatValidation/data/Update/aquastat_questionnaire.csv</strong>). <br> When updating the aquastat_questionnaire file to be saved in the (<strong>/AquastatValidation/data/Update/aquastat_questionnaire.csv</strong>) please remember that the columns must be named as <strong>geographicAreaM49</strong> (M49 codes), <strong>aquastatElement</strong>, <strong>timePointYears</strong>, <strong>flagAquastat</strong>
-</p>
-</div>
-<ol start="3" style="list-style-type: decimal">
-<li><p><strong>aquastat_external</strong>. An SWS dataset output from the <strong>faoswsAquastatExternal</strong> module which replaces the lack of a proper CIO-developed harvester for external source data used by AQUASTAT. This dataset feeds, along with the aquastat_legacy_corr and the aquastat_quest datasets, the faoswsAquastatUpdate module.</p></li>
-<li><p><strong>aquastat_aggregation</strong>. An <strong>Non-</strong>SWS dataset output from the <strong>faoswsAquastatAggregation</strong> module with the regional aggregation of SDG 6.4.1 (Water Use Efficiency) and SDG 6.4.2 (Water Stress) at regional level following SDG regional aggregation guidelines.</p></li>
-</ol>
+
 </div>
 </div>
             </section>
@@ -261,17 +1735,19 @@ The harvester for data in AQUASTAT questionnaire has not yet been developed by C
           </div>
         </div>
       </div>
-<a href="aquastat-in-sws-proposed-dataflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="aquastat-elements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="Aggregation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -279,12 +1755,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -296,6 +1771,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

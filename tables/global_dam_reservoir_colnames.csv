@@ -1,0 +1,38 @@
+Field,Description
+id,ID of the dam
+Country,Name of country
+Name of Dam,Name of dam
+Alternate Dam Name,Unit of the indicator
+ISO alpha-3,Country name (ISO)
+Region,Region of country
+Administrative Unit,
+Nearest city,
+River,
+Major basin,
+Sub-basin,
+Completed/operational since,
+Dam height(m),
+Reservoir capacity (million m3),
+Dam Category,
+Reservoir area (km2),
+Yearly ETO (mm/m),
+Evaporation,
+Evaporation/Capacity,
+Sedimentation (latest known) (%),
+Irrigation,
+Water supply,
+Flood control,
+Hydroelectricity MIW,
+Navigation,
+Recreation,
+Pollution control,
+Livestock rearing,
+Other,
+Decimal degree latitude,
+Decimal degree longitude,
+Validated,
+National reference(s),
+Other reference(s),
+Internal metadata,
+GEO NOTES,
+Comments,

@@ -1,0 +1,10 @@
+Field,Description
+region_el_code,Element code for the SDG region
+relevant_el_code,Relevant element code
+country_el_code,Country code
+addition,Formula
+sdg_region,Code of SDG region
+group_order_name,Name of the group
+column_to_select,
+transboundary,
+indicator,Element code of the indicator

@@ -1,0 +1,5215 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 AQUASTAT Framework | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 AQUASTAT Framework | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/cover_book.png" />
+  <meta property="og:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 AQUASTAT Framework | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  
+  <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="twitter:image" content="images/cover_book.png" />
+
+
+
+<meta name="date" content="2020-04-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="preface.html"/>
+<link rel="next" href="AquastatQuestionnaire.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="ess.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
+<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
+<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="preface.html#migration-team"><strong>Migration Team</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html"><i class="fa fa-check"></i><b>1</b> <strong>AQUASTAT Framework</strong></a><ul>
+<li class="chapter" data-level="1.1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#data-collection"><i class="fa fa-check"></i><b>1.1</b> <strong>Data Collection</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#questionnaire"><i class="fa fa-check"></i><b>1.2</b> <strong>Questionnaire</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#the-current-aquastat-information-management"><i class="fa fa-check"></i><b>1.3</b> <strong>The current AQUASTAT information management</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#aquastat-in-sws-proposed-dataflow"><i class="fa fa-check"></i><b>1.4</b> <strong>AQUASTAT in SWS: proposed dataflow</strong></a></li>
+<li class="chapter" data-level="1.5" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#aquastat-elements"><i class="fa fa-check"></i><b>1.5</b> <strong>AQUASTAT Elements</strong></a><ul>
+<li class="chapter" data-level="1.5.1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#international-classification-systems"><i class="fa fa-check"></i><b>1.5.1</b> <strong>International Classification Systems</strong></a></li>
+<li class="chapter" data-level="1.5.2" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-aquastat-variables"><i class="fa fa-check"></i><b>1.5.2</b> <strong>Current AQUASTAT Variables</strong></a></li>
+<li class="chapter" data-level="1.5.3" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-aquastat-indicators"><i class="fa fa-check"></i><b>1.5.3</b> <strong>Current AQUASTAT indicators</strong></a></li>
+<li class="chapter" data-level="1.5.4" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-external-data"><i class="fa fa-check"></i><b>1.5.4</b> <strong>Current External data</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastatQuestionnaire module</strong></a><ul>
+<li class="chapter" data-level="2.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>2.1</b> <strong>Steps</strong></a></li>
+<li class="chapter" data-level="2.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>2.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
+<li class="chapter" data-level="3.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#steps-1"><i class="fa fa-check"></i><b>3.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="3.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
+<li class="chapter" data-level="3.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Reshapes the data sources</strong></a></li>
+<li class="chapter" data-level="3.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
+<li class="chapter" data-level="3.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>3.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
+<li class="chapter" data-level="3.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>3.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module-1"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
+<li class="chapter" data-level="4.1" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#methods"><i class="fa fa-check"></i><b>4.1</b> <strong>Methods</strong></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#calculate-indicators-first-calculation"><i class="fa fa-check"></i><b>4.1.1</b> <strong>Calculate indicators (<em>First Calculation</em>)</strong></a></li>
+<li class="chapter" data-level="4.1.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#vertical-imputation-components"><i class="fa fa-check"></i><b>4.1.2</b> <strong>Vertical Imputation (components)</strong></a></li>
+<li class="chapter" data-level="4.1.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
+<li class="chapter" data-level="4.1.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#running-the-module-2"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
+<li class="chapter" data-level="4.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>5</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
+<li class="chapter" data-level="5.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#steps-2"><i class="fa fa-check"></i><b>5.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="5.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>5.1.1</b> <strong>Applies validation rules</strong></a></li>
+<li class="chapter" data-level="5.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>5.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
+<li class="chapter" data-level="5.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>5.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
+<li class="chapter" data-level="5.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>5.1.4</b> <strong>Sends the output to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>5.2</b> <strong>Running the module in the SWS</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>6</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
+<li class="chapter" data-level="6.1" data-path="Aggregation.html"><a href="Aggregation.html#steps-3"><i class="fa fa-check"></i><b>6.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="6.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>6.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
+<li class="chapter" data-level="6.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>6.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
+<li class="chapter" data-level="6.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>6.1.3</b> <strong>Send the result to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="Aggregation.html"><a href="Aggregation.html#running-the-module-3"><i class="fa fa-check"></i><b>6.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
+<li class="chapter" data-level="A.1" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i><b>A.1</b> Code lists</a></li>
+<li class="chapter" data-level="A.2" data-path="sws-resources.html"><a href="sws-resources.html#datatables"><i class="fa fa-check"></i><b>A.2</b> Datatables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-reference"><i class="fa fa-check"></i>AQUASTAT Reference</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-faostat-mapping"><i class="fa fa-check"></i>AQUASTAT FAOSTAT Mapping</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sources"><i class="fa fa-check"></i>AQUASTAT Sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#calculation-rule"><i class="fa fa-check"></i>Calculation Rule</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-dam-reservoir"><i class="fa fa-check"></i>Global Dam Reservoir</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-map-of-irrigated-area"><i class="fa fa-check"></i>Global Map of Irrigated Area</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sdg-aggregates"><i class="fa fa-check"></i>AQUASTAT SDG Aggregates</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
+<li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AQUASTAT: Migration of the Statistical Processes
+into the SWS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="AquastatFraemwork" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> <strong>AQUASTAT Framework</strong></h1>
+<p>The book focuses on the migration of the AQUASTAT statistical processes to SWS. However, for those interested, AQUASTAT has a dedicated FAO website where the <a href="http://www.fao.org/aquastat/overview/methodology">new methodology</a> for data collection and data management can be accessed. The next sections summarize the AQUASTAT data collection and information management methodology.</p>
+<div id="data-collection" class="section level2">
+<h2><span class="header-section-number">1.1</span> <strong>Data Collection</strong></h2>
+<ol style="list-style-type: decimal">
+<li><p>Data collection relies on a network of AQUASTAT national correspondents in charge of the provision of official national data;</p></li>
+<li><p>As of January of 2019, 107 countries have nominated AQUASTAT national correspondents as requested by FAO Land and Water Division between April-May 2018;</p></li>
+<li><p>Alternate correspondents from different agencies are also used to improve the data collection;</p></li>
+<li><p>The <strong>FAO Office of the Chief Statistician (OCS)</strong> has endorsed the annual <strong>Water and Agriculture</strong> questionnaire;</p></li>
+<li><p>AQUASTAT sends out the questionnaire in the first semester of each year.</p></li>
+</ol>
+</div>
+<div id="questionnaire" class="section level2">
+<h2><span class="header-section-number">1.2</span> <strong>Questionnaire</strong></h2>
+<p>The <strong>Water and Agriculture</strong> questionnaire has the following characteristics:</p>
+<ol style="list-style-type: decimal">
+<li><p>Three introductory sections: Cover page, Instructions, Definitions;</p></li>
+<li><p>One data reporting section, including national data on water withdrawal, dam capacity, municipal wastewater, irrigation and drainage;</p></li>
+<li><p>Two Supplementary Information sections: Metadata, Feedback.</p></li>
+<li><p>In addition, to the annual data collection, a more complete questionnaire will be sent every 5 years to populate other AQUASTAT <a href="http://www.fao.org/aquastat/databases/">databases</a>.</p></li>
+<li><p>To download the <strong>Water and Agriculture</strong> questionnaire, please click on this <a href="https://firebasestorage.googleapis.com/v0/b/fao-aquastat.appspot.com/o/Excel%2FAQUASTATQuestionnaire2018ENG.xlsm?alt=media&amp;token=43a81b96-1853-46c9-bf38-e94de717efef">link</a>.</p></li>
+</ol>
+</div>
+<div id="the-current-aquastat-information-management" class="section level2">
+<h2><span class="header-section-number">1.3</span> <strong>The current AQUASTAT information management</strong></h2>
+<div class="figure" style="text-align: center"><span id="fig:fig1"></span>
+<img src="images/aquastat_info_management.png" alt="Aquastat Information Management" width="55%" />
+<p class="caption">
+Figure 1.1: Aquastat Information Management
+</p>
+</div>
+</div>
+<div id="aquastat-in-sws-proposed-dataflow" class="section level2">
+<h2><span class="header-section-number">1.4</span> <strong>AQUASTAT in SWS: proposed dataflow</strong></h2>
+<p>AQUASTAT dataflow will predominantly be triggered by the filling and compilation of the <strong>Water and Agriculture questionnaire</strong> by the AQUASTAT network of National Correspondents. The CIO - SWS counterpart is responsible for creating a tailored questionnaire harvesters to automatically extract data from filled surveys and output it as an SWS compliant dataset. Once in the SWS, the technical unit will benefit from the tools and other features that have been developed to make the AQUASTAT dataflow as seamless as possible. On this basis, the flowchart below gives the AQUASTAT dataflow that has been fostered by the ESS - SWS team.</p>
+<div class="figure" style="text-align: center"><span id="fig:figSWSDataFlow"></span>
+<img src="images/sws_dataflow.png" alt="Developed AQUATAST - SWS dataflow" width="55%" />
+<p class="caption">
+Figure 1.2: Developed AQUATAST - SWS dataflow
+</p>
+</div>
+<!--```{r fig2, echo=FALSE, fig.cap='Developed AQUATAST - SWS dataflow', message=FALSE, warning=FALSE}
+
+require(DiagrammeR)
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = TB]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = Linen]
+
+# Inputs
+coordination [label = 'Source \n coordination \n between agencies', shape = folder, fillcolor = Beige]
+Surveys [label = 'Source \n Country surveys \n and census', shape = folder, fillcolor = Beige]
+Literature [label = 'Source \n Literature review', shape = folder, fillcolor = Beige]
+
+focalpoint [label = 'Compilation: \n questionnaire filling \n by AQUASTAT \n national correspondent', shape = folder, fillcolor = Beige]
+
+SWSQH [label = 'Harvester: \n questionnaire harvesting \n by CIO - SWS', fillcolor = LightBlue]
+
+Newdata [label = 'Dataset: \n data harvested from questionnaire \n and SWS compliant', shape = folder, fillcolor = Beige]
+
+QA1 [label = 'QAQC \n Manual Quality control \n of data harvested from questionnaire', fillcolor = PaleGreen]
+
+Newdata_val [label = 'Dataset: \n aquastat_questionnaire', shape = folder, fillcolor = Beige]
+
+APIsourcing [label = 'Process: \n faoswsAquastatExternal module', fillcolor = PaleGreen]
+
+APIdata [label = 'Dataset: \n aquastat_external', shape = folder, fillcolor = Beige]
+
+oldsystem [label = 'Database: \n Old Aquastat Working System', shape = folder, fillcolor = Beige]
+
+Migration [label = 'Migration: \n legacy data into the SWS \n done by CIO - SWS', fillcolor = LightBlue]
+
+legacydata [label = 'Dataset: \n aquastat_legacy dataset ', shape = folder, fillcolor = Beige]
+
+update [label = 'Process:: \n SWS faoswsAquastatUpdate module: \n 1. merges the questionnaire data, external data, and aquastat_legacy_corr \n 2. flag conversion, \n 3. apply calculations, 4. impute data, 5.  apply recalculations', shape = losangle, fillcolor = PaleGreen]
+
+updateddata [label = 'Dataset: \n aquastat_update \n from SWS faoswsAquastatUpdate module ', shape = folder, fillcolor = Beige]
+
+agg_proc [label = 'Process: \n faoswsAquastatAggregation module \n (Get regional SDG aggregations)', fillcolor = PaleGreen]
+agg_out [label = 'Dataset: \n aquastat_aggregation \n sent to the user by email (.csv file)', shape = folder, fillcolor = Beige]
+
+QA2 [label = 'Process: \n Automate Quality control \n by faoswsAquatsatValidation module', fillcolor = PaleGreen]
+
+validationemail [label = 'Dataset: \n Validation output \n sent to the user by email (.csv file)', shape = folder, fillcolor = Beige]
+
+QA3 [label = 'Process: \n Manual Quality control \n of faoswsAquatsatValidation module output', fillcolor = PaleGreen]
+
+validated [label = 'Dataset: \n aquastat_update \n cleared by technical division', shape = folder, fillcolor = Beige]
+
+AQUASWSdb [label = 'Dataset: \n aquastat_update \n saved in the SWS database', shape = folder, fillcolor = Beige]
+
+Diss [label = 'Dissemination: \n  Web, publications, Apps', shape = folder, fillcolor = LightGrey]
+
+
+# Flow
+# edge definitions with the node IDs
+{coordination, Surveys, Literature} -> focalpoint -> SWSQH -> Newdata -> QA1 -> Newdata_val -> update
+{oldsystem} -> Migration -> legacydata -> update 
+{APIsourcing} -> APIdata -> update -> updateddata -> QA2 -> validationemail -> QA3 -> validated -> AQUASWSdb -> Diss
+{validated} -> agg_proc -> agg_out -> Diss
+}")
+
+```-->
+<p><br></p>
+</div>
+<div id="aquastat-elements" class="section level2">
+<h2><span class="header-section-number">1.5</span> <strong>AQUASTAT Elements</strong></h2>
+<p>The next chapters will treat the modules as well as their datasets and datatables in more details. However, after describing the current SWS resources involved in the AQUASTAT - SWS migration framework, it is important to have a look at how the technical units references its data and the list of the data collected, processed, and disseminated.</p>
+<div id="international-classification-systems" class="section level3">
+<h3><span class="header-section-number">1.5.1</span> <strong>International Classification Systems</strong></h3>
+<p>AQUASTAT datasets use the following international classification systems to reference its elements:</p>
+<ul>
+<li><p>The International Standard Industrial Classification of All Economic Activities: <a href="https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf">ISIC4</a>;</p></li>
+<li><p>The System of Environmental-Economic Accounting for Water: <a href="https://unstats.un.org/unsd/envaccounting/seeaw/">SEEA-Water</a> for water resources and withdrawals;</p></li>
+<li><p>The World Census of Agriculture 2020: <a href="http://www.fao.org/world-census-agriculture">WCA</a> (Volume 1), for irrigation definitions.</p></li>
+</ul>
+</div>
+<div id="current-aquastat-variables" class="section level3">
+<h3><span class="header-section-number">1.5.2</span> <strong>Current AQUASTAT Variables</strong></h3>
+<p>Variables are AQUASTAT elements that are non-calculated. These can be from different sources as described in the table below.</p>
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:aquaElements">Table 1.1: </span>AQUASTAT variable codes and names actually collected.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+element_code
+</th>
+<th style="text-align:left;">
+element_name
+</th>
+<th style="text-align:left;">
+disseminated
+</th>
+<th style="text-align:left;">
+source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+4100
+</td>
+<td style="text-align:left;">
+Total area of the country
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4101
+</td>
+<td style="text-align:left;">
+Arable land area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4102
+</td>
+<td style="text-align:left;">
+Permanent crops area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4104
+</td>
+<td style="text-align:left;">
+Total population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4106
+</td>
+<td style="text-align:left;">
+Urban population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4109
+</td>
+<td style="text-align:left;">
+Male population economically active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4110
+</td>
+<td style="text-align:left;">
+Female population economically active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4111
+</td>
+<td style="text-align:left;">
+Human Development Index (HDI) [highest = 1]
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+UNDP
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4112
+</td>
+<td style="text-align:left;">
+Gross Domestic Product (GDP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4113
+</td>
+<td style="text-align:left;">
+Agriculture, value added (% GDP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4114
+</td>
+<td style="text-align:left;">
+Total population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4115
+</td>
+<td style="text-align:left;">
+Rural population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4116
+</td>
+<td style="text-align:left;">
+Urban population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4151
+</td>
+<td style="text-align:left;">
+Long-term average annual precipitation in depth
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+CRU CL 2.0 dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4152
+</td>
+<td style="text-align:left;">
+Evaporation from artificial lakes and reservoirs
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4153
+</td>
+<td style="text-align:left;">
+Water resources produced internally in a 10th dry year frequency
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4154
+</td>
+<td style="text-align:left;">
+Groundwater produced internally
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4155
+</td>
+<td style="text-align:left;">
+Surface water produced internally
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4156
+</td>
+<td style="text-align:left;">
+Overlap between surface water and groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4159
+</td>
+<td style="text-align:left;">
+Surface water: entering the country (total)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4160
+</td>
+<td style="text-align:left;">
+Surface water: inflow not submitted to treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4161
+</td>
+<td style="text-align:left;">
+Surface water: inflow submitted to treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4162
+</td>
+<td style="text-align:left;">
+Surface water: inflow secured through treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4165
+</td>
+<td style="text-align:left;">
+Surface water: total flow of border rivers
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4168
+</td>
+<td style="text-align:left;">
+Surface water: accounted flow of border rivers
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4171
+</td>
+<td style="text-align:left;">
+Surface water: leaving the country to other countries (total)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4172
+</td>
+<td style="text-align:left;">
+Surface water: outflow to other countries not submitted to treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4173
+</td>
+<td style="text-align:left;">
+Surface water: outflow to other countries submitted to treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4174
+</td>
+<td style="text-align:left;">
+Surface water: outflow to other countries secured through treaties
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4177
+</td>
+<td style="text-align:left;">
+Groundwater: entering the country (total)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4178
+</td>
+<td style="text-align:left;">
+Groundwater: leaving the country to other countries (total)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4193
+</td>
+<td style="text-align:left;">
+Exploitable: regular renewable surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4194
+</td>
+<td style="text-align:left;">
+Exploitable: irregular renewable surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4195
+</td>
+<td style="text-align:left;">
+Exploitable: regular renewable groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4197
+</td>
+<td style="text-align:left;">
+Total dam capacity
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4250
+</td>
+<td style="text-align:left;">
+Agricultural water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4251
+</td>
+<td style="text-align:left;">
+Municipal water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4252
+</td>
+<td style="text-align:left;">
+Industrial water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4260
+</td>
+<td style="text-align:left;">
+Irrigation water requirement
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4261
+</td>
+<td style="text-align:left;">
+Fresh surface water withdrawal (primary and secondary)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4262
+</td>
+<td style="text-align:left;">
+Fresh groundwater withdrawal (primary and secondary)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4264
+</td>
+<td style="text-align:left;">
+Desalinated water produced
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4265
+</td>
+<td style="text-align:left;">
+Direct use of treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4266
+</td>
+<td style="text-align:left;">
+Depletion rate of renewable groundwater resources
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4267
+</td>
+<td style="text-align:left;">
+Abstraction of fossil groundwater
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4268
+</td>
+<td style="text-align:left;">
+Expected time that fossil groundwater will last
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4269
+</td>
+<td style="text-align:left;">
+Produced municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4270
+</td>
+<td style="text-align:left;">
+Treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4303
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation drained
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4304
+</td>
+<td style="text-align:left;">
+Non-irrigated cultivated area drained
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4306
+</td>
+<td style="text-align:left;">
+Water harvesting area
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4307
+</td>
+<td style="text-align:left;">
+Irrigation potential
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4308
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: surface irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4309
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: sprinkler irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4310
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: localized irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4312
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation: equipped lowland areas
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4314
+</td>
+<td style="text-align:left;">
+Flood recession cropping area non-equipped
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4315
+</td>
+<td style="text-align:left;">
+Cultivated wetlands and inland valley bottoms non-equipped
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4316
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation: spate irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4318
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation: actually irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4320
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4321
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4322
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by mixed surface water and groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4326
+</td>
+<td style="text-align:left;">
+Area equipped for power irrigation (surface water or groundwater)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4329
+</td>
+<td style="text-align:left;">
+% of total grain production irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4332
+</td>
+<td style="text-align:left;">
+Total area of small irrigation schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4333
+</td>
+<td style="text-align:left;">
+Total area of medium irrigation schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4334
+</td>
+<td style="text-align:left;">
+Total area of large irrigation schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4335
+</td>
+<td style="text-align:left;">
+Average cost of irrigation development in public schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4336
+</td>
+<td style="text-align:left;">
+Average cost of operation and maintenance in public schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4337
+</td>
+<td style="text-align:left;">
+Average cost of drainage development in public schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4338
+</td>
+<td style="text-align:left;">
+Average cost of irrigation rehabilitation in public schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4339
+</td>
+<td style="text-align:left;">
+Average cost of irrigation development in private schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4340
+</td>
+<td style="text-align:left;">
+Average cost of operation and maintenance cost in private schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4341
+</td>
+<td style="text-align:left;">
+Average cost of drainage development in private schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4342
+</td>
+<td style="text-align:left;">
+Average cost of irrigation rehabilitation in private schemes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4343
+</td>
+<td style="text-align:left;">
+Average cost of installation of sprinkler irrigation: on farm
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4344
+</td>
+<td style="text-align:left;">
+Average cost of installation of localized irrigation: on farm
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4345
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Wheat
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4346
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Rice
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4347
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Barley
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4348
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Maize
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4349
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Millet
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4350
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sorghum
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4351
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Other cereals
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4352
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Potatoes
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4353
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sweet Potatoes
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4354
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Cassava
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4355
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Other roots and tubers
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4356
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Plantains
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4357
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sugarcane
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4358
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sugar beet
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4359
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Leguminous crops
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4360
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Vegetables
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4361
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Bananas
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4362
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Citrus
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4363
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Cocoa beans
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4364
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Coffee
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4365
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Tea
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4366
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: tobacco
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4367
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Cotton
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4368
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Rubber
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4369
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Fodder
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4370
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Oil palm
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4371
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Soybeans
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4372
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Groundnuts
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4373
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sunflower
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4374
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Sesame
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4375
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Coconuts
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4376
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Flowers
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4377
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Other crops
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4378
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Other crops
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4379
+</td>
+<td style="text-align:left;">
+Total harvested irrigated crop area (full control irrigation)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4400
+</td>
+<td style="text-align:left;">
+Area salinized by irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4401
+</td>
+<td style="text-align:left;">
+Area waterlogged by irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4403
+</td>
+<td style="text-align:left;">
+Population affected by water related disease
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4410
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Wheat
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4411
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Rice
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4412
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Barley
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4413
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Maize
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4414
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Millet
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4415
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sorghum
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4416
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Other cereals
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4417
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Potatoes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4418
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sweet potatoes
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4419
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Cassava
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4420
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Other roots and tubers
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4421
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Plantain
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4422
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sugar cane
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4423
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sugar beet
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4424
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Pulses
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4425
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Vegetables
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4426
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Bananas
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4427
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Citrus
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4428
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Cocoa beans
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4429
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Coffee
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4430
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Tea
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4431
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Tobacco
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4432
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Cotton
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4433
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Rubber
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4434
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Fodder
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4435
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Oil palm
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4436
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Soybeans
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4437
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Groundnuts
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4438
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sunflower
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4439
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Sesame
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4440
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Coconuts
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4441
+</td>
+<td style="text-align:left;">
+Irrigated crop yield: Flowers
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4449
+</td>
+<td style="text-align:left;">
+Population economically active
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4451
+</td>
+<td style="text-align:left;">
+Direct use of agricultural drainage water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4452
+</td>
+<td style="text-align:left;">
+Groundwater: accounted inflow
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4453
+</td>
+<td style="text-align:left;">
+Groundwater: accounted outflow to other countries
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4454
+</td>
+<td style="text-align:left;">
+Conservation agriculture area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4460
+</td>
+<td style="text-align:left;">
+Water withdrawal for cooling of thermoelectric plants
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4461
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: actually irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4465
+</td>
+<td style="text-align:left;">
+Area equipped by direct use of treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4469
+</td>
+<td style="text-align:left;">
+Permanent meadows and pastures irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4472
+</td>
+<td style="text-align:left;">
+National Rainfall Index (NRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOCLIMPAG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4473
+</td>
+<td style="text-align:left;">
+Number of people undernourished (3-year average)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4474
+</td>
+<td style="text-align:left;">
+Prevalence of undernourishment (3-year average)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4475
+</td>
+<td style="text-align:left;">
+Irrigation water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4476
+</td>
+<td style="text-align:left;">
+Water withdrawal for livestock (water and cleaning)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4477
+</td>
+<td style="text-align:left;">
+Water withdrawal for aquaculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4478
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal by households (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4479
+</td>
+<td style="text-align:left;">
+Water withdrawal for manufactured products
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4480
+</td>
+<td style="text-align:left;">
+Water withdrawal for other industries
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4481
+</td>
+<td style="text-align:left;">
+Agricultural fresh surface water withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4482
+</td>
+<td style="text-align:left;">
+Industrial fresh surface water withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4483
+</td>
+<td style="text-align:left;">
+Municipal fresh surface water withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4484
+</td>
+<td style="text-align:left;">
+Agricultural fresh groundwater withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4485
+</td>
+<td style="text-align:left;">
+Industrial fresh groundwater withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4486
+</td>
+<td style="text-align:left;">
+Municipal fresh groundwater withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4487
+</td>
+<td style="text-align:left;">
+Agricultural freshwater withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4488
+</td>
+<td style="text-align:left;">
+Industrial freshwater withdrawal (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4489
+</td>
+<td style="text-align:left;">
+Municipal freshwater withdrawal (total)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4490
+</td>
+<td style="text-align:left;">
+Direct use of treated municipal wastewater for irrigation purposes
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4491
+</td>
+<td style="text-align:left;">
+Not treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4492
+</td>
+<td style="text-align:left;">
+Fresh groundwater withdrawal for irrigation (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4493
+</td>
+<td style="text-align:left;">
+Collected municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4494
+</td>
+<td style="text-align:left;">
+Desalinated water for municipalities
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4495
+</td>
+<td style="text-align:left;">
+Desalinated water for agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4496
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal by water supply entity
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4497
+</td>
+<td style="text-align:left;">
+Fresh surface water withdrawal for irrigation (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4498
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal by services (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4499
+</td>
+<td style="text-align:left;">
+Water from Water Supply Entity used by agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4500
+</td>
+<td style="text-align:left;">
+Water from Water Supply Entity used by industry
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4501
+</td>
+<td style="text-align:left;">
+Water from Water Supply Entity used by households
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4502
+</td>
+<td style="text-align:left;">
+Total water used (withdrawal + WSE)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4503
+</td>
+<td style="text-align:left;">
+Total water used by agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4504
+</td>
+<td style="text-align:left;">
+Total water used by industry
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4505
+</td>
+<td style="text-align:left;">
+Total water used by households
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4506
+</td>
+<td style="text-align:left;">
+Total Water Supply Entity (WSE) water used
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4507
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal for irrigation (self-abstracted)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4508
+</td>
+<td style="text-align:left;">
+In-stream water usage by hydropower plants
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4510
+</td>
+<td style="text-align:left;">
+Treated municipal wastewater discharged (secondary water)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4511
+</td>
+<td style="text-align:left;">
+Water reserved for ecosystems
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4512
+</td>
+<td style="text-align:left;">
+Direct use of the not treated municipal wastewater for irrigation purposes
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4513
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by direct use of non-treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4515
+</td>
+<td style="text-align:left;">
+Number of municipal wastewater treatment facilities
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4516
+</td>
+<td style="text-align:left;">
+Capacity of the municipal wastewater treatment facilities
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4517
+</td>
+<td style="text-align:left;">
+Not treated municipal wastewater discharged (secondary water)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4520
+</td>
+<td style="text-align:left;">
+Harvested irrigated temporary crop area: Total
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4521
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Total
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4522
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Grass and Fodder
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4523
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Grapes
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4524
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Other fruits
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4525
+</td>
+<td style="text-align:left;">
+Harvested irrigated permanent crop area: Olives
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4526
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by direct use of agricultural drainage water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4530
+</td>
+<td style="text-align:left;">
+Produced industrial wastewater
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4537
+</td>
+<td style="text-align:left;">
+Gender Inequality Index (GII)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+UNDP
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4539
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation by desalinated water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4541
+</td>
+<td style="text-align:left;">
+Interannual variability (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4542
+</td>
+<td style="text-align:left;">
+Seasonal variability (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4543
+</td>
+<td style="text-align:left;">
+Flood occurrence (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4544
+</td>
+<td style="text-align:left;">
+% of the area equipped for irrigation managed by women
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4545
+</td>
+<td style="text-align:left;">
+% of the agricultural holdings with irrigation managed by women
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4546
+</td>
+<td style="text-align:left;">
+Industry, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4547
+</td>
+<td style="text-align:left;">
+Services, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4548
+</td>
+<td style="text-align:left;">
+Agriculture, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4549
+</td>
+<td style="text-align:left;">
+Environmental Flow Requirements
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAO/IWMI
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4557
+</td>
+<td style="text-align:left;">
+Ratio between rainfed and irrigated yields
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+AQUASTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4559
+</td>
+<td style="text-align:left;">
+Land area
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4560
+</td>
+<td style="text-align:left;">
+Inland waterd
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="current-aquastat-indicators" class="section level3">
+<h3><span class="header-section-number">1.5.3</span> <strong>Current AQUASTAT indicators</strong></h3>
+The indicators in AQUASTAT are calculated variables.
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tab2">Table 1.2: </span>AQUASTAT indicators
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+element_code
+</th>
+<th style="text-align:left;">
+element_name
+</th>
+<th style="text-align:left;">
+disseminated
+</th>
+<th style="text-align:left;">
+calculated
+</th>
+<th style="text-align:left;">
+source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+4103
+</td>
+<td style="text-align:left;">
+Cultivated area (arable land + permanent crops)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4105
+</td>
+<td style="text-align:left;">
+Rural population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4107
+</td>
+<td style="text-align:left;">
+Population density
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4108
+</td>
+<td style="text-align:left;">
+Population economically active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4150
+</td>
+<td style="text-align:left;">
+Long-term average annual precipitation in volume
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4157
+</td>
+<td style="text-align:left;">
+Total internal renewable water resources (IRWR)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4158
+</td>
+<td style="text-align:left;">
+Total internal renewable water resources per capita
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4164
+</td>
+<td style="text-align:left;">
+Surface water: accounted inflow
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4176
+</td>
+<td style="text-align:left;">
+Surface water: total external renewable
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4182
+</td>
+<td style="text-align:left;">
+Water resources: total external renewable
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4185
+</td>
+<td style="text-align:left;">
+Total renewable surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4187
+</td>
+<td style="text-align:left;">
+Total renewable groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4188
+</td>
+<td style="text-align:left;">
+Total renewable water resources
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4190
+</td>
+<td style="text-align:left;">
+Total renewable water resources per capita
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4192
+</td>
+<td style="text-align:left;">
+Dependency ratio
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4196
+</td>
+<td style="text-align:left;">
+Total exploitable water resources
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4253
+</td>
+<td style="text-align:left;">
+Total water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4254
+</td>
+<td style="text-align:left;">
+Agricultural water withdrawal as % of total water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4255
+</td>
+<td style="text-align:left;">
+Municipal water withdrawal as % of total withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4256
+</td>
+<td style="text-align:left;">
+Industrial water withdrawal as % of total water withdrawal
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4257
+</td>
+<td style="text-align:left;">
+Total water withdrawal per capita
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4263
+</td>
+<td style="text-align:left;">
+Total freshwater withdrawal (primary and secondary)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4271
+</td>
+<td style="text-align:left;">
+Agricultural water requirement as % of agricultural water withdrawal
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4273
+</td>
+<td style="text-align:left;">
+Agricultural water withdrawal as % of total renewable water resources
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4275
+</td>
+<td style="text-align:left;">
+MDG 7.5. Freshwater withdrawal as % of total renewable water resources
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4300
+</td>
+<td style="text-align:left;">
+Total cultivated area drained
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4305
+</td>
+<td style="text-align:left;">
+% of total cultivated area drained
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4311
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: total
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4313
+</td>
+<td style="text-align:left;">
+Area equipped for irrigation: total
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4317
+</td>
+<td style="text-align:left;">
+Total agricultural water managed area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4319
+</td>
+<td style="text-align:left;">
+% of agricultural water managed area equipped for irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4323
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4324
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4325
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by mixed surface water and groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4327
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation power irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4328
+</td>
+<td style="text-align:left;">
+% of the area equipped for irrigation actually irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4330
+</td>
+<td style="text-align:left;">
+% of irrigation potential equipped for irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4331
+</td>
+<td style="text-align:left;">
+% of the cultivated area equipped for irrigation
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4445
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation salinized
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4446
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation drained
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4448
+</td>
+<td style="text-align:left;">
+Other agricultural water managed area
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4450
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal as % of internal renewable water resources
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4455
+</td>
+<td style="text-align:left;">
+Conservation agriculture area as % of arable land area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4457
+</td>
+<td style="text-align:left;">
+Municipal water withdrawal per capita (total population)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4458
+</td>
+<td style="text-align:left;">
+GDP per Capita
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4459
+</td>
+<td style="text-align:left;">
+Area equipped for full control irrigation: pressurized (sprinkler + localized)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4462
+</td>
+<td style="text-align:left;">
+Harvested irrigated crop area as % of the full control irrigation area actually irrigated
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4463
+</td>
+<td style="text-align:left;">
+% of area equipped for full control irrigation actually irrigated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4464
+</td>
+<td style="text-align:left;">
+Irrigated cropping intensity
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4466
+</td>
+<td style="text-align:left;">
+% of area equipped by direct use of treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4467
+</td>
+<td style="text-align:left;">
+Freshwater withdrawal as % of total water withdrawal
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4468
+</td>
+<td style="text-align:left;">
+Municipal water withdrawal per capita (urban population)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4470
+</td>
+<td style="text-align:left;">
+% of total country area cultivated
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4471
+</td>
+<td style="text-align:left;">
+Dam capacity per capita
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4509
+</td>
+<td style="text-align:left;">
+Exploitable: total renewable surface water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4514
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by direct use of non-treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4527
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by direct use of agricultural drainage water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4531
+</td>
+<td style="text-align:left;">
+Industrial water withdrawal per capita
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4532
+</td>
+<td style="text-align:left;">
+Agricultural water withdrawal per capita
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4533
+</td>
+<td style="text-align:left;">
+Area equipped by direct use of treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4534
+</td>
+<td style="text-align:left;">
+Area equipped by direct use of not treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4535
+</td>
+<td style="text-align:left;">
+Direct use of treated municipal wastewater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4536
+</td>
+<td style="text-align:left;">
+Overlap: between surface water and groundwater
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4538
+</td>
+<td style="text-align:left;">
+% of economically active population active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4540
+</td>
+<td style="text-align:left;">
+% of area equipped for irrigation by desalinated water
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4550
+</td>
+<td style="text-align:left;">
+SDG 6.4.2. Water Stress
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4551
+</td>
+<td style="text-align:left;">
+SDG 6.4.1. Water Use Efficiency
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4552
+</td>
+<td style="text-align:left;">
+SDG 6.4.1. Irrigated Agriculture Water Use Efficiency
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4553
+</td>
+<td style="text-align:left;">
+SDG 6.4.1. Industrial Water Use Efficiency
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4554
+</td>
+<td style="text-align:left;">
+SDG 6.4.1. Services Water Use Efficiency
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4555
+</td>
+<td style="text-align:left;">
+% of agricultural GVA produced by irrigated agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4556
+</td>
+<td style="text-align:left;">
+% of arable land irrigated
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4558
+</td>
+<td style="text-align:left;">
+GDP deflator (2015)
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+DERIVED
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="current-external-data" class="section level3">
+<h3><span class="header-section-number">1.5.4</span> <strong>Current External data</strong></h3>
+<p>The AQUASTAT calculated variables <strong>Rural Population</strong> and <strong>Cultivated area (arable land + permanent crops)</strong> are actually not calculated variables as they can be extracted from FAOSTAT. To solve it, the <strong>faoswsAquastatExternal</strong> module extracts these and other external data used by AQUASTAT and save them in the SWS-complaint <strong>aquastat_external</strong> dataset. This dataset is then used as one of the inputs of the <strong>faoswsAquastatUpdate</strong> module.</p>
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:externalData">Table 1.3: </span>AQUASTAT indicators (derived) calculated by AQUASTAT.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+element_code
+</th>
+<th style="text-align:left;">
+element_name
+</th>
+<th style="text-align:left;">
+disseminated
+</th>
+<th style="text-align:left;">
+source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+4100
+</td>
+<td style="text-align:left;">
+Total area of the country
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4101
+</td>
+<td style="text-align:left;">
+Arable land area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4102
+</td>
+<td style="text-align:left;">
+Permanent crops area
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4103
+</td>
+<td style="text-align:left;">
+Cultivated area (arable land + permanent crops)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4104
+</td>
+<td style="text-align:left;">
+Total population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4105
+</td>
+<td style="text-align:left;">
+Rural population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4106
+</td>
+<td style="text-align:left;">
+Urban population
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4109
+</td>
+<td style="text-align:left;">
+Male population economically active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4110
+</td>
+<td style="text-align:left;">
+Female population economically active in agriculture
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4111
+</td>
+<td style="text-align:left;">
+Human Development Index (HDI) [highest = 1]
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+UNDP
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4112
+</td>
+<td style="text-align:left;">
+Gross Domestic Product (GDP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4113
+</td>
+<td style="text-align:left;">
+Agriculture, value added (% GDP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4114
+</td>
+<td style="text-align:left;">
+Total population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4115
+</td>
+<td style="text-align:left;">
+Rural population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4116
+</td>
+<td style="text-align:left;">
+Urban population with access to improved drinking-water source (JMP)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+JMP(WHO/UNICEF)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4151
+</td>
+<td style="text-align:left;">
+Long-term average annual precipitation in depth
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+CRU CL 2.0 dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4449
+</td>
+<td style="text-align:left;">
+Population economically active
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+ILO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4472
+</td>
+<td style="text-align:left;">
+National Rainfall Index (NRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOCLIMPAG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4473
+</td>
+<td style="text-align:left;">
+Number of people undernourished (3-year average)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4474
+</td>
+<td style="text-align:left;">
+Prevalence of undernourishment (3-year average)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4537
+</td>
+<td style="text-align:left;">
+Gender Inequality Index (GII)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+UNDP
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4541
+</td>
+<td style="text-align:left;">
+Interannual variability (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4542
+</td>
+<td style="text-align:left;">
+Seasonal variability (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4543
+</td>
+<td style="text-align:left;">
+Flood occurrence (WRI)
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+WORLD_RESOURCES_INSTITUTE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4546
+</td>
+<td style="text-align:left;">
+Industry, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4547
+</td>
+<td style="text-align:left;">
+Services, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4548
+</td>
+<td style="text-align:left;">
+Agriculture, value added to GDP
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+WORLD_BANK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4549
+</td>
+<td style="text-align:left;">
+Environmental Flow Requirements
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:left;">
+FAO/IWMI
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4559
+</td>
+<td style="text-align:left;">
+Land area
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4560
+</td>
+<td style="text-align:left;">
+Inland waterd
+</td>
+<td style="text-align:left;">
+I
+</td>
+<td style="text-align:left;">
+FAOSTAT
+</td>
+</tr>
+</tbody>
+</table>
+<div class="rmdnote">
+<p>
+<strong>IMPORTANT:</strong> FAOSTAT data used by AQUASTAT is an in-house source, but in the <strong>faoswsAquastatExternal</strong> module it is being treated as an external source to facilitate the workflow.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="preface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="AquastatQuestionnaire.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

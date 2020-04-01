@@ -1,9 +1,17 @@
 # **The faoswsAquastatAggregation module** {#Aggregation}
 
-## **Aims**
 
-The faoswsAquastatAggregation produces the regional aggregations of the SDG 6.4.1 (Water Use Efficiency) and 6.4.2 (Water Stress) following the guidelines for SDG regional aggregates. The input for this module is the dataset from the **faoswsAquastatUpdate** module.
+The **faoswsAquastatAggregation** produces the regional aggregations of the SDG 6.4.1 (Water Use Efficiency) and 6.4.2 (Water Stress) following the guidelines for SDG regional aggregates. The input for this module is the dataset from the **faoswsAquastatUpdate** module.
 
+
+```{r  figAquastatAggregation, echo=FALSE, out.width="65%", fig.align="center", fig.cap='Workflow of the faoswsAquastatAggregation module'}
+knitr::include_graphics("images/faoswsAquastatAggregation.png")
+
+```
+
+## **Steps** 
+
+Below you find the description of the process to calculate aggregates.
 
 ### **Calculate region-specific aggregations for SDG 6.4.2**
 
@@ -33,18 +41,17 @@ To account for the information necessary to aggregate the SDGs, the SWS has a da
 ```{r aquasdgdt, echo=FALSE, message=FALSE}
 require(data.table)
 require(kableExtra)
-d = data.table::fread("tables/aqua_sdg_agg.csv")
+d = head(data.table::fread("tables/aqua_sdg_agg.csv"))
 knitr::kable(d, 
              escape = F, 
              table.attr='class="table-fixed-header"',
-             caption = "The SWS aqua_sdg_agg data table") %>%
-  kableExtra::kable_styling(font_size = 12) %>% 
-   scroll_box(width = "100%", height = "500px")
+             caption = "The SWS aqua_sdg_agg datatable - first rows") %>%
+  kableExtra::kable_styling(font_size = 12) 
 ```
 
 <br>
 <br>
-<br>
+In the following table, find the description of relevant AQUASTAT elements present in the **aqua_sdg_agg**. 
 
 ```{r relnames, echo=FALSE, message=FALSE}
 require(data.table)
@@ -58,9 +65,8 @@ d <- d[element_code %in% rel, .(element_code, element_name)]
 knitr::kable(d, 
              # escape = F, 
              # table.attr='class="table-fixed-header"',
-             caption = "Relevant AQUASTAT elements in the aqua_sdg_agg data table") %>%
-  kableExtra::kable_styling(font_size = 12) %>% 
-   scroll_box(width = "100%", height = "500px")
+             caption = "Relevant AQUASTAT elements in the aqua_sdg_agg datatable") %>%
+  kableExtra::kable_styling(font_size = 12) 
 ```
 
 <br>
@@ -68,7 +74,7 @@ knitr::kable(d,
 
 ### **Calculate region-specific aggregations for SDG 6.4.1**
 
-Different from the SDG 6.4.2, the regional aggregations of the SDG 6.4.2 do not have a national component that varies from region to region. Therefore, the aggregates are done by summarizing the elements composing the SDG 6.4.1 intermediates and then obtain the SDG 6.4.1 aggregation at the regional level. The formulas for the SDG 6.4.1 and its intermediates are in the column **addition** of the SWS **aqua_sdg_agg** data table. 
+Different from the SDG 6.4.2, the regional aggregations of the SDG 6.4.2 do not have a national component that varies from region to region. Therefore, the aggregates are done by summarizing the elements composing the SDG 6.4.1 intermediates and then obtain the SDG 6.4.1 aggregation at the regional level. The formulas for the SDG 6.4.1 and its intermediates are in the column **addition** of the SWS **aqua_sdg_agg** datatable. 
 
 
 ### **Send the result to the user email**
@@ -83,48 +89,13 @@ d = data.table::fread("tables/agg_output.csv")
 knitr::kable(d, 
              # escape = F, 
              # table.attr='class="table-fixed-header"',
-             caption = "Relevant AQUASTAT elements in the aqua_sdg_agg data table") %>%
-  kableExtra::kable_styling(font_size = 12) %>% 
-   scroll_box(width = "100%", height = "500px")
+             caption = "Relevant AQUASTAT elements in the aqua_sdg_agg datatable") %>%
+  kableExtra::kable_styling(font_size = 12) 
 ```
 
-## **Workflow**
-```{r fig1, echo=FALSE, fig.cap='Workflow of the faoswsAquastatExternal module.'}
-
-library(DiagrammeR)
-DiagrammeR::grViz("digraph {
-
-graph [layout = dot, rankdir = LR]
-
-# define the global styles of the nodes. We can override these in box if we wish
-node [shape = rectangle, style = filled, fillcolor = Linen]
-
-# Inputs
-input [label = 'Dataset: \n aquastat_update', shape = folder, fillcolor = Beige]
-
-# data tables
-aquasdg [label = 'Data table: \n aqua_sdg_agg dataset \n with equations for SDG aggregation',  shape = folder, fillcolor = LightGrey]
-cgcsv [label = 'Data table: \n a2017regionalgroupings_sdg_feb2017 data \n with sdg reional codes',  shape = folder, fillcolor = LightGrey]
 
 
-# processing
-aggmodule [label = ' Processing: \n faoswsAquastatAggregate using:\n 1. read in aquastat_update dataset from the session, \n 2. extracts information from data tables, \n 3. use information to aggregate SDGs at the regional level, \n 4. Sent the result to the user email', shape = losangle, fillcolor = PaleGreen]
-
-
-# Output
-Output [label = 'Dataset: \n aquastat_aggregation \n SDG aggregated data sent to the user', shape = folder, fillcolor = Beige]
-
-# Flow
-# edge definitions with the node IDs
-{input} -> aggmodule -> Output
-{aquasdg, cgcsv} -> aggmodule
-}")
-
-```
-<br>
-<br>
-
-##**Running the module**
+## **Running the module**
 
 1. After running the **faoswsAquastatUpdate** module, wait for the result to pop up in the session;
 <br>
@@ -151,14 +122,6 @@ knitr::include_graphics("images/agg_checkemail.png")
 <br>
 ```{block , type='rmdimportant'}
 
-The **faoswsAquastatAggregation** DOES NOT SAVE any result on the session. Aggregates are meant to be performed on the fly at the user convenience using as input the aquastat_update dataset.
-
-```
-
-## **Did the module..**
-
-```{block , type='rmdnote'}
-
-The module has met the expectations concerning SDG regional aggregations.
+The **faoswsAquastatAggregation** **does not save** any result on the session. Aggregates are meant to be performed on the fly at the user convenience using as input the `aquastat_update` dataset.
 
 ```

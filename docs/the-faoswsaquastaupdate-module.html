@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/cover_book.png" />
+  <meta property="og:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  
+  <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
+  <meta name="twitter:image" content="images/cover_book.png" />
+
+
+
+<meta name="date" content="2020-04-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="AquastatExternal.html"/>
+<link rel="next" href="AquastatValidation.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="ess.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
+<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
+<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="preface.html#migration-team"><strong>Migration Team</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html"><i class="fa fa-check"></i><b>1</b> <strong>AQUASTAT Framework</strong></a><ul>
+<li class="chapter" data-level="1.1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#data-collection"><i class="fa fa-check"></i><b>1.1</b> <strong>Data Collection</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#questionnaire"><i class="fa fa-check"></i><b>1.2</b> <strong>Questionnaire</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#the-current-aquastat-information-management"><i class="fa fa-check"></i><b>1.3</b> <strong>The current AQUASTAT information management</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#aquastat-in-sws-proposed-dataflow"><i class="fa fa-check"></i><b>1.4</b> <strong>AQUASTAT in SWS: proposed dataflow</strong></a></li>
+<li class="chapter" data-level="1.5" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#aquastat-elements"><i class="fa fa-check"></i><b>1.5</b> <strong>AQUASTAT Elements</strong></a><ul>
+<li class="chapter" data-level="1.5.1" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#international-classification-systems"><i class="fa fa-check"></i><b>1.5.1</b> <strong>International Classification Systems</strong></a></li>
+<li class="chapter" data-level="1.5.2" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-aquastat-variables"><i class="fa fa-check"></i><b>1.5.2</b> <strong>Current AQUASTAT Variables</strong></a></li>
+<li class="chapter" data-level="1.5.3" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-aquastat-indicators"><i class="fa fa-check"></i><b>1.5.3</b> <strong>Current AQUASTAT indicators</strong></a></li>
+<li class="chapter" data-level="1.5.4" data-path="AquastatFraemwork.html"><a href="AquastatFraemwork.html#current-external-data"><i class="fa fa-check"></i><b>1.5.4</b> <strong>Current External data</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html"><i class="fa fa-check"></i><b>2</b> <strong>The faoswsAquastatQuestionnaire module</strong></a><ul>
+<li class="chapter" data-level="2.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>2.1</b> <strong>Steps</strong></a></li>
+<li class="chapter" data-level="2.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>2.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
+<li class="chapter" data-level="3.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#steps-1"><i class="fa fa-check"></i><b>3.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="3.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
+<li class="chapter" data-level="3.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Reshapes the data sources</strong></a></li>
+<li class="chapter" data-level="3.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
+<li class="chapter" data-level="3.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>3.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
+<li class="chapter" data-level="3.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>3.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module-1"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
+<li class="chapter" data-level="4.1" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#methods"><i class="fa fa-check"></i><b>4.1</b> <strong>Methods</strong></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#calculate-indicators-first-calculation"><i class="fa fa-check"></i><b>4.1.1</b> <strong>Calculate indicators (<em>First Calculation</em>)</strong></a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#vertical-imputation-components"><i class="fa fa-check"></i><b>4.1.2</b> <strong>Vertical Imputation (components)</strong></a></li>
+<li class="chapter" data-level="4.1.3" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
+<li class="chapter" data-level="4.1.4" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#running-the-module-2"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.3" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
+<li class="chapter" data-level="4.4" data-path="the-faoswsaquastaupdate-module.html"><a href="the-faoswsaquastaupdate-module.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>5</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
+<li class="chapter" data-level="5.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#steps-2"><i class="fa fa-check"></i><b>5.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="5.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>5.1.1</b> <strong>Applies validation rules</strong></a></li>
+<li class="chapter" data-level="5.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>5.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
+<li class="chapter" data-level="5.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>5.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
+<li class="chapter" data-level="5.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>5.1.4</b> <strong>Sends the output to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>5.2</b> <strong>Running the module in the SWS</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>6</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
+<li class="chapter" data-level="6.1" data-path="Aggregation.html"><a href="Aggregation.html#steps-3"><i class="fa fa-check"></i><b>6.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="6.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>6.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
+<li class="chapter" data-level="6.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>6.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
+<li class="chapter" data-level="6.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>6.1.3</b> <strong>Send the result to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="Aggregation.html"><a href="Aggregation.html#running-the-module-3"><i class="fa fa-check"></i><b>6.2</b> <strong>Running the module</strong></a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
+<li class="chapter" data-level="A.1" data-path="sws-resources.html"><a href="sws-resources.html#code-lists"><i class="fa fa-check"></i><b>A.1</b> Code lists</a></li>
+<li class="chapter" data-level="A.2" data-path="sws-resources.html"><a href="sws-resources.html#datatables"><i class="fa fa-check"></i><b>A.2</b> Datatables</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-reference"><i class="fa fa-check"></i>AQUASTAT Reference</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-faostat-mapping"><i class="fa fa-check"></i>AQUASTAT FAOSTAT Mapping</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sources"><i class="fa fa-check"></i>AQUASTAT Sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#calculation-rule"><i class="fa fa-check"></i>Calculation Rule</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-dam-reservoir"><i class="fa fa-check"></i>Global Dam Reservoir</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#global-map-of-irrigated-area"><i class="fa fa-check"></i>Global Map of Irrigated Area</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-sdg-aggregates"><i class="fa fa-check"></i>AQUASTAT SDG Aggregates</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
+<li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AQUASTAT: Migration of the Statistical Processes
+into the SWS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-faoswsaquastaupdate-module" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> <strong>The faoswsAquastaUpdate module</strong></h1>
+<p>The <strong>faoswsAquastatUpdate</strong> module is the <em>heart</em> of the AQUASTAT migration into the SWS since it runs the periodic update of the <code>aquastat_update</code> dataset whenever new data from questionnaire and/or external sources are available.</p>
+<div class="figure" style="text-align: center"><span id="fig:figWORKFLOWUPDATE"></span>
+<img src="images/faoswsAquastatUpdate.png" alt="Workflow of the faoswsAquastatUpdate module" width="75%" />
+<p class="caption">
+Figure 4.1: Workflow of the faoswsAquastatUpdate module
+</p>
+</div>
+<div id="methods" class="section level2">
+<h2><span class="header-section-number">4.1</span> <strong>Methods</strong></h2>
+<p>The <strong>faoswsAquastatUpdate</strong> module applies different imputation’s methods, depending on the <code>aquastatElement</code>. Below you find their definitions and applications in the module.</p>
+<div id="calculate-indicators-first-calculation" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> <strong>Calculate indicators (<em>First Calculation</em>)</strong></h3>
+<p>After merging the data coming from the <code>AQUASTAT Questionnaire</code>, <code>AQUASTAT External</code> and <code>aquastat_update</code>, the <strong>faoswsAquastatupdate</strong> module implements the calculation of indicators by applying the information in the SWS <code>calculation_rule</code> datatable.</p>
+<!--The **First Calculation** and **Second Calculations** are the key part of the module as they apply the available formulas in the datatable `calculation_rule`.
+The calculations are restricted applied just to the `aquastatElement` classified as **indicator**.-->
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:calcs">Table 4.1: </span>Calculation rules in AQUASTAT.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+calculation_rule
+</th>
+<th style="text-align:left;">
+indicator_name
+</th>
+<th style="text-align:left;">
+component_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+[4100]=[4559]+[4560]
+</td>
+<td style="text-align:left;">
+[Total area of the country (excl. coastal water)]
+</td>
+<td style="text-align:left;">
+[Land area]+[InlandWater]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4107]=[4104]/([4100]/100)
+</td>
+<td style="text-align:left;">
+[Population density]
+</td>
+<td style="text-align:left;">
+[Total population]/([Total area of the country]/100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4108]=[4109]+[4110]
+</td>
+<td style="text-align:left;">
+[Population economically active in agriculture]
+</td>
+<td style="text-align:left;">
+[Male population economically active in agriculture]+[Female population economically active in agriculture]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4150]=[4100] * [4151] / 100000
+</td>
+<td style="text-align:left;">
+[Long-term average annual precipitation in volume]
+</td>
+<td style="text-align:left;">
+[Total area of the country]*[Long-term average annual precipitation in depth]/100000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4157]=[4154]+[4155]-[4156]
+</td>
+<td style="text-align:left;">
+[Total internal renewable water resources (IRWR)]
+</td>
+<td style="text-align:left;">
+[Groundwater produced internally]+[Surface water produced internally]-[Overlap between surface water and groundwater]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4158]=[4157]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Total internal renewable water resources per capita]
+</td>
+<td style="text-align:left;">
+[Total internal renewable water resources (IRWR)]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4164]=[4160]+[4162]+[4168]
+</td>
+<td style="text-align:left;">
+[Surface water: accounted inflow]
+</td>
+<td style="text-align:left;">
+[Surface water: inflow not submitted to treaties]+[Surface water: inflow secured through treaties]+[Surface water: accounted flow of border rivers]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4176]=[4160]+[4162]+[4168]-[4174]
+</td>
+<td style="text-align:left;">
+[Surface water: total external renewable]
+</td>
+<td style="text-align:left;">
+[Surface water: inflow not submitted to treaties]+[Surface water: inflow secured through treaties]+[Surface water: accounted flow of border rivers]-[Surface water: outflow to other countries secured through treaties]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4182]=[4176]+[4452]
+</td>
+<td style="text-align:left;">
+[Water resources: total external renewable]
+</td>
+<td style="text-align:left;">
+[Surface water: total external renewable]+[Groundwater: accounted inflow]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4185]=[4176]+[4155]
+</td>
+<td style="text-align:left;">
+[Total renewable surface water]
+</td>
+<td style="text-align:left;">
+[Surface water: total external renewable]+[Surface water produced internally]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4187]=[4154]+[4452]
+</td>
+<td style="text-align:left;">
+[Total renewable groundwater]
+</td>
+<td style="text-align:left;">
+[Groundwater produced internally]+[Groundwater: accounted inflow]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4188]=[4185]+[4187]-[4156]
+</td>
+<td style="text-align:left;">
+[Total renewable water resources]
+</td>
+<td style="text-align:left;">
+[Total renewable surface water]+[Total renewable groundwater]-[Overlap between surface water and groundwater]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4190]=[4188]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Total renewable water resources per capita]
+</td>
+<td style="text-align:left;">
+[Total renewable water resources]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4192]=100*([4164]+[4452])/([4164]+[4452]+[4157])
+</td>
+<td style="text-align:left;">
+[Dependency ratio]
+</td>
+<td style="text-align:left;">
+100*([Surface water: accounted inflow]+[Groundwater: accounted inflow])/([Surface water: accounted inflow]+[Groundwater: accounted inflow]+[Total internal renewable water resources (IRWR)]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4509]=[4193]+[4194]
+</td>
+<td style="text-align:left;">
+[Exploitable: total renewable surface water]
+</td>
+<td style="text-align:left;">
+[Exploitable: regular renewable surface water]+[Exploitable: irregular renewable surface water]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4196]=[4509]+[4195]
+</td>
+<td style="text-align:left;">
+[Total exploitable water resources]
+</td>
+<td style="text-align:left;">
+[Exploitable: total renewable surface water]+[Exploitable: regular renewable groundwater]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4253]=[4251]+[4252]+[4250]
+</td>
+<td style="text-align:left;">
+[Total water withdrawal]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal]+[Industrial water withdrawal]+[Agricultural water withdrawal]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4254]=[4250]/[4253]*100
+</td>
+<td style="text-align:left;">
+[Agricultural water withdrawal as % of total water withdrawal]
+</td>
+<td style="text-align:left;">
+[Agricultural water withdrawal]/[Total water withdrawal]*100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4255]=[4251]/[4253]*100
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal as % of total water withdrawal]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal]/[Total water withdrawal]*100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4256]=[4252]/[4253]*100
+</td>
+<td style="text-align:left;">
+[Industrial water withdrawal as % of total water withdrawal]
+</td>
+<td style="text-align:left;">
+[Industrial water withdrawal]/[Total water withdrawal]*100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4257]=[4253]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Total water withdrawal per capita]
+</td>
+<td style="text-align:left;">
+[Total water withdrawal]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4263]=[4261]+[4262]
+</td>
+<td style="text-align:left;">
+[Total freshwater withdrawal]
+</td>
+<td style="text-align:left;">
+[Total water withdrawal]-[Desalinated water produced]-[Direct use of treated municipal wastewater]-[Direct use of agricultural drainage water]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4263]=[4253]-[4264]-[4265]-[4451]
+</td>
+<td style="text-align:left;">
+[Total freshwater withdrawal]
+</td>
+<td style="text-align:left;">
+[Total water withdrawal]-[Desalinated water produced]-[Direct use of treated municipal wastewater]-[Direct use of agricultural drainage water]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4271]=100*[4260]/[4250]
+</td>
+<td style="text-align:left;">
+[Agricultural water requirement as % of agricultural water withdrawal]
+</td>
+<td style="text-align:left;">
+100*[Irrigation water requirement]/[Agricultural water withdrawal]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4273]=100*[4250]/[4188]
+</td>
+<td style="text-align:left;">
+[Agricultural water withdrawal as % of total renewable water resources]
+</td>
+<td style="text-align:left;">
+100*[Agricultural water withdrawal]/[Total renewable water resources]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4275]=100*[4263]/[4188]
+</td>
+<td style="text-align:left;">
+[MDG 7.5. Freshwater withdrawal as % of total renewable water resources]
+</td>
+<td style="text-align:left;">
+100*[Total freshwater withdrawal (primary and secondary)]/[Total renewable water resources]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4300]=[4303]+[4304]
+</td>
+<td style="text-align:left;">
+[Total cultivated area drained]
+</td>
+<td style="text-align:left;">
+[Area equipped for irrigation drained]+[Non-irrigated cultivated area drained]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4305]=100*[4300]/[4103]
+</td>
+<td style="text-align:left;">
+[% of total cultivated area drained]
+</td>
+<td style="text-align:left;">
+100*[Total cultivated area drained]/[Cultivated area (arable land + permanent crops)]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4311]=[4308]+[4309]+[4310]
+</td>
+<td style="text-align:left;">
+[Area equipped for full control irrigation: total]
+</td>
+<td style="text-align:left;">
+[Area equipped for full control irrigation: surface irrigation]+[Area equipped for full control irrigation: sprinkler irrigation]+[Area equipped for full control irrigation: localized irrigation]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4313]= [4311]+[4312]+[4316]
+</td>
+<td style="text-align:left;">
+[Area equipped for irrigation: total]
+</td>
+<td style="text-align:left;">
+[Area equipped for full control irrigation: total]+[Area equipped for irrigation: equipped lowland areas]+[Area equipped for irrigation: spate irrigation]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4550]=100*[4263]/([4188])
+</td>
+<td style="text-align:left;">
+[SDG 6.4.2. Water Stress]
+</td>
+<td style="text-align:left;">
+100*[Total freshwater withdrawal (primary and secondary)]/([Total renewable water resources]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4317]= [4313]+[4314]+[4315]
+</td>
+<td style="text-align:left;">
+[Total agricultural water managed area]
+</td>
+<td style="text-align:left;">
+[Area equipped for irrigation: total]+[Flood recession cropping area non-equipped]+[Cultivated wetlands and inland valley bottoms non-equipped]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4319]=100*[4313]/[4317]
+</td>
+<td style="text-align:left;">
+[% of agricultural water managed area equipped for irrigation]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation: total]/[Total agricultural water managed area]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4323]=100*[4320]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by groundwater ]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by groundwater]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4324]=100*[4321]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by surface water]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by surface water]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4325]=100*[4322]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by mixed surface water and groundwater]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by mixed surface water and groundwater]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4327]=100*[4326]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation power irrigated]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for power irrigation (surface water or groundwater)]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4328]=100*[4318]/[4313]
+</td>
+<td style="text-align:left;">
+[% of the area equipped for irrigation actually irrigated]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation: actually irrigated]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4330]=100*[4313]/[4307]
+</td>
+<td style="text-align:left;">
+[% of irrigation potential equipped for irrigation]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation: total]/[Irrigation potential]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4331]=100*[4313]/[4103]
+</td>
+<td style="text-align:left;">
+[% of the cultivated area equipped for irrigation]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation: total]/[Cultivated area (arable land + permanent crops)]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4445]=100*[4400]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation salinized]
+</td>
+<td style="text-align:left;">
+100*[Area salinized by irrigation]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4446]=100*[4303]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation drained]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation drained]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4448]=[4314]+[4315]
+</td>
+<td style="text-align:left;">
+[Other agricultural water managed area]
+</td>
+<td style="text-align:left;">
+[Flood recession cropping area non-equipped]+[Cultivated wetlands and inland valley bottoms non-equipped]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4450]=100*[4263]/[4157]
+</td>
+<td style="text-align:left;">
+[Freshwater withdrawal as % of internal renewable water resources]
+</td>
+<td style="text-align:left;">
+100*[Total freshwater withdrawal (primary and secondary)]/[Total internal renewable water resources (IRWR)]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4455]=100*[4454]/[4101]
+</td>
+<td style="text-align:left;">
+[Conservation agriculture area as % of arable land area]
+</td>
+<td style="text-align:left;">
+100*[Conservation agriculture area]/[Arable land area]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4457]=[4251]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal per capita (total population)]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4459]=[4309]+[4310]
+</td>
+<td style="text-align:left;">
+[Area equipped for full control irrigation: pressurized (sprinkler + localized)]
+</td>
+<td style="text-align:left;">
+[Area equipped for full control irrigation: sprinkler irrigation]+[Area equipped for full control irrigation: localized irrigation]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4462]=100*[4379]/[4461]
+</td>
+<td style="text-align:left;">
+[Harvested irrigated crop area as % of the full control irrigation area actually irrigated]
+</td>
+<td style="text-align:left;">
+100*[Total harvested irrigated crop area (full control irrigation)]/[Area equipped for full control irrigation: actually irrigated]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4463]=100*[4461]/[4311]
+</td>
+<td style="text-align:left;">
+[% of area equipped for full control irrigation actually irrigated]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for full control irrigation: actually irrigated]/[Area equipped for full control irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4464]=100*[4379]/[4461]
+</td>
+<td style="text-align:left;">
+[Irrigated cropping intensity]
+</td>
+<td style="text-align:left;">
+100*[Total harvested irrigated crop area (full control irrigation)]/[Area equipped for full control irrigation: actually irrigated]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4466]=100*[4465]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped by direct use of treated municipal wastewater]
+</td>
+<td style="text-align:left;">
+100*[Area equipped by direct use of treated municipal wastewater]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4467]=100*[4263]/[4253]
+</td>
+<td style="text-align:left;">
+[Freshwater withdrawal as % of total water withdrawal
+</td>
+<td style="text-align:left;">
+100*[Total freshwater withdrawal (primary and secondary)]/[Total water withdrawal]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4468]=[4251]*1000000/[4106]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal per capita (urban population)]
+</td>
+<td style="text-align:left;">
+[Municipal water withdrawal]*1000000/[Urban population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4470]=100*[4103]/[4100]
+</td>
+<td style="text-align:left;">
+[% of total country area cultivated]
+</td>
+<td style="text-align:left;">
+100*[Cultivated area (arable land + permanent crops)]/[Total area of the country]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4471]=1000000*[4197]/[4104]
+</td>
+<td style="text-align:left;">
+[Dam capacity per capita]
+</td>
+<td style="text-align:left;">
+1000000*[Total dam capacity]/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4514]=100*[4513]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by direct use of non-treated municipal wastewater]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by direct use of non-treated municipal wastewater]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4527]=100*[4526]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by direct use of agricultural drainage water]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by direct use of agricultural drainage water]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4531]= [4252]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Industrial water withdrawal per capita]
+</td>
+<td style="text-align:left;">
+[Industrial water withdrawal]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4532]=[4250]*1000000/[4104]
+</td>
+<td style="text-align:left;">
+[Agricultural water withdrawal per capita]
+</td>
+<td style="text-align:left;">
+[Agricultural water withdrawal]*1000000/[Total population]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4538]=100*[4108]/[4449]
+</td>
+<td style="text-align:left;">
+[% of economically active population active in agriculture]
+</td>
+<td style="text-align:left;">
+100*[Population economically active in agriculture]/[Population economically active]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4540]=100*[4539]/[4313]
+</td>
+<td style="text-align:left;">
+[% of area equipped for irrigation by desalinated water]
+</td>
+<td style="text-align:left;">
+100*[Area equipped for irrigation by desalinated water]/[Area equipped for irrigation: total]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4550]=100*[4263]/([4188]-[4549])
+</td>
+<td style="text-align:left;">
+[SDG 6.4.2. Water Stress]
+</td>
+<td style="text-align:left;">
+100*[Total freshwater withdrawal (primary and secondary)]/([Total renewable water resources]-[Environmental Flow Requirements]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4556]=100*[4379]/[4103]
+</td>
+<td style="text-align:left;">
+[% of cultivated land irrigated]
+</td>
+<td style="text-align:left;">
+100*[Total harvested irrigated crop area (full control irrigation)]/[Arable land area]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4556]=100*[4461]/[4103]
+</td>
+<td style="text-align:left;">
+[% of cultivated land irrigated]
+</td>
+<td style="text-align:left;">
+100*[Total harvested irrigated crop area (full control irrigation)]/[Arable land area]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4555]=100<em>1/(1+((1-([4556]/100))/(([4556]/100)</em>[4557])))
+</td>
+<td style="text-align:left;">
+[% of agricultural GVA produced by irrigated agriculture]
+</td>
+<td style="text-align:left;">
+1/(1+((1-([% of arable land irrigated]/100))/(([% of arable land irrigated]/100)*[4557])))
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4552]= ((([4548]/[4558]<em>100)</em>[4555]/100)/[4250])/1000000000
+</td>
+<td style="text-align:left;">
+[SDG 6.4.1. Irrigated Agriculture Water Use Efficiency]
+</td>
+<td style="text-align:left;">
+(([Agriculture, value added to GDP]*[% of agricultural GVA produced by irrigated agriculture]/100)/[Agricultural water withdrawal])/1000000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4553]=(([4546]/[4558]*100)/[4252])/1000000000
+</td>
+<td style="text-align:left;">
+[SDG 6.4.1. Industrial Water Use Efficiency]
+</td>
+<td style="text-align:left;">
+([Industry, value added to GDP]/[Industrial water withdrawal])/1000000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4554]= (([4547]/[4558]*100)/[4251])/1000000000
+</td>
+<td style="text-align:left;">
+[SDG 6.4.1. Services Water Use Efficiency]
+</td>
+<td style="text-align:left;">
+([Services, value added to GDP]/[Municipal water withdrawal])/1000000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4551]=([4552]<em>[4254]/100)+([4553]</em>[4256]/100)+([4554]*[4255]/100)
+</td>
+<td style="text-align:left;">
+[SDG 6.4.1. Water Use Efficiency]
+</td>
+<td style="text-align:left;">
+([SDG 6.4.1. Irrigated Agriculture Water Use Efficiency]<em>[Agricultural water withdrawal as % of total water withdrawal]) + ([SDG 6.4.1. Industrial Water Use Efficiency]</em>[Industrial water withdrawal as % of total water withdrawal]) + ([SDG 6.4.1. Services Water Use Efficiency]*[Municipal water withdrawal as % of total withdrawal])
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4533]=[4465]
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4534]=[4513]
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4535]=[4265]
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4536]=[4156]
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="vertical-imputation-components" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> <strong>Vertical Imputation (components)</strong></h3>
+<p>After the <em>First Calculation</em>, the module tries to retrieve some information for selected components based on the share of their indicators. This can be done only for the formulas that are <em>linear combination</em>. For instance, for a given country and year, an indicator and all its components are known. The idea then is to calculate the share of each component based on that indicator and fill in the gaps where the indicator is also available but the components are not. The example below illustrates the vertical imputation method.</p>
+<div class="figure" style="text-align: center"><span id="fig:figVertImp"></span>
+<img src="images/vertical_imputation_example.png" alt="Bulgaria - Vertical Imputation [4311]=[4308]+[4309]+[4310]" width="75%" />
+<p class="caption">
+Figure 4.2: Bulgaria - Vertical Imputation [4311]=[4308]+[4309]+[4310]
+</p>
+</div>
+<p>The vertical imputation is applied on the selected elements (components). See the components by formula.
+Mind that none of them are <em>LTA</em>.</p>
+<ul>
+<li>[4100]=[4559]+[4560]</li>
+<li>[4253]=[4251]+[4252]+[4250]</li>
+<li>[4300]=[4303]+[4304]</li>
+<li>[4311]=[4308]+[4309]+[4310]</li>
+<li>[4313]=[4311]+[4312]+[4316]</li>
+<li>[4317]=[4313]+[4314]+[4315]</li>
+</ul>
+</div>
+<div id="linear-interpolation-and-carry-forward" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> <strong>Linear Interpolation and Carry-Forward</strong></h3>
+<p>The next methods to take place are the linear interpolation and carry-forward. For the elements classified as <em>LTA</em> (<code>Long-Term Average</code>), the module will just carry-forward their values as they are elements that are not supposed to change over time.
+However, if the element is not <code>LTA</code>, the linear interpolation method takes place if there are at least two non-missing values in the time series. If not, the only possible way to impute it is through the carry-forward.
+<!--However, the variables that are neither indicator nor *LTA* are imputed through the linear interpolation method if there are at least two non-missing values in the time series. If not, the only possible way to impute it is through the carry-forward.--></p>
+</div>
+<div id="recalculate-indicators-second-calculation" class="section level3">
+<h3><span class="header-section-number">4.1.4</span> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></h3>
+<p>The time-series completeness brought by imputations is used by the recalculation step to try to calculate the remaining indicators that were still missing after the <em>first calcualtion</em>. This is the last step before getting the outcome.</p>
+<p><br></p>
+</div>
+</div>
+<div id="running-the-module-2" class="section level2">
+<h2><span class="header-section-number">4.2</span> <strong>Running the module</strong></h2>
+<ol style="list-style-type: decimal">
+<li><p>Log in the SWS;</p></li>
+<li><p>Click on <strong>New Query</strong>;</p></li>
+<li><p>Select <strong>AQUASTAT domain</strong> and <strong>aquastat_update dataset</strong>;</p></li>
+<li><p>Select whatever country, measured element, and timePointYears;</p></li>
+<li><p>Run the query by clicking on the <strong>Run</strong> button;</p></li>
+</ol>
+<div class="figure" style="text-align: center"><span id="fig:up124"></span>
+<img src="images/sws_1_to_5_steps.png" alt="Steps 1 to 5 to run the module in the SWS." width="100%" />
+<p class="caption">
+Figure 4.3: Steps 1 to 5 to run the module in the SWS.
+</p>
+</div>
+<!--The `aquastat_update` dataset stores the current AQUASTAT data coming from the previous system and the outcome of the **faoswsAquastatUpdate** module.-->
+<ol start="6" style="list-style-type: decimal">
+<li><p>Click on <strong>Run plugin</strong> on the top-right (see figure below);</p></li>
+<li><p>Select the <strong>faoswsAquastatUpdate</strong> module, choose the set of countries (<em>All countries</em> or <em>Session countries</em>) and click on <strong>Run plugin</strong> on the bottom-right;</p></li>
+</ol>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:up7"></span>
+<img src="images/sws_6_7_steps.png" alt="Select the faoswsAquastatUpdate and run it in the SWS." width="100%" />
+<p class="caption">
+Figure 4.4: Select the faoswsAquastatUpdate and run it in the SWS.
+</p>
+</div>
+<br>
+8. Wait for the results to appear in the session;
+<br>
+<div class="figure" style="text-align: center"><span id="fig:up8"></span>
+<img src="images/update_8.PNG" alt="Wait for the end of the processing (~ 15 minutes)." width="100%" />
+<p class="caption">
+Figure 4.5: Wait for the end of the processing (~ 15 minutes).
+</p>
+</div>
+<p><br>
+9. Check the populated session and click on <strong>Save to dataset</strong> after validation.</p>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:up9"></span>
+<img src="images/update_9.PNG" alt="Wait for the end of the processing (~ 15 minutes)." width="100%" />
+<p class="caption">
+Figure 4.6: Wait for the end of the processing (~ 15 minutes).
+</p>
+</div>
+<p><br></p>
+</div>
+<div id="flag-assignment" class="section level2">
+<h2><span class="header-section-number">4.3</span> <strong>Flag Assignment</strong></h2>
+<p>The flag assignment constitutes a paramount step in the migration of any process to the SWS, helping to understand how the data was collected/estimated and also in the validation process. The plugin <code>faoswsAquastatUpdate</code> provides an important information on the metadata regarding the origin of each data point. In this way it is possible to analyse the relevance of flags by origin. See the figure below with the set of flags for each origin.</p>
+<div class="figure" style="text-align: center"><span id="fig:relevanceFlagsOrigin"></span>
+<img src="images/AQUASTAT_Flags_Origin.png" alt="Relevance of flags by origin" width="75%" />
+<p class="caption">
+Figure 4.7: Relevance of flags by origin
+</p>
+</div>
+<p>Mind that the size of each rectangle is determined by the number of data points. Therefore, the flags <code>I,t</code> and <code>I,e</code> are the ones which have more relevance in the module while <code>I,i</code> is the one with less relevance.</p>
+</div>
+<div id="aquastat-network" class="section level2">
+<h2><span class="header-section-number">4.4</span> <strong>AQUASTAT Network</strong></h2>
+<p>The calculation rules are the key part of the plugin <code>faoswsAquastatUpdate</code> as it provides the formulas to calculate the indicators, including the SDG’s indicators.</p>
+<p>As an indicator can be also a component of another indicator, a deeper analysis of how indicators and components are linked to each other is needed.</p>
+<p>Below you can see how the AQUASTAT elements are connected to each other. It is important to note that there is a high concentration of elements connected, what could evidence a mutual dependency. The elements are split into three categories: <strong>Indicator</strong>, <strong>Component</strong> and <strong>Indicator&amp;Component</strong>. For instance, <strong>4313</strong> has the largest circle, which means that it’s the <em>variable</em> that has more connections. In this case, the connections means that many indicators depend on <strong>4313</strong>. Other networks are completely isolated, as per <strong>4455</strong>, <strong>4454</strong> and <strong>4101</strong> (on the left of the figure).</p>
+<div class="figure" style="text-align: center"><span id="fig:network"></span>
+<img src="images/network.PNG" alt="AQUASTAT Network" width="55%" />
+<p class="caption">
+Figure 4.8: AQUASTAT Network
+</p>
+</div>
+<p>Despite the fact that the network above can be convoluted to understand given a high concentration of elements interconnected, the graph above is a <strong>DAG</strong> (Directed Acyclic Graph) as per the result of the test in R. This means that it contains no cycles.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="AquastatExternal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="AquastatValidation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

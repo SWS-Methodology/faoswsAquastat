@@ -1,0 +1,15 @@
+Field,Description
+Source_Id,ID source
+Title,Title of the ID source
+Personal_Author,Name of author
+Corporate_Author,Name of corporate author
+Journal_Title,Name of journal
+Publication_Year,Year of publication
+Editor,Name of editor
+Comments,Comments about the publication
+Hidden,Flag of hidden
+area_id,FAOSTAT Area code
+Area_name,FAOSTAT Area name
+source_file,Source of the file
+source_url,URL of the source
+Source_type,Type of source

@@ -1,0 +1,8 @@
+Field,Description
+element_code,AQUASTAT element code
+element_name,AQUASTAT element name
+disseminated,"Flag of disseminated (D = disseminated , I = internal)"
+calculated,Flag of calculated
+source,"Source of the element (e.g. FAOSTAT, AQUASTAT, ILO)"
+lta,"Flag of Long Term Average ( 1 = TRUE, 0 = FALSE)"
+pr,"Flag of Primary Variable (1 = TRUE, 0 = FALSE)"
