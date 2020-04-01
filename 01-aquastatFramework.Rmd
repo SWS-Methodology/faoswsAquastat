@@ -40,7 +40,7 @@ knitr::include_graphics("images/aquastat_info_management.png")
 
 AQUASTAT dataflow will predominantly be triggered by the filling and compilation of the **Water and Agriculture questionnaire** by the AQUASTAT network of National Correspondents. The CIO - SWS counterpart is responsible for creating a tailored questionnaire harvesters to automatically extract data from filled surveys and output it as an SWS compliant dataset. Once in the SWS, the technical unit will benefit from the tools and other features that have been developed to make the AQUASTAT dataflow as seamless as possible. On this basis, the flowchart below gives the AQUASTAT dataflow that has been fostered by the ESS - SWS team.
 
-```{r figSWSDataFlow,  echo=FALSE, out.width="55%", fig.align="center",fig.cap='Developed AQUATAST - SWS dataflow'}
+```{r figSWSDataFlow,  echo=FALSE, out.width="75%", fig.align="center",fig.cap='Developed AQUATAST - SWS dataflow'}
 knitr::include_graphics("images/sws_dataflow.png")
 ```
 
