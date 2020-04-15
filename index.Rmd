@@ -42,7 +42,7 @@ Use the **Chrome browser** to have a correct vizualization of HTML outputs in th
 <br>
 <br>
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://www.crcpress.com/product/isbn/9781138700109'}
+```{r fig.align='center', echo=FALSE}
 knitr::include_graphics('images/cover_book.png', dpi = NA)
 ```
 
