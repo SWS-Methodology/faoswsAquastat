@@ -40,7 +40,8 @@ d = data.table::fread("tables/step2_aqua_quest.csv")
 knitr::kable(d,   
              caption = paste("Step 2"),
              booktabs = TRUE) %>%
-  kableExtra::kable_styling(font_size = 12)
+  kableExtra::kable_styling(font_size = 12) %>% 
+  scroll_box(width = "100%", box_css = "border: 0px;")
 ```
 
 
