@@ -5,34 +5,34 @@ Name of Dam,Name of dam
 Alternate Dam Name,Unit of the indicator
 ISO alpha-3,Country name (ISO)
 Region,Region of country
-Administrative Unit,
-Nearest city,
-River,
-Major basin,
-Sub-basin,
-Completed/operational since,
-Dam height(m),
-Reservoir capacity (million m3),
+Administrative Unit,Administrative region within the country
+Nearest city,Name of the city nearest to where the dam is located
+River,River on which the dam is built
+Major basin,Name of the major river basin in which the dam is located
+Sub-basin,Name of the sub-basin in which the dam is located
+Completed/operational since,"Year in which the dam was completed, operational or improved"
+Dam height(m),"Height of dam in metres. The precision given is two decimals (cm), although most of the available figures are given with a precision of 1 metre"
+Reservoir capacity (million m3),"Capacity of reservoir in million (1 000 000) cubic metres (this is equivalent to hm3). It refers to the initial capacity, not taking into consideration the reduction in volume due to sedimentation"
 Dam Category,
-Reservoir area (km2),
+Reservoir area (km2),Surface area of the reservoir in square kilometres
 Yearly ETO (mm/m),
-Evaporation,
-Evaporation/Capacity,
-Sedimentation (latest known) (%),
-Irrigation,
-Water supply,
-Flood control,
-Hydroelectricity MIW,
-Navigation,
-Recreation,
-Pollution control,
-Livestock rearing,
-Other,
-Decimal degree latitude,
-Decimal degree longitude,
+Evaporation,Dam evaporation
+Evaporation/Capacity,Average evaporation per capacity area
+Sedimentation (latest known) (%),Percentage of initial capacity lost to sedimentation (%). This information is updated to be latest known.
+Irrigation,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Water supply,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Flood control,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Hydroelectricity MIW,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Navigation,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Recreation,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Pollution control,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Livestock rearing,"An ""x"" here denotes the dam is used for this purpose. Check the comment for potential additional details."
+Other,Purpose of the dam other than the 8 above. Check the comment for potential additional details.
+Decimal degree latitude,"Latitudinal coordinate of the dam, expressed in decimal degrees."
+Decimal degree longitude,"Longitudinal coordinate of the dam, expressed in decimal degrees."
 Validated,
-National reference(s),
-Other reference(s),
+National reference(s),"Number of reference providing information on the dam, coming from a national source. The references are given in Notes and References of the regional file."
+Other reference(s),"Number of reference providing information on the dam, coming from a global or general source (for example ICOLD). The references are given in Notes and References of the regional file"
 Internal metadata,
 GEO NOTES,
-Comments,
+Comments,In this column specific comments of importance to the dam are given

@@ -1,8 +1,6 @@
 Chapter,Description
 Ch \@ref(AquastatFramework),Provides the AQUASTAT framework and entire overview.
-Ch \@ref(AquastatQuestionnaire),Provides the whole documentation of the module faoswsAquastatQuestionnaire.
+Ch \@ref(AquastatQuestionnaire),Provides the whole documentation of the management of AQUASTAT questionnaires.
 Ch \@ref(AquastatExternal),Provides the whole documentation of the module faoswsAquastatExternal.
 Ch \@ref(faoswsAquastatUpdate),Provides the whole documentation of the module faoswsAquastatUpdate.
-Ch \@ref(AquastatValidation),Provides the whole documentation of the module faoswsAquastatValidation.
-Ch \@ref(Aggregation),Provides the whole documentation of the module faoswsAquastatAggregation.
 Appendix,"Describe all code lists, reference tables (datatables) and data sets."

@@ -5,28 +5,28 @@ Admin1,Name of Admin1
 Admin2,Name of Admin2
 Admin3,Name of Admin3
 Area(ha),Area in ha
-Year,
-Flag_src,
-AEI(ha),
-AEI_GW(ha),
-AEI_SW(ha),
-AEI_NC(ha),
-AAI(ha),
-AAI_GW(ha),
-AAI_SW(ha),
-AAI_NC(ha),
-AEI_MIRCA(ha),
-AHI_MIRCA(ha),
+Year,Year to which the irrigated areas (following field) refers to
+Flag_src,Water source for irrigation
+AEI(ha),Area equipped for irrigation in hectare
+AEI_GW(ha),Area equipped for irrigation by groundwater in hectare
+AEI_SW(ha),Area equipped for irrigation by surface water in hectare
+AEI_NC(ha),Area equipped for irrigation by non-conventional water in hectare
+AAI(ha),Area equipped for irrigation actually irrigated in hectare
+AAI_GW(ha),Area equipped for irrigation by groundwater actually irrigated in hectare
+AAI_SW(ha),Area equipped for irrigation by surface water actually irrigated in hectare
+AAI_NC(ha),Area equipped for irrigation by non-conventional water actually irrigated in hectare
+AEI_MIRCA(ha),Area equipped for irrigation in hectare from MIRCA 2000 - Global data set of monthly irrigated and rainfed crop areas around the year 2000
+AHI_MIRCA(ha),Harvested irrigated crop area in hectare from MIRCA 2000 - Global data set of monthly irrigated and rainfed crop areas around the year 2000
 MMGA_MIRCA(ha),
 ICWU_GCWM(m3 yr-1),
 cs1,
 cs1*MMGA_MIRCA,
 cs2,
-ICWU(m3 yr-1),
-ICWU_GW(m3 yr-1),
-ICWU_SW(m3 yr-1),
-ICWU_NC(m3 yr-1),
-AEI_GW_PCT,
-AEI_GW_FRAC,
-AEI_SW_PCT,
-AEI_SW_FRAC,
+ICWU(m3 yr-1), Irrigation consumptive water use
+ICWU_GW(m3 yr-1), Irrigation consumptive groundwater use
+ICWU_SW(m3 yr-1), Irrigation consumptive surface water use
+ICWU_NC(m3 yr-1), Irrigation consumptive non-conventional water use
+AEI_GW_PCT,Pourcentage of area equipped for irrigation by groundwater
+AEI_GW_FRAC,Fraction of the area equipped for irrigation by groundwater
+AEI_SW_PCT,Pourcentage of area equipped for irrigation by surface water
+AEI_SW_FRAC,Fraction of the area equipped for irrigation by surface water

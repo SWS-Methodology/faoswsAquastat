@@ -7,11 +7,11 @@ The book focuses on the migration of the AQUASTAT statistical processes to SWS. 
 
 1. Data collection relies on a network of AQUASTAT national correspondents in charge of the provision of official national data;
 
-2. As of January of 2019, 107 countries have nominated AQUASTAT national correspondents as requested by FAO Land and Water Division   between April-May 2018;
+2. As of August 2020, 150 countries have nominated AQUASTAT national correspondents as requested by FAO Land and Water Division between April-May 2018;
 
 3. Alternate correspondents from different agencies are also used to improve the data collection;
 
-4. The **FAO Office of the Chief Statistician (OCS)** has endorsed the annual **Water and Agriculture** questionnaire;
+4. The **FAO Office of the Chief Statistician (OCS)** has endorsed the annual **Water and Agriculture** questionnaire as well as the long version of the 2020 questionnaire to be sent every 5 years;
 
 5. AQUASTAT sends out the questionnaire in the first semester of each year.
 
@@ -20,15 +20,15 @@ The book focuses on the migration of the AQUASTAT statistical processes to SWS. 
 
 The **Water and Agriculture** questionnaire has the following characteristics:
   
-  1. Three introductory sections: Cover page, Instructions, Definitions;
+1. Three introductory sections: Cover page, Instructions, Definitions;
 
-2. One data reporting section, including national data on water withdrawal, dam capacity, municipal wastewater, irrigation and drainage;
+2. One data reporting section, including national data on water withdrawal, municipal wastewater, irrigation and drainage;
 
-3. Two Supplementary Information sections: Metadata, Feedback.
+3. Four Supplementary Information sections: SDG 6.4.1 and 6.4.2 calculation sheets, Metadata, Feedback.
 
-4. In addition, to the annual data collection, a more complete questionnaire will be sent every 5 years to populate other AQUASTAT [databases](http://www.fao.org/aquastat/databases/).
+<!--4. In addition, to the annual data collection, a more complete questionnaire will be sent every 5 years to populate other AQUASTAT [databases](http://www.fao.org/aquastat/databases/).-->
 
-5. To download the **Water and Agriculture** questionnaire, please click on this [link](https://firebasestorage.googleapis.com/v0/b/fao-aquastat.appspot.com/o/Excel%2FAQUASTATQuestionnaire2018ENG.xlsm?alt=media&token=43a81b96-1853-46c9-bf38-e94de717efef).
+4. To download the annual **Water and Agriculture** questionnaire, please click on this [link](http://www.fao.org/aquastat/en/overview/methodology/).
 
 ## **The current AQUASTAT information management**
 
@@ -38,7 +38,7 @@ knitr::include_graphics("images/aquastat_info_management.png")
 
 ## **AQUASTAT in SWS: proposed dataflow**
 
-AQUASTAT dataflow will predominantly be triggered by the filling and compilation of the **Water and Agriculture questionnaire** by the AQUASTAT network of National Correspondents. The CIO - SWS counterpart is responsible for creating a tailored questionnaire harvesters to automatically extract data from filled surveys and output it as an SWS compliant dataset. Once in the SWS, the technical unit will benefit from the tools and other features that have been developed to make the AQUASTAT dataflow as seamless as possible. On this basis, the flowchart below gives the AQUASTAT dataflow that has been fostered by the ESS - SWS team.
+AQUASTAT dataflow will predominantly be triggered by the filling and compilation of the **Water and Agriculture questionnaire** by the AQUASTAT network of National Correspondents. In the future, a tailored questionnaire harvester could be created in collaboration with CSI to automatically extract data from filled surveys and output it as an SWS compliant dataset. Once in the SWS, the technical unit will benefit from the tools and other features that have been developed to make the AQUASTAT dataflow as seamless as possible. On this basis, the flowchart below gives the AQUASTAT dataflow that has been fostered by the ESS - SWS team.
 
 ```{r figSWSDataFlow,  echo=FALSE, out.width="75%", fig.align="center",fig.cap='Developed AQUATAST - SWS dataflow'}
 knitr::include_graphics("images/sws_dataflow.png")
@@ -62,7 +62,7 @@ Literature [label = 'Source \n Literature review', shape = folder, fillcolor = B
 
 focalpoint [label = 'Compilation: \n questionnaire filling \n by AQUASTAT \n national correspondent', shape = folder, fillcolor = Beige]
 
-SWSQH [label = 'Harvester: \n questionnaire harvesting \n by CIO - SWS', fillcolor = LightBlue]
+SWSQH [label = 'Harvester: \n questionnaire harvesting \n by CSI - SWS', fillcolor = LightBlue]
 
 Newdata [label = 'Dataset: \n data harvested from questionnaire \n and SWS compliant', shape = folder, fillcolor = Beige]
 
@@ -76,7 +76,7 @@ APIdata [label = 'Dataset: \n aquastat_external', shape = folder, fillcolor = Be
 
 oldsystem [label = 'Database: \n Old Aquastat Working System', shape = folder, fillcolor = Beige]
 
-Migration [label = 'Migration: \n legacy data into the SWS \n done by CIO - SWS', fillcolor = LightBlue]
+Migration [label = 'Migration: \n legacy data into the SWS \n done by CSI - SWS', fillcolor = LightBlue]
 
 legacydata [label = 'Dataset: \n aquastat_legacy dataset ', shape = folder, fillcolor = Beige]
 
@@ -134,7 +134,7 @@ library(data.table)
 library(kableExtra)
 d = data.table::fread("tables/aquastat_meta_FL_sources.csv")
 d <- d[calculated %in% 'V']
-d <- d[, c('Source', 'calculated', 'lta', 'PR') := NULL]
+d <- d[, c('source', 'calculated', 'lta', 'pr') := NULL]
 
 knitr::kable(d,   
              caption = paste("AQUASTAT variable codes and names actually collected."),
@@ -165,11 +165,11 @@ The AQUASTAT calculated variables **Rural Population** and **Cultivated area (ar
 
 ```{r externalData, echo=FALSE, message=FALSE}
 require(data.table)
-d = data.table::fread("tables/aquastat_meta_FL_sources.csv")
-d <- d[Source == 'O']
-d <- d[,.(element_code, element_name, disseminated, source)]
+d = data.table::fread("tables/aqua_external_sources (2).csv")
+# d <- d[source == 'O']
+# d <- d[,.(element_code, element_name, disseminated, source)]
 knitr::kable(d,   
-             caption = paste("AQUASTAT indicators (derived) calculated by AQUASTAT."),
+             caption = paste("External AQUASTAT variables."),
              booktabs = TRUE) %>%
   kableExtra::kable_styling(font_size = 12)
 

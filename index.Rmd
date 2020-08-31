@@ -74,7 +74,7 @@ knitr::kable(d
 
 ## **Why to use the SWS** {-}
 
-The Statistical Working System (SWS) is a corporate system that supports data collection, processing and validation, metadata management, and quality assessment of FAO's main statistical domains in line with the Generic Statistical Business Process Model. It has a dual nature – both technological and statistical – and for this reason, is developed by two different teams (the IT Division [CIO] and the Statistics Division [ESS]). The SWS provides an end-to-end solution for inputting and storing raw data, performing automated statistical processes (e.g. imputation, validation, etc.), and producing data that are ready for dissemination. Moreover, the reasons why you should use the SWS are:
+The Statistical Working System (SWS) is a corporate system that supports data collection, processing and validation, metadata management, and quality assessment of FAO's main statistical domains in line with the Generic Statistical Business Process Model. It has a dual nature – both technological and statistical – and for this reason, is developed by two different teams (the IT Division [CSI] and the Statistics Division [ESS]). The SWS provides an end-to-end solution for inputting and storing raw data, performing automated statistical processes (e.g. imputation, validation, etc.), and producing data that are ready for dissemination. Moreover, the reasons why you should use the SWS are:
 
 - The SWS improves data quality by **centralizing and standardizing** the maintenance of data, classification systems, methodologies, and standards.
 - The SWS is **cost-efficient** in terms of statistical development and functionalities:
@@ -102,8 +102,8 @@ Any migration into the SWS requires the interaction between at least three teams
 
 1. The **technical unit** interested in automating either some or all its analytical processes in the SWS. The technical unit can be treated as client demanding services from the counterparts responsible for the implementation of its data and statistical assets in the SWS. Therefore, a successful AQUASTAT - SWS migration depends on the coordination between the technical division and other parts. In the AQUASTAT - SWS migration framework the technical unit is called AQUASTAT and is represented by:
 
-- **Virginie Gillet** *Land and Water Officer (CBLD)*
-- **Jippe Hoogeveen** *Technical Officer (CBL)*
+- **Virginie Gillet** *Land and Water Officer (NSL)*
+- **Jippe Hoogeveen** *Technical Officer (NSL)*
 
 2. The **ESS - Methodological Innovation Team** (ESS - SWS) responsible for the implementation and documentation of the required statistical processes. From the ESS - SWS team the focal points for AQUASTAT - SWS migration are:
 
@@ -113,10 +113,11 @@ Any migration into the SWS requires the interaction between at least three teams
   
 
   
-3. The **CIO - SWS** the **primary backend and frontend maintainer of the SWS** and responsible for the implementation and documentation of non-statistical processes (IT infrastructure). The CIO - SWS team have as interlocutors:
+3. The **CSI - SWS** the **primary backend and frontend maintainer of the SWS** and responsible for the implementation and documentation of non-statistical processes (IT infrastructure). The CSI - SWS team have as interlocutors:
 
-- **Enrico Anello** *Full Stack Developer (CIO)*
-- **Matteo Terrinoni** *Lead Front End Developer (CIO)*
-- **John Rowell** *Information Technology Officer (CIO)*
+- **Enrico Anello** *Full Stack Developer (CSI)*
+- **Matteo Terrinoni** *Lead Front End Developer (CSI)*
+- **Rohi Fadlun** *Full Stack Java Developer (CSI)*
+- **John Rowell** *Information Technology Officer (CSI)*
   
 

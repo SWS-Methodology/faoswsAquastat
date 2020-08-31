@@ -3,12 +3,12 @@
 The **faoswsAquastatExternal** is essentially a data harvester that emerges as demand for making the AQUASTAT process of extracting and reshaping data from external sources (web databases) easier.
 
 
-```{r  figExternal, echo=FALSE, out.width="65%", fig.align="center", fig.show='hold', fig.cap='Ideal Workflow of the faoswsAquastatExternal module'}
-knitr::include_graphics("images/faoswsAquastatExetrnal.png")
+```{r  figExternal, echo=FALSE, out.width="65%", fig.align="center", fig.show='hold', fig.cap='Workflow of the faoswsAquastatExternal module'}
+knitr::include_graphics("images/faoswsAquastatExternal.png")
 
 ```
 
-*Only Possible* **Workflow**
+<!--*Only Possible* **Workflow**
 
 <br>
 ```{block , type='rmdnote'}
@@ -19,14 +19,13 @@ The harvest of all external data was proved to be not possible due to IT securit
 
 Therefore, while the module does not have the clearance to download external data, the `faoswsAquastatExternal` module will only harvest FAOSTAT data.
 
-```
-<br>
+```-->
 
 
-```{r  figExternalPossible, echo=FALSE, out.width="65%", fig.align="center", fig.show='hold', fig.cap='Workflow of the faoswsAquastatExternal module harvesting FAOSTAT data only.'}
+<!--```{r  figExternalPossible, echo=FALSE, out.width="65%", fig.align="center", fig.show='hold', fig.cap='Workflow of the faoswsAquastatExternal module harvesting FAOSTAT data only.'}
 knitr::include_graphics("images/POSSIBLEfaoswsAquastatExetrnal.png")
 
-```
+```-->
 
 ## **Steps**
 
@@ -200,18 +199,10 @@ knitr::include_graphics("images/aqua_external_output.png")
 ```
 <br>
 
-9. Click on **Save to dataset**;
+9. Click on **Save to dataset**. In case new external data are available, please click on **Save to dataset** for the new data to be integrated to the **aquastat_external** dataset and later to the **aquastat_update** dataset;
 
 
 ```{block , type='rmdtip'}
 The aquastat_external dataset has already been saved in the SWS database to prop up the **faoswsAquastatUpdate** module development. If the user knows that the External sources have not been updated, he/she does not neeed to save the dataset gain.
 
-```
-
-<br>
-10. Email to the user.
-
-<br>
-```{r extemail,  echo=FALSE, out.width="100%", fig.cap='The AquastatExternal output is emailed to the user.'}
-knitr::include_graphics("images/aqua_external_email.png")
 ```

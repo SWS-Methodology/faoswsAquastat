@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
+  <title>C The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
   <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  <meta property="og:title" content="C The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/cover_book.png" />
@@ -16,14 +16,14 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
+  <meta name="twitter:title" content="C The faoswsAquastatAggregation module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   
   <meta name="twitter:description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
   <meta name="twitter:image" content="images/cover_book.png" />
 
 
 
-<meta name="date" content="2020-04-15" />
+<meta name="date" content="2020-08-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="AquastatValidation.html"/>
-<link rel="next" href="sws-resources.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -89,14 +89,14 @@
 <li class="chapter" data-level="2.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>2.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="AquastatExternal.html"><a href="AquastatExternal.html"><i class="fa fa-check"></i><b>3</b> <strong>The faoswsAquastatExternal module</strong></a><ul>
-<li class="chapter" data-level="3.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#steps-1"><i class="fa fa-check"></i><b>3.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="3.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>3.1</b> <strong>Steps</strong></a><ul>
 <li class="chapter" data-level="3.1.1" data-path="AquastatExternal.html"><a href="AquastatExternal.html#identifies-aquastat-external-data-sources"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Identifies AQUASTAT external data sources</strong></a></li>
 <li class="chapter" data-level="3.1.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#reshapes-the-data-sources"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Reshapes the data sources</strong></a></li>
 <li class="chapter" data-level="3.1.3" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-aquastat-to-external-sources"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Maps out AQUASTAT to external sources</strong></a></li>
 <li class="chapter" data-level="3.1.4" data-path="AquastatExternal.html"><a href="AquastatExternal.html#maps-out-faostat-areas-to-unsdm49"><i class="fa fa-check"></i><b>3.1.4</b> <strong>Maps out FAOSTAT areas to UNSDM49</strong></a></li>
 <li class="chapter" data-level="3.1.5" data-path="AquastatExternal.html"><a href="AquastatExternal.html#saves-the-output-back-into-sws"><i class="fa fa-check"></i><b>3.1.5</b> <strong>Saves the output back into SWS</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module-1"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>3.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html"><i class="fa fa-check"></i><b>4</b> <strong>The faoswsAquastaUpdate module</strong></a><ul>
 <li class="chapter" data-level="4.1" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#methods"><i class="fa fa-check"></i><b>4.1</b> <strong>Methods</strong></a><ul>
@@ -105,26 +105,9 @@
 <li class="chapter" data-level="4.1.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
 <li class="chapter" data-level="4.1.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#running-the-module-2"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
 <li class="chapter" data-level="4.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
 <li class="chapter" data-level="4.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>5</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
-<li class="chapter" data-level="5.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#steps-2"><i class="fa fa-check"></i><b>5.1</b> <strong>Steps</strong></a><ul>
-<li class="chapter" data-level="5.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>5.1.1</b> <strong>Applies validation rules</strong></a></li>
-<li class="chapter" data-level="5.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>5.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
-<li class="chapter" data-level="5.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>5.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
-<li class="chapter" data-level="5.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>5.1.4</b> <strong>Sends the output to the user email</strong></a></li>
-</ul></li>
-<li class="chapter" data-level="5.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>5.2</b> <strong>Running the module in the SWS</strong></a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>6</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
-<li class="chapter" data-level="6.1" data-path="Aggregation.html"><a href="Aggregation.html#steps-3"><i class="fa fa-check"></i><b>6.1</b> <strong>Steps</strong></a><ul>
-<li class="chapter" data-level="6.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>6.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
-<li class="chapter" data-level="6.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>6.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
-<li class="chapter" data-level="6.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>6.1.3</b> <strong>Send the result to the user email</strong></a></li>
-</ul></li>
-<li class="chapter" data-level="6.2" data-path="Aggregation.html"><a href="Aggregation.html#running-the-module-3"><i class="fa fa-check"></i><b>6.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="sws-resources.html"><a href="sws-resources.html"><i class="fa fa-check"></i><b>A</b> SWS resources</a><ul>
@@ -140,6 +123,23 @@
 <li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#aquastat-external-sources"><i class="fa fa-check"></i>AQUASTAT External sources</a></li>
 <li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#m49-fs-iso-mapping"><i class="fa fa-check"></i>M49 FS ISO Mapping</a></li>
 <li class="chapter" data-level="A.3" data-path="sws-resources.html"><a href="sws-resources.html#datasets"><i class="fa fa-check"></i><b>A.3</b> Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="AquastatValidation.html"><a href="AquastatValidation.html"><i class="fa fa-check"></i><b>B</b> <strong>The faoswsAquastatValidation module</strong></a><ul>
+<li class="chapter" data-level="B.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>B.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="B.1.1" data-path="AquastatValidation.html"><a href="AquastatValidation.html#applies-validation-rules"><i class="fa fa-check"></i><b>B.1.1</b> <strong>Applies validation rules</strong></a></li>
+<li class="chapter" data-level="B.1.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#focuses-on-high-priority-rules"><i class="fa fa-check"></i><b>B.1.2</b> <strong>Focuses on high priority rules</strong></a></li>
+<li class="chapter" data-level="B.1.3" data-path="AquastatValidation.html"><a href="AquastatValidation.html#reshapes-and-adds-names-to-data"><i class="fa fa-check"></i><b>B.1.3</b> <strong>Reshapes and adds names to data</strong></a></li>
+<li class="chapter" data-level="B.1.4" data-path="AquastatValidation.html"><a href="AquastatValidation.html#sends-the-output-to-the-user-email"><i class="fa fa-check"></i><b>B.1.4</b> <strong>Sends the output to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="B.2" data-path="AquastatValidation.html"><a href="AquastatValidation.html#running-the-module-in-the-sws"><i class="fa fa-check"></i><b>B.2</b> <strong>Running the module in the SWS</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="Aggregation.html"><a href="Aggregation.html"><i class="fa fa-check"></i><b>C</b> <strong>The faoswsAquastatAggregation module</strong></a><ul>
+<li class="chapter" data-level="C.1" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#steps"><i class="fa fa-check"></i><b>C.1</b> <strong>Steps</strong></a><ul>
+<li class="chapter" data-level="C.1.1" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.2"><i class="fa fa-check"></i><b>C.1.1</b> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></a></li>
+<li class="chapter" data-level="C.1.2" data-path="Aggregation.html"><a href="Aggregation.html#calculate-region-specific-aggregations-for-sdg-6.4.1"><i class="fa fa-check"></i><b>C.1.2</b> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></a></li>
+<li class="chapter" data-level="C.1.3" data-path="Aggregation.html"><a href="Aggregation.html#send-the-result-to-the-user-email"><i class="fa fa-check"></i><b>C.1.3</b> <strong>Send the result to the user email</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="C.2" data-path="AquastatQuestionnaire.html"><a href="AquastatQuestionnaire.html#running-the-module"><i class="fa fa-check"></i><b>C.2</b> <strong>Running the module</strong></a></li>
 </ul></li>
 </ul>
 
@@ -160,19 +160,19 @@ into the SWS</a>
 
             <section class="normal" id="section-">
 <div id="Aggregation" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> <strong>The faoswsAquastatAggregation module</strong></h1>
+<h1><span class="header-section-number">C</span> <strong>The faoswsAquastatAggregation module</strong></h1>
 <p>The <strong>faoswsAquastatAggregation</strong> produces the regional aggregations of the SDG 6.4.1 (Water Use Efficiency) and 6.4.2 (Water Stress) following the guidelines for SDG regional aggregates. The input for this module is the dataset from the <strong>faoswsAquastatUpdate</strong> module.</p>
 <div class="figure" style="text-align: center"><span id="fig:figAquastatAggregation"></span>
 <img src="images/faoswsAquastatAggregation.png" alt="Workflow of the faoswsAquastatAggregation module" width="65%" />
 <p class="caption">
-Figure 6.1: Workflow of the faoswsAquastatAggregation module
+Figure C.1: Workflow of the faoswsAquastatAggregation module
 </p>
 </div>
-<div id="steps-3" class="section level2">
-<h2><span class="header-section-number">6.1</span> <strong>Steps</strong></h2>
+<div id="steps" class="section level2">
+<h2><span class="header-section-number">C.1</span> <strong>Steps</strong></h2>
 <p>Below you find the description of the process to calculate aggregates.</p>
 <div id="calculate-region-specific-aggregations-for-sdg-6.4.2" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></h3>
+<h3><span class="header-section-number">C.1.1</span> <strong>Calculate region-specific aggregations for SDG 6.4.2</strong></h3>
 <p>The aggregation of the SDG 6.4.1 (Water Stress) is region-specific, which means that for each region there is a specific equation. The equations differ from each other in terms of an element(s) that need to add or discount from the aggregates final regional aggregates. These elements, in turn, are country-specific. Therefore, the equations have a fixed part that aggregates elements at the regional level a variable part representing element values at the country level.</p>
 <p>To account for the information necessary to aggregate the SDGs, the SWS has a data table named <strong>aqua_sdg_agg</strong>, which contains the fixed and variable part of the aggregating equations. In the table below, <strong>aqua_sdg_agg</strong>, the columns are:</p>
 <ul>
@@ -189,7 +189,7 @@ Figure 6.1: Workflow of the faoswsAquastatAggregation module
 <br>
 <table class="table-fixed-header table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:aquasdgdt">Table 6.1: </span>The SWS aqua_sdg_agg datatable - first rows
+<span id="tab:aquasdgdt">Table C.1: </span>The SWS aqua_sdg_agg datatable - first rows
 </caption>
 <thead>
 <tr>
@@ -404,7 +404,7 @@ m49_level1_code
 In the following table, find the description of relevant AQUASTAT elements present in the <strong>aqua_sdg_agg</strong>.</p>
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:relnames">Table 6.2: </span>Relevant AQUASTAT elements in the aqua_sdg_agg datatable
+<span id="tab:relnames">Table C.2: </span>Relevant AQUASTAT elements in the aqua_sdg_agg datatable
 </caption>
 <thead>
 <tr>
@@ -599,16 +599,16 @@ GDP deflator (2015)
 <br></p>
 </div>
 <div id="calculate-region-specific-aggregations-for-sdg-6.4.1" class="section level3">
-<h3><span class="header-section-number">6.1.2</span> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></h3>
+<h3><span class="header-section-number">C.1.2</span> <strong>Calculate region-specific aggregations for SDG 6.4.1</strong></h3>
 <p>Different from the SDG 6.4.2, the regional aggregations of the SDG 6.4.2 do not have a national component that varies from region to region. Therefore, the aggregates are done by summarizing the elements composing the SDG 6.4.1 intermediates and then obtain the SDG 6.4.1 aggregation at the regional level. The formulas for the SDG 6.4.1 and its intermediates are in the column <strong>addition</strong> of the SWS <strong>aqua_sdg_agg</strong> datatable.</p>
 </div>
 <div id="send-the-result-to-the-user-email" class="section level3">
-<h3><span class="header-section-number">6.1.3</span> <strong>Send the result to the user email</strong></h3>
+<h3><span class="header-section-number">C.1.3</span> <strong>Send the result to the user email</strong></h3>
 <p>The output of the faoswsAquastatAggregation module is a large pivot dataset that is sent by email to the user (FAO corporate email). The output looks like the table below.
 <br></p>
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:aggout">Table 6.3: </span>Relevant AQUASTAT elements in the aqua_sdg_agg datatable
+<span id="tab:aggout">Table C.3: </span>Relevant AQUASTAT elements in the aqua_sdg_agg datatable
 </caption>
 <thead>
 <tr>
@@ -1169,15 +1169,15 @@ USD/m3
 </table>
 </div>
 </div>
-<div id="running-the-module-3" class="section level2">
-<h2><span class="header-section-number">6.2</span> <strong>Running the module</strong></h2>
+<div id="running-the-module" class="section level2">
+<h2><span class="header-section-number">C.2</span> <strong>Running the module</strong></h2>
 <ol style="list-style-type: decimal">
 <li><p>After running the <strong>faoswsAquastatUpdate</strong> module, wait for the result to pop up in the session;
 <br></p>
 <div class="figure"><span id="fig:popsession"></span>
 <img src="images/agg_popsession.png" alt="aquastat_update populated session from the faoswsAquastatUpdate module." width="100%" />
 <p class="caption">
-Figure 6.2: aquastat_update populated session from the faoswsAquastatUpdate module.
+Figure C.2: aquastat_update populated session from the faoswsAquastatUpdate module.
 </p>
 </div>
 <p><br></p></li>
@@ -1187,7 +1187,7 @@ Figure 6.2: aquastat_update populated session from the faoswsAquastatUpdate modu
 <div class="figure"><span id="fig:choosereg"></span>
 <img src="images/agg_choosereg.PNG" alt="Choose the Aggregation module and the region." width="100%" />
 <p class="caption">
-Figure 6.3: Choose the Aggregation module and the region.
+Figure C.3: Choose the Aggregation module and the region.
 </p>
 </div>
 <p><br></p></li>
@@ -1197,7 +1197,7 @@ Figure 6.3: Choose the Aggregation module and the region.
 <div class="figure"><span id="fig:aggcheckemail"></span>
 <img src="images/agg_checkemail.png" alt="Steps 1 to 4" width="100%" />
 <p class="caption">
-Figure 6.4: Steps 1 to 4
+Figure C.4: Steps 1 to 4
 </p>
 </div>
 <br>
@@ -1210,16 +1210,13 @@ The <strong>faoswsAquastatAggregation</strong> <strong>does not save</strong> an
 
 </div>
 </div>
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="AquastatValidation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sws-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="AquastatValidation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

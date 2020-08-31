@@ -1,22 +1,65 @@
-# **The faoswsAquastatQuestionnaire module** {#AquastatQuestionnaire}
+# **The AQUASTAT Questionnaire** {#AquastatQuestionnaire}
 
-The **faoswsAquastatQuestionnaire** is essentially a data harvester. It converts countries to m49 and flags to the SWS flag system.
+<!--The **faoswsAquastatQuestionnaire** is essentially a data harvester. It converts countries to m49 and flags to the SWS flag system.-->
+Before a proper questionnaire harvester is created, the data collected, either through the questionnaire, other international organizations or literature review, should be uploaded in the aquastat_questionnaire dataset through the import function of the SWS.
 
 
-```{r  aquastatQuest, echo=FALSE, out.width="75%", fig.align="center", fig.show='hold', fig.cap='Workflow of the faoswsAquastatQuestionnaire module'}
+<!--```{r  aquastatQuest, echo=FALSE, out.width="75%", fig.align="center", fig.show='hold', fig.cap='Workflow of the faoswsAquastatQuestionnaire module'}
 knitr::include_graphics("images/faoswsAquastatQuestionnaire.png")
 
-```
+```-->
 
 
 ## **Steps**
 
-The module is straightforward and executes only two process.
+<!--The module is straightforward and executes only two process.
 
 - Country code to M49;
-- Flags to SWS flag system.
+- Flags to SWS flag system.-->
 
-## **Running the module**
+- Create a csv file based on the following template for the data;
+
+
+```{r step1AquaQuest, echo=FALSE, message=FALSE}
+# library(data.table)
+# library(kableExtra)
+d = data.table::fread("tables/step1_aqua_quest.csv")
+knitr::kable(d,   
+             caption = paste("Step 1"),
+             booktabs = TRUE) %>%
+  kableExtra::kable_styling(font_size = 12)
+```
+
+
+- Create a csv file based on the following template for the metadata (compulsory, please add at least the source ID as metadata);
+
+```{r step2AquaQuest, echo=FALSE, message=FALSE}
+# library(data.table)
+# library(kableExtra)
+d = data.table::fread("tables/step2_aqua_quest.csv")
+knitr::kable(d,   
+             caption = paste("Step 2"),
+             booktabs = TRUE) %>%
+  kableExtra::kable_styling(font_size = 12)
+```
+
+
+- Create a csv file based on the following template for the block metadata if needed;
+
+```{r step3AquaQuest, echo=FALSE, message=FALSE}
+# library(data.table)
+# library(kableExtra)
+d = data.table::fread("tables/step3_aqua_quest.csv")
+knitr::kable(d,   
+             caption = paste("Step 3"),
+             booktabs = TRUE, 
+             col.names = NULL) %>%
+  kableExtra::kable_styling(font_size = 12)
+```
+
+- Each of this csv file should be imported and their respective data saved to the dataset one after the other.
+
+<!--## **Running the module**
 
 1. Log in the SWS;
 
@@ -52,5 +95,5 @@ knitr::include_graphics("images/aqua_quest_run.png")
 ```
 <br>
 
-9. Click on **Save to dataset**;
+9. Click on **Save to dataset**;-->
 

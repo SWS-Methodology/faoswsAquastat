@@ -91,7 +91,7 @@ knitr::include_graphics("images/sws_1_to_5_steps.png")
 
 6. Click on **Run plugin** on the top-right (see figure below);
 
-7. Select the **faoswsAquastatUpdate** module, choose the set of countries (*All countries* or *Session countries*) and click on **Run plugin** on the bottom-right;
+7. Select the **faoswsAquastatUpdate** module, choose the set of countries (*All countries* or *Session countries*) and click on **Run plugin** on the bottom-right. Please note that the running of the plugin for all countries takes over 24 hours because of the reading/saving metadata process;
 
 <br>
 ```{r  up7, echo=FALSE, out.width="100%", fig.align="center", fig.cap='Select the faoswsAquastatUpdate and run it in the SWS.'}

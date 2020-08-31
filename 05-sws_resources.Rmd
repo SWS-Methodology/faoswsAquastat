@@ -175,13 +175,13 @@ knitr::kable(d,
   
 ```
 
-## AQUASTAT FAOSTAT Mapping {-}
+<!--## AQUASTAT FAOSTAT Mapping {-}
 
 - **Datatable:** `aquastat_faostat_mapping`
 - **Domain:** AQUASTAT
-- **Usage:** This datatable maps out AQUASTAT elements to FAOSTAT elements.
+- **Usage:** This datatable maps out AQUASTAT elements to FAOSTAT elements.<!--
 
-```{r tabMappingColumns, echo=FALSE, message=FALSE}
+<!--```{r tabMappingColumns, echo=FALSE, message=FALSE}
 require(data.table)
 require(kableExtra)
 d = data.table::fread("tables/aquastat_faostat_mapping_colnames.csv")
@@ -195,7 +195,7 @@ knitr::kable(d,
   kableExtra::kable_styling(font_size = 18) %>% 
   kable_styling(fixed_thead = T) 
   
-```
+```-->
 
 
 ## AQUASTAT Sources {-}
@@ -247,7 +247,7 @@ knitr::kable(d,
 
 - **Datatable:** `global_dam_reservoir`
 - **Domain:** AQUASTAT
-- **Usage:** A datatable storing national expert - provided information on the major Dams at the country level and used to calculate Dam capacity time-series.
+- **Usage:** A datatable storing information on the major Dams at the country level and used to calculate Dam capacity time-series.
 
 
 ```{r tab5, echo=FALSE, message=FALSE}
@@ -361,12 +361,14 @@ knitr::kable(d,
 
 Datasets in the SWS are interchangeably used as module inputs/outputs and are composed by dimensions (aka reference/code lists). Because SWS datasets contain code lists following international standards as dimensions, there is little space for variation of dimension names across SWS datasets for the sake of standardization. In the AQUASTAT - SWS framework, the available data sets are:
 
-1. **aquastat_legacy**. The **aquastat_legacy** is an SWS dataset with the legacy data from the 'Old' AQUASTAT working system. The CIO - SWS has migrated the aquastat_legacy dataset into the SWS in order to store the whole data coming from the old system. The **aquastat_legacy** dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables). 
+1. **aquastat_legacy**. The **aquastat_legacy** is an SWS dataset with the legacy data from the 'Old' AQUASTAT working system. The CSI - SWS has migrated the aquastat_legacy dataset into the SWS in order to store the whole data coming from the old system. The **aquastat_legacy** dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables). 
 
-2. **aquastat_questionnaire**. An SWS dataset output from the questionnaire harvester produced by module `faoswsAquastatQeustionnaire`. This dataset feeds, along with the aquastat_external and the aquastat_update datasets, the `faoswsAquastatUpdate` module. More information is found in the chapter \@ref(AquastatQuestionnaire).
+2. **aquastat_questionnaire**. An SWS dataset fed with new data (though import) to be incorporated in the AQUASTAT database. This dataset feeds, along with the aquastat_external and the aquastat_update datasets, the `faoswsAquastatUpdate` module. More information is found in the chapter \@ref(AquastatQuestionnaire).
 
-3. **aquastat_external**. An SWS dataset output from the **faoswsAquastatExternal** module which replaces the lack of a proper CIO-developed harvester for external source data used by AQUASTAT. More information is found in the chapter \@ref(AquastatExternal).
-
+3. **aquastat_external**. An SWS dataset output from the **faoswsAquastatExternal** module which replaces the lack of a proper CSI-developed harvester for external source data used by AQUASTAT. More information is found in the chapter \@ref(AquastatExternal).
 
 4. **aquastat_update**. This dataset is the most complete dataset, storing the AQUASTAT compiled data. For more details, please see chapter \@ref(faoswsAquastatUpdate).
 
+5. **aquastat_legacy_2flags**. This is a copy of the Aquastat_legacy dataset where the flags of the old AQUASTAT working system have been converted to the SWS flags using the following mapping.
+
+6. **aquastat_legacy_ltacorrected**. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset.

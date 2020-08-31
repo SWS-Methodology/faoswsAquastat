@@ -1,0 +1,22 @@
+element_code,element_name,source,source_item_code,source_element_code,data_link
+4101,Arable land area,FAOSTAT,6621,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4102,Permanent crops area,FAOSTAT,6650,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4103,Cultivated area (arable land + permanent crops),FAOSTAT,6620,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4104,Total population,FAOSTAT,3010,511,http://fenixservices.fao.org/faostat/static/bulkdownloads/Population_E_All_Data_(Normalized).zip 
+4105,Rural population,FAOSTAT,3010,551,http://fenixservices.fao.org/faostat/static/bulkdownloads/Population_E_All_Data_(Normalized).zip 
+4106,Urban population,FAOSTAT,3010,561,http://fenixservices.fao.org/faostat/static/bulkdownloads/Population_E_All_Data_(Normalized).zip
+4112,Gross Domestic Product (GDP),FAOSTAT,22008,6110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip
+4113,"Agriculture, value added (% GDP)",FAOSTAT,22016,6103,http://fenixservices.fao.org/faostat/static/bulkdownloads/Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip
+4473,Number of people undernourished (3-year average),FAOSTAT,210011,6132,http://fenixservices.fao.org/faostat/static/bulkdownloads/Food_Security_Data_E_All_Data_(Normalized).zip 
+4474,Prevalence of undernourishment (3-year average),FAOSTAT,210041,6121,http://fenixservices.fao.org/faostat/static/bulkdownloads/Food_Security_Data_E_All_Data_(Normalized).zip 
+4559,Land area,FAOSTAT,6601,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4560,Inland watersd,FAOSTAT,6680,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4561,Total area of the country (incl. coastal water),FAOSTAT,6600,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip 
+4562,Land area equipped for irrigation,FAOSTAT,6690,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4563,Land area actually irrigated,FAOSTAT,6616,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4564,Agriculture area actually irrigated,FAOSTAT,6611,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4565,Cropland area actually irrigated,FAOSTAT,6694,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4566,Permanent meadows & pastures area actually irrigated,FAOSTAT,6657,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4567,Forestry area actually irrigated,FAOSTAT,6695,5110,http://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip
+4458,GDP per capita,FAOSTAT,22014,6119,http://fenixservices.fao.org/faostat/static/bulkdownloads/Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip
+4558,GDP Deflators,FAOSTAT,22024,6179,http://fenixservices.fao.org/faostat/static/bulkdownloads/Deflators_E_All_Data_(Normalized).zip
