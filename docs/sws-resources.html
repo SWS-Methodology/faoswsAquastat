@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>A SWS resources | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
   <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="A SWS resources | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-08-31" />
+<meta name="date" content="2020-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,7 +49,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -101,7 +107,7 @@
 <li class="chapter" data-level="4.1.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
 <li class="chapter" data-level="4.1.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#running-the-module-1"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
 <li class="chapter" data-level="4.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
 <li class="chapter" data-level="4.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
 </ul></li>
@@ -1703,9 +1709,9 @@ ISO three-letetr country code
 <p>Datasets in the SWS are interchangeably used as module inputs/outputs and are composed by dimensions (aka reference/code lists). Because SWS datasets contain code lists following international standards as dimensions, there is little space for variation of dimension names across SWS datasets for the sake of standardization. In the AQUASTAT - SWS framework, the available data sets are:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>aquastat_legacy</strong>. The <strong>aquastat_legacy</strong> is an SWS dataset with the legacy data from the ‘Old’ AQUASTAT working system. The CSI - SWS has migrated the aquastat_legacy dataset into the SWS in order to store the whole data coming from the old system. The <strong>aquastat_legacy</strong> dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables).</p></li>
-<li><p><strong>aquastat_questionnaire</strong>. An SWS dataset fed with new data (though import) to be incorporated in the AQUASTAT database. This dataset feeds, along with the aquastat_external and the aquastat_update datasets, the <code>faoswsAquastatUpdate</code> module. More information is found in the chapter <a href="AquastatQuestionnaire.html#AquastatQuestionnaire">2</a>.</p></li>
+<li><p><strong>aquastat_questionnaire</strong>. An SWS dataset fed with new data (though import) to be incorporated in the AQUASTAT database. This dataset feeds, along with the aquastat_external and the aquastat_legacy_ltacorrected datasets, the <code>faoswsAquastatUpdate</code> module. More information is found in the chapter <a href="AquastatQuestionnaire.html#AquastatQuestionnaire">2</a>.</p></li>
 <li><p><strong>aquastat_external</strong>. An SWS dataset output from the <strong>faoswsAquastatExternal</strong> module which replaces the lack of a proper CSI-developed harvester for external source data used by AQUASTAT. More information is found in the chapter <a href="AquastatExternal.html#AquastatExternal">3</a>.</p></li>
-<li><p><strong>aquastat_update</strong>. This dataset is the most complete dataset, storing the AQUASTAT compiled data. For more details, please see chapter <a href="faoswsAquastatUpdate.html#faoswsAquastatUpdate">4</a>.</p></li>
+<li><p><strong>aquastat_update</strong>. This dataset is the most complete and updated one, storing the AQUASTAT compiled calculated and imputed data. For more details, please see chapter 4.</p></li>
 <li><p><strong>aquastat_legacy_2flags</strong>. This is a copy of the Aquastat_legacy dataset where the flags of the old AQUASTAT working system have been converted to the SWS flags using the following mapping.</p></li>
 <li><p><strong>aquastat_legacy_ltacorrected</strong>. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset.</p></li>
 </ol>

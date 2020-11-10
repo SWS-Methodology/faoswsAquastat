@@ -363,11 +363,11 @@ Datasets in the SWS are interchangeably used as module inputs/outputs and are co
 
 1. **aquastat_legacy**. The **aquastat_legacy** is an SWS dataset with the legacy data from the 'Old' AQUASTAT working system. The CSI - SWS has migrated the aquastat_legacy dataset into the SWS in order to store the whole data coming from the old system. The **aquastat_legacy** dataset is the bare minimum of AQUASTAT, meaning that none analytical process has been applied to it, including the calculation of AQUASTAT indicators (aka derived variables). 
 
-2. **aquastat_questionnaire**. An SWS dataset fed with new data (though import) to be incorporated in the AQUASTAT database. This dataset feeds, along with the aquastat_external and the aquastat_update datasets, the `faoswsAquastatUpdate` module. More information is found in the chapter \@ref(AquastatQuestionnaire).
+2. **aquastat_questionnaire**. An SWS dataset fed with new data (though import) to be incorporated in the AQUASTAT database. This dataset feeds, along with the aquastat_external and the aquastat_legacy_ltacorrected  datasets, the `faoswsAquastatUpdate` module. More information is found in the chapter \@ref(AquastatQuestionnaire).
 
 3. **aquastat_external**. An SWS dataset output from the **faoswsAquastatExternal** module which replaces the lack of a proper CSI-developed harvester for external source data used by AQUASTAT. More information is found in the chapter \@ref(AquastatExternal).
 
-4. **aquastat_update**. This dataset is the most complete dataset, storing the AQUASTAT compiled data. For more details, please see chapter \@ref(faoswsAquastatUpdate).
+4. **aquastat_update**. This dataset is the most complete and updated one, storing the AQUASTAT compiled calculated and imputed data. For more details, please see chapter 4.
 
 5. **aquastat_legacy_2flags**. This is a copy of the Aquastat_legacy dataset where the flags of the old AQUASTAT working system have been converted to the SWS flags using the following mapping.
 

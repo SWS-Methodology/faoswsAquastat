@@ -14,7 +14,7 @@ The **faoswsAquastatUpdate** module applies different imputation's methods, depe
 
 ### **Calculate indicators (*First Calculation*)**
 
-After merging the data coming from the `AQUASTAT Questionnaire`, `AQUASTAT External` and `aquastat_update`, the **faoswsAquastatupdate** module implements the calculation of indicators by applying the information in the SWS `calculation_rule` datatable.
+After merging the data coming from the `AQUASTAT Questionnaire`, `AQUASTAT External` and `aquastat_legacy_ltacorrected`, the **faoswsAquastatupdate** module implements the calculation of indicators by applying the information in the SWS `calculation_rule` datatable.
 
 <!--The **First Calculation** and **Second Calculations** are the key part of the module as they apply the available formulas in the datatable `calculation_rule`.
 The calculations are restricted applied just to the `aquastatElement` classified as **indicator**.-->

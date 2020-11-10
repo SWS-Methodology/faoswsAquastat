@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS</title>
   <meta name="description" content="This online book describes the migration of the statistical processes associated with the AQUASTAT - FAO Global’s Water Information System into the Corporate Statistical Working System (SWS)" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 The faoswsAquastaUpdate module | AQUASTAT: Migration of the Statistical Processes into the SWS" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-08-31" />
+<meta name="date" content="2020-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,7 +49,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -101,7 +107,7 @@
 <li class="chapter" data-level="4.1.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#linear-interpolation-and-carry-forward"><i class="fa fa-check"></i><b>4.1.3</b> <strong>Linear Interpolation and Carry-Forward</strong></a></li>
 <li class="chapter" data-level="4.1.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#recalculate-indicators-second-calculation"><i class="fa fa-check"></i><b>4.1.4</b> <strong>Recalculate indicators (<em>Second calculation</em>)</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="AquastatExternal.html"><a href="AquastatExternal.html#running-the-module"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="4.2" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#running-the-module-1"><i class="fa fa-check"></i><b>4.2</b> <strong>Running the module</strong></a></li>
 <li class="chapter" data-level="4.3" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#flag-assignment"><i class="fa fa-check"></i><b>4.3</b> <strong>Flag Assignment</strong></a></li>
 <li class="chapter" data-level="4.4" data-path="faoswsAquastatUpdate.html"><a href="faoswsAquastatUpdate.html#aquastat-network"><i class="fa fa-check"></i><b>4.4</b> <strong>AQUASTAT Network</strong></a></li>
 </ul></li>
@@ -151,7 +157,7 @@ Figure 4.1: Workflow of the faoswsAquastatUpdate module
 <p>The <strong>faoswsAquastatUpdate</strong> module applies different imputation’s methods, depending on the <code>aquastatElement</code>. Below you find their definitions and applications in the module.</p>
 <div id="calculate-indicators-first-calculation" class="section level3">
 <h3><span class="header-section-number">4.1.1</span> <strong>Calculate indicators (<em>First Calculation</em>)</strong></h3>
-<p>After merging the data coming from the <code>AQUASTAT Questionnaire</code>, <code>AQUASTAT External</code> and <code>aquastat_update</code>, the <strong>faoswsAquastatupdate</strong> module implements the calculation of indicators by applying the information in the SWS <code>calculation_rule</code> datatable.</p>
+<p>After merging the data coming from the <code>AQUASTAT Questionnaire</code>, <code>AQUASTAT External</code> and <code>aquastat_legacy_ltacorrected</code>, the <strong>faoswsAquastatupdate</strong> module implements the calculation of indicators by applying the information in the SWS <code>calculation_rule</code> datatable.</p>
 <!--The **First Calculation** and **Second Calculations** are the key part of the module as they apply the available formulas in the datatable `calculation_rule`.
 The calculations are restricted applied just to the `aquastatElement` classified as **indicator**.-->
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
@@ -974,7 +980,7 @@ component_name
 <h3><span class="header-section-number">4.1.2</span> <strong>Vertical Imputation (components)</strong></h3>
 <p>After the <em>First Calculation</em>, the module tries to retrieve some information for selected components based on the share of their indicators. This can be done only for the formulas that are <em>linear combination</em>. For instance, for a given country and year, an indicator and all its components are known. The idea then is to calculate the share of each component based on that indicator and fill in the gaps where the indicator is also available but the components are not. The example below illustrates the vertical imputation method.</p>
 <div class="figure" style="text-align: center"><span id="fig:figVertImp"></span>
-<img src="images/vertical_imputation_example.png" alt="Bulgaria - Vertical Imputation [4311]=[4308]+[4309]+[4310]" width="75%" />
+<img src="images/vertical_imputation_example.PNG" alt="Bulgaria - Vertical Imputation [4311]=[4308]+[4309]+[4310]" width="75%" />
 <p class="caption">
 Figure 4.2: Bulgaria - Vertical Imputation [4311]=[4308]+[4309]+[4310]
 </p>
@@ -1003,7 +1009,7 @@ However, if the element is not <code>LTA</code>, the linear interpolation method
 <p><br></p>
 </div>
 </div>
-<div id="running-the-module" class="section level2">
+<div id="running-the-module-1" class="section level2">
 <h2><span class="header-section-number">4.2</span> <strong>Running the module</strong></h2>
 <ol style="list-style-type: decimal">
 <li><p>Log in the SWS;</p></li>
@@ -1013,7 +1019,7 @@ However, if the element is not <code>LTA</code>, the linear interpolation method
 <li><p>Run the query by clicking on the <strong>Run</strong> button;</p></li>
 </ol>
 <div class="figure" style="text-align: center"><span id="fig:up124"></span>
-<img src="images/sws_1_to_5_steps.png" alt="Steps 1 to 5 to run the module in the SWS." width="100%" />
+<img src="images/sws_1_to_5_steps.PNG" alt="Steps 1 to 5 to run the module in the SWS." width="100%" />
 <p class="caption">
 Figure 4.3: Steps 1 to 5 to run the module in the SWS.
 </p>
@@ -1025,7 +1031,7 @@ Figure 4.3: Steps 1 to 5 to run the module in the SWS.
 </ol>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:up7"></span>
-<img src="images/sws_6_7_steps.png" alt="Select the faoswsAquastatUpdate and run it in the SWS." width="100%" />
+<img src="images/sws_6_7_steps.PNG" alt="Select the faoswsAquastatUpdate and run it in the SWS." width="100%" />
 <p class="caption">
 Figure 4.4: Select the faoswsAquastatUpdate and run it in the SWS.
 </p>
