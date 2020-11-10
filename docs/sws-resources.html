@@ -1713,7 +1713,7 @@ ISO three-letetr country code
 <li><p><strong>aquastat_external</strong>. An SWS dataset output from the <strong>faoswsAquastatExternal</strong> module which replaces the lack of a proper CSI-developed harvester for external source data used by AQUASTAT. More information is found in the chapter <a href="AquastatExternal.html#AquastatExternal">3</a>.</p></li>
 <li><p><strong>aquastat_update</strong>. This dataset is the most complete and updated one, storing the AQUASTAT compiled calculated and imputed data. For more details, please see chapter 4.</p></li>
 <li><p><strong>aquastat_legacy_2flags</strong>. This is a copy of the Aquastat_legacy dataset where the flags of the old AQUASTAT working system have been converted to the SWS flags using the following mapping.</p></li>
-<li><p><strong>aquastat_legacy_ltacorrected</strong>. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset.</p></li>
+<li><p><strong>aquastat_legacy_ltacorrected</strong>. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset. It’s also one of the inputs for the module <strong>faoswsAquastatUpdate</strong>.</p></li>
 </ol>
 
 </div>

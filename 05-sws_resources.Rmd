@@ -371,4 +371,4 @@ Datasets in the SWS are interchangeably used as module inputs/outputs and are co
 
 5. **aquastat_legacy_2flags**. This is a copy of the Aquastat_legacy dataset where the flags of the old AQUASTAT working system have been converted to the SWS flags using the following mapping.
 
-6. **aquastat_legacy_ltacorrected**. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset.
+6. **aquastat_legacy_ltacorrected**. This is a copy of the Aquastat_legacy_2flags dataset where the Long Term Averages (LTA) variables, mostly corresponding to water resources variables, have been uploaded for each year (vs once every 5 year in the old working system) and corrected when needed. Indeed the migration from the old working system to the SWS for these LTA created some differences in the dataset. It's also one of the inputs for the module **faoswsAquastatUpdate**.
